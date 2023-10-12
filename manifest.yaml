@@ -6,6 +6,14 @@ descriptions:
     name: Everyone
     type: group
     short: A selection of experiments for any user
+  d-g-sm2-students:
+    name: Structural Mechanics 2 Students
+    type: group
+    short: Truss experiments with no-force UI
+  d-g-sm2-staff:
+    name: Structural Mechanics 2 Staff
+    type: group
+    short: Truss experiments with all available UI
   d-g-engdes1:
     name: Engineering Design 1 
     type: group
@@ -32,6 +40,14 @@ descriptions:
     name: Pendulums (Everyone)
     type: policy
     short: Pendulums for everyone
+  d-p-trus-sm2-students:
+    name: Truss (Structural Mechanics 2)
+    type: policy
+    short: Trusses for Structural Mechanics 2 Students
+  d-p-trus-sm2-staff:
+    name: Truss (Structural Mechanics 2 Staff)
+    type: policy
+    short: Trusses for Structural Mechanics 2 Staff    
   d-p-everyone-spin:
     name: Spinners (Everyone)
     type: policy
@@ -73,12 +89,7 @@ descriptions:
     type: resource
     short: An electromagnetically-driven pendulum (standard configuration)
 
-  # Truss resources
-  d-r-truss-medium:
-    name: Truss (Medium)
-    type: resource
-    short: Medium size truss with linear actuator and strain gauges
-
+  
   # Spinner resources
   d-r-spin30:
     name: Spinner 30
@@ -369,6 +380,70 @@ descriptions:
     image: https://dev.practable.io/static/images/booking/slots/spinner-real-2.0/image.png
     thumb: https://dev.practable.io/static/images/booking/slots/spinner-real-2.0/thumb.png
 
+  # Truss resources
+  d-r-trus-medium:
+    name: Truss (Medium)
+    type: resource
+    short: Medium size truss with linear actuator and strain gauges
+    image: https://dev.practable.io/static/images/booking/slots/truss-real-1.0/image.png
+    thumb: https://dev.practable.io/static/images/booking/slots/truss-real-1.0/thumb.png
+
+  d-r-trus00:
+    name: Truss 00
+    type: resource
+    short: Medium size truss with linear actuator and strain gauges
+    image: https://dev.practable.io/static/images/booking/slots/truss-real-1.0/image.png
+    thumb: https://dev.practable.io/static/images/booking/slots/truss-real-1.0/thumb.png
+
+  d-r-trus01:
+    name: Truss 01
+    type: resource
+    short: Medium size truss with linear actuator and strain gauges
+    image: https://dev.practable.io/static/images/booking/slots/truss-real-1.0/image.png
+    thumb: https://dev.practable.io/static/images/booking/slots/truss-real-1.0/thumb.png
+    
+  d-r-trus02:
+    name: Truss 02
+    type: resource
+    short: Medium size truss with linear actuator and strain gauges
+    image: https://dev.practable.io/static/images/booking/slots/truss-real-1.0/image.png
+    thumb: https://dev.practable.io/static/images/booking/slots/truss-real-1.0/thumb.png
+
+  d-r-trus03:
+    name: Truss 03
+    type: resource
+    short: Medium size truss with linear actuator and strain gauges
+    image: https://dev.practable.io/static/images/booking/slots/truss-real-1.0/image.png
+    thumb: https://dev.practable.io/static/images/booking/slots/truss-real-1.0/thumb.png
+    
+  d-r-trus04:
+    name: Truss 04
+    type: resource
+    short: Medium size truss with linear actuator and strain gauges
+    image: https://dev.practable.io/static/images/booking/slots/truss-real-1.0/image.png
+    thumb: https://dev.practable.io/static/images/booking/slots/truss-real-1.0/thumb.png
+
+  d-r-trus05:
+    name: Truss 05
+    type: resource
+    short: Medium size truss with linear actuator and strain gauges
+    image: https://dev.practable.io/static/images/booking/slots/truss-real-1.0/image.png
+    thumb: https://dev.practable.io/static/images/booking/slots/truss-real-1.0/thumb.png
+    
+  d-r-trus06:
+    name: Truss 06
+    type: resource
+    short: Medium size truss with linear actuator and strain gauges
+    image: https://dev.practable.io/static/images/booking/slots/truss-real-1.0/image.png
+    thumb: https://dev.practable.io/static/images/booking/slots/truss-real-1.0/thumb.png
+
+  d-r-trus07:
+    name: Truss 07
+    type: resource
+    short: Medium size truss with linear actuator and strain gauges
+    image: https://dev.practable.io/static/images/booking/slots/truss-real-1.0/image.png
+    thumb: https://dev.practable.io/static/images/booking/slots/truss-real-1.0/thumb.png
+    
   # Slot descriptiosn
 
   # Everyone pendulums
@@ -2459,7 +2534,119 @@ descriptions:
     type: slot
     short: A PID-controlled brushed motor with 115g disk of size ⌀:60mm t:15mm
     image: https://dev.practable.io/static/images/booking/slots/spinner-real-2.0/image.png
-    thumb: https://dev.practable.io/static/images/booking/slots/spinner-real-2.0/thumb.png     
+    thumb: https://dev.practable.io/static/images/booking/slots/spinner-real-2.0/thumb.png
+    
+  d-sl-sm2-staff-trus00:
+    name: Truss 00 (Students)
+    type: slot
+    short: Medium size acrylic truss with linear actuator and strain gauges
+    image: https://dev.practable.io/static/images/booking/slots/truss-real-1.0/image.png
+    thumb: https://dev.practable.io/static/images/booking/slots/truss-real-1.0/thumb.png
+
+  d-sl-sm2-staff-trus01:
+    name: Truss 01 (Students)
+    type: slot
+    short: Medium size acrylic truss with linear actuator and strain gauges
+    image: https://dev.practable.io/static/images/booking/slots/truss-real-1.0/image.png
+    thumb: https://dev.practable.io/static/images/booking/slots/truss-real-1.0/thumb.png
+    
+  d-sl-sm2-staff-trus02:
+    name: Truss 02 (Students)
+    type: slot
+    short: Medium size acrylic truss with linear actuator and strain gauges
+    image: https://dev.practable.io/static/images/booking/slots/truss-real-1.0/image.png
+    thumb: https://dev.practable.io/static/images/booking/slots/truss-real-1.0/thumb.png
+
+  d-sl-sm2-staff-trus03:
+    name: Truss 03 (Students)
+    type: slot
+    short: Medium size acrylic truss with linear actuator and strain gauges
+    image: https://dev.practable.io/static/images/booking/slots/truss-real-1.0/image.png
+    thumb: https://dev.practable.io/static/images/booking/slots/truss-real-1.0/thumb.png
+    
+  d-sl-sm2-staff-trus04:
+    name: Truss 04 (Students)
+    type: slot
+    short: Medium size acrylic truss with linear actuator and strain gauges
+    image: https://dev.practable.io/static/images/booking/slots/truss-real-1.0/image.png
+    thumb: https://dev.practable.io/static/images/booking/slots/truss-real-1.0/thumb.png
+
+  d-sl-sm2-staff-trus05:
+    name: Truss 05 (Students)
+    type: slot
+    short: Medium size acrylic truss with linear actuator and strain gauges
+    image: https://dev.practable.io/static/images/booking/slots/truss-real-1.0/image.png
+    thumb: https://dev.practable.io/static/images/booking/slots/truss-real-1.0/thumb.png
+    
+  d-sl-sm2-staff-trus06:
+    name: Truss 06 (Students)
+    type: slot
+    short: Medium size acrylic truss with linear actuator and strain gauges
+    image: https://dev.practable.io/static/images/booking/slots/truss-real-1.0/image.png
+    thumb: https://dev.practable.io/static/images/booking/slots/truss-real-1.0/thumb.png
+
+  d-sl-sm2-staff-trus07:
+    name: Truss 07 (Students)
+    type: slot
+    short: Medium size acrylic truss with linear actuator and strain gauges
+    image: https://dev.practable.io/static/images/booking/slots/truss-real-1.0/image.png
+    thumb: https://dev.practable.io/static/images/booking/slots/truss-real-1.0/thumb.png
+    
+  d-sl-sm2-students-trus00:
+    name: Truss 00 (Students)
+    type: slot
+    short: Medium size acrylic truss with linear actuator and strain gauges
+    image: https://dev.practable.io/static/images/booking/slots/truss-real-1.0/image.png
+    thumb: https://dev.practable.io/static/images/booking/slots/truss-real-1.0/thumb.png
+
+  d-sl-sm2-students-trus01:
+    name: Truss 01 (Students)
+    type: slot
+    short: Medium size acrylic truss with linear actuator and strain gauges
+    image: https://dev.practable.io/static/images/booking/slots/truss-real-1.0/image.png
+    thumb: https://dev.practable.io/static/images/booking/slots/truss-real-1.0/thumb.png
+    
+  d-sl-sm2-students-trus02:
+    name: Truss 02 (Students)
+    type: slot
+    short: Medium size acrylic truss with linear actuator and strain gauges
+    image: https://dev.practable.io/static/images/booking/slots/truss-real-1.0/image.png
+    thumb: https://dev.practable.io/static/images/booking/slots/truss-real-1.0/thumb.png
+
+  d-sl-sm2-students-trus03:
+    name: Truss 03 (Students)
+    type: slot
+    short: Medium size acrylic truss with linear actuator and strain gauges
+    image: https://dev.practable.io/static/images/booking/slots/truss-real-1.0/image.png
+    thumb: https://dev.practable.io/static/images/booking/slots/truss-real-1.0/thumb.png
+    
+  d-sl-sm2-students-trus04:
+    name: Truss 04 (Students)
+    type: slot
+    short: Medium size acrylic truss with linear actuator and strain gauges
+    image: https://dev.practable.io/static/images/booking/slots/truss-real-1.0/image.png
+    thumb: https://dev.practable.io/static/images/booking/slots/truss-real-1.0/thumb.png
+
+  d-sl-sm2-students-trus05:
+    name: Truss 05 (Students)
+    type: slot
+    short: Medium size acrylic truss with linear actuator and strain gauges
+    image: https://dev.practable.io/static/images/booking/slots/truss-real-1.0/image.png
+    thumb: https://dev.practable.io/static/images/booking/slots/truss-real-1.0/thumb.png
+    
+  d-sl-sm2-students-trus06:
+    name: Truss 06 (Students)
+    type: slot
+    short: Medium size acrylic truss with linear actuator and strain gauges
+    image: https://dev.practable.io/static/images/booking/slots/truss-real-1.0/image.png
+    thumb: https://dev.practable.io/static/images/booking/slots/truss-real-1.0/thumb.png
+
+  d-sl-sm2-students-trus07:
+    name: Truss 07 (Students)
+    type: slot
+    short: Medium size acrylic truss with linear actuator and strain gauges
+    image: https://dev.practable.io/static/images/booking/slots/truss-real-1.0/image.png
+    thumb: https://dev.practable.io/static/images/booking/slots/truss-real-1.0/thumb.png    
 
   # User Interfaces
   d-ui-pend-student:
@@ -2474,10 +2661,6 @@ descriptions:
     short: Spinner UI for student use
     image: https://dev.practable.io/static/images/booking/ui/spinner-default-2.0/image.png
     thumb: https://dev.practable.io/static/images/booking/ui/spinner-default-2.0/thumb.png  
-  d-ui-trus-student:
-    name: Truss (Student)
-    type: ui
-    short: Truss UI for student use
   d-ui-pend-analytics-student:
     name: Analytics Pendulum (Student)
     type: ui
@@ -2490,6 +2673,30 @@ descriptions:
     short: Analytics UI for student use
     image: https://dev.practable.io/static/images/booking/ui/analytics-spin-1.0/image.png
     thumb: https://dev.practable.io/static/images/booking/ui/analytics-spin-1.0/thumb.png
+  d-ui-trus-default:
+    name: Truss (Default)
+    type: ui
+    short: Truss UI for default use
+    image: https://dev.practable.io/static/images/booking/ui/truss-default-1.0/image.png
+    thumb: https://dev.practable.io/static/images/booking/ui/truss-default-1.0/thumb.png
+  d-ui-trus-open-day:
+    name: Truss (Open Day)
+    type: ui
+    short: Truss UI for Open Day use
+    image: https://dev.practable.io/static/images/booking/ui/truss-open-day-1.0/image.png
+    thumb: https://dev.practable.io/static/images/booking/ui/truss-open-day-1.0/thumb.png
+  d-ui-trus-no-force:
+    name: Truss (Student)
+    type: ui
+    short: Truss UI for Student use
+    image: https://dev.practable.io/static/images/booking/ui/truss-no-force-1.0/image.png
+    thumb: https://dev.practable.io/static/images/booking/ui/truss-no-force-1.0/thumb.png    
+  d-ui-trus-student:
+    name: Truss (Student)
+    type: ui
+    short: Truss UI for Student use
+    image: https://dev.practable.io/static/images/booking/ui/truss-no-force-1.0/image.png
+    thumb: https://dev.practable.io/static/images/booking/ui/truss-no-force-1.0/thumb.png     
 display_guides:
   5mFor20m:
     book_ahead: 20m
@@ -2550,6 +2757,14 @@ groups:
     policies:
       - p-engdes1-lab-pend
       - p-engdes1-lab-spin
+  g-sm2-students-428bbe:
+    description: d-g-sm2-students
+    policies:
+      - p-trus-sm2-students
+  g-sm2-staff-832eb6:
+    description: d-g-sm2-staff
+    policies:
+      - p-trus-sm2-staff      
   g-opendays-k8ds2D:
     description: d-g-opendays
     policies:
@@ -2596,7 +2811,45 @@ policies:
     slots:
       - sl-everyone-pend34
       - sl-everyone-pend35
-     
+      
+  p-trus-sm2-students:
+    description: d-p-trus-sm2-students
+    enforce_allow_start_in_past: true
+    allow_start_in_past_within: 5m
+    display_guides:
+      - 5mFor20m
+      - 15mFor1h
+      - 30mFor8h
+      - 1hFor8h
+    slots:
+      - sl-sm2-students-trus00
+      - sl-sm2-students-trus01
+      - sl-sm2-students-trus02
+      - sl-sm2-students-trus03
+      - sl-sm2-students-trus04
+      - sl-sm2-students-trus05
+      - sl-sm2-students-trus06
+      - sl-sm2-students-trus07
+      
+  p-trus-sm2-staff:
+    description: d-p-trus-sm2-staff
+    enforce_allow_start_in_past: true
+    allow_start_in_past_within: 5m
+    display_guides:
+      - 5mFor20m
+      - 15mFor1h
+      - 30mFor8h
+      - 1hFor8h
+    slots:
+      - sl-sm2-staff-trus00
+      - sl-sm2-staff-trus01
+      - sl-sm2-staff-trus02
+      - sl-sm2-staff-trus03
+      - sl-sm2-staff-trus04
+      - sl-sm2-staff-trus05
+      - sl-sm2-staff-trus06
+      - sl-sm2-staff-trus07
+      
   p-everyone-spin:
     description: d-p-everyone-spin
     enforce_allow_start_in_past: true
@@ -2606,45 +2859,46 @@ policies:
       - 15mFor1h
     slots:
       - sl-everyone-spin30
-      - sl-everyone-spin32
-      - sl-everyone-spin33
-      - sl-everyone-spin34
-      - sl-everyone-spin35
-      - sl-everyone-spin36
-      - sl-everyone-spin37       
-      - sl-everyone-spin38
-      - sl-everyone-spin39
-      - sl-everyone-spin40
-      - sl-everyone-spin41
-      - sl-everyone-spin46
-      - sl-everyone-spin47       
-      - sl-everyone-spin48
-      - sl-everyone-spin49
-      - sl-everyone-spin51
-      - sl-everyone-spin52
-      - sl-everyone-spin53
-      - sl-everyone-spin54
-      - sl-everyone-spin55
-      - sl-everyone-spin56
-      - sl-everyone-spin57       
-      - sl-everyone-spin58
-      - sl-everyone-spin59
-      - sl-everyone-spin60
-      - sl-everyone-spin61
-      - sl-everyone-spin62
-      - sl-everyone-spin63
-      - sl-everyone-spin65
-      - sl-everyone-spin66
-      - sl-everyone-spin67       
-      - sl-everyone-spin68
-      - sl-everyone-spin70
-      - sl-everyone-spin71
-      - sl-everyone-spin72
-      - sl-everyone-spin73
-      - sl-everyone-spin74
-      - sl-everyone-spin75
-      - sl-everyone-spin76
-      - sl-everyone-spin77
+      # - sl-everyone-spin32
+      # - sl-everyone-spin33
+      # - sl-everyone-spin34
+      # - sl-everyone-spin35
+      # - sl-everyone-spin36
+      # - sl-everyone-spin37       
+      # - sl-everyone-spin38
+      # - sl-everyone-spin39
+      # - sl-everyone-spin40
+      # - sl-everyone-spin41
+      # - sl-everyone-spin46
+      # - sl-everyone-spin47       
+      # - sl-everyone-spin48
+      # - sl-everyone-spin49
+      # - sl-everyone-spin51
+      # - sl-everyone-spin52
+      # - sl-everyone-spin53
+      # - sl-everyone-spin54
+      # - sl-everyone-spin55
+      # - sl-everyone-spin56
+      # - sl-everyone-spin57       
+      # - sl-everyone-spin58
+      # - sl-everyone-spin59
+      # - sl-everyone-spin60
+      # - sl-everyone-spin61
+      # - sl-everyone-spin62
+      # - sl-everyone-spin63
+      # - sl-everyone-spin65
+      # - sl-everyone-spin66
+      # - sl-everyone-spin67       
+      # - sl-everyone-spin68
+      # - sl-everyone-spin70
+      # - sl-everyone-spin71
+      # - sl-everyone-spin72
+      # - sl-everyone-spin73
+      # - sl-everyone-spin74
+      # - sl-everyone-spin75
+      # - sl-everyone-spin76
+      # - sl-everyone-spin77
+      
   p-everyone-trus:
     description: d-p-everyone-trus
     enforce_allow_start_in_past: true
@@ -2663,36 +2917,36 @@ policies:
       - 1hFor2h
     slots:
       - sl-engdes1-lab-pend00
-      - sl-engdes1-lab-pend02
-      - sl-engdes1-lab-pend03
-      - sl-engdes1-lab-pend04
-      - sl-engdes1-lab-pend05
-      - sl-engdes1-lab-pend06
-      - sl-engdes1-lab-pend07
-      - sl-engdes1-lab-pend08
-      - sl-engdes1-lab-pend09
-      - sl-engdes1-lab-pend10
-      - sl-engdes1-lab-pend11
-      - sl-engdes1-lab-pend12
-      - sl-engdes1-lab-pend13
-      - sl-engdes1-lab-pend14
-      - sl-engdes1-lab-pend15
-      - sl-engdes1-lab-pend16
-      - sl-engdes1-lab-pend17
-      - sl-engdes1-lab-pend20
-      - sl-engdes1-lab-pend21
-      - sl-engdes1-lab-pend22
-      - sl-engdes1-lab-pend23
-      - sl-engdes1-lab-pend26
-      - sl-engdes1-lab-pend27
-      - sl-engdes1-lab-pend28
-      - sl-engdes1-lab-pend29
-      - sl-engdes1-lab-pend31
-      - sl-engdes1-lab-pend33
-      - sl-engdes1-lab-pend34
-      - sl-engdes1-lab-pend35
-      - sl-engdes1-lab-pend36
-      - sl-engdes1-lab-pend37
+      #  - sl-engdes1-lab-pend02
+      #  - sl-engdes1-lab-pend03
+      #  - sl-engdes1-lab-pend04
+      #  - sl-engdes1-lab-pend05
+      #  - sl-engdes1-lab-pend06
+      #  - sl-engdes1-lab-pend07
+      #  - sl-engdes1-lab-pend08
+      #  - sl-engdes1-lab-pend09
+      #  - sl-engdes1-lab-pend10
+      #  - sl-engdes1-lab-pend11
+      #  - sl-engdes1-lab-pend12
+      #  - sl-engdes1-lab-pend13
+      #  - sl-engdes1-lab-pend14
+      #  - sl-engdes1-lab-pend15
+      #  - sl-engdes1-lab-pend16
+      #  - sl-engdes1-lab-pend17
+      #  - sl-engdes1-lab-pend20
+      #  - sl-engdes1-lab-pend21
+      #  - sl-engdes1-lab-pend22
+      #  - sl-engdes1-lab-pend23
+      #  - sl-engdes1-lab-pend26
+      #  - sl-engdes1-lab-pend27
+      #  - sl-engdes1-lab-pend28
+      #  - sl-engdes1-lab-pend29
+      #  - sl-engdes1-lab-pend31
+      #  - sl-engdes1-lab-pend33
+      #  - sl-engdes1-lab-pend34
+      #  - sl-engdes1-lab-pend35
+      #  - sl-engdes1-lab-pend36
+      #  - sl-engdes1-lab-pend37
       
   p-engdes1-pend:
     description: d-p-engdes1-pend
@@ -2908,7 +3162,8 @@ policies:
       - sl-opendays-spin74
       - sl-opendays-spin75
       - sl-opendays-spin76
-      - sl-opendays-spin77      
+      - sl-opendays-spin77
+      
 resources:
   r-pend00:
     description: d-r-pendulum-standard
@@ -3514,19 +3769,62 @@ resources:
       - log
     topic_stub: spin77
   r-trus00:
-    description: d-r-truss-medium
+    description: d-r-trus00
     streams:
       - st-data
       - st-video
       - log
     topic_stub: trus00
   r-trus01:
-    description: d-r-truss-medium
+    description: d-r-trus01
     streams:
       - st-data
       - st-video
       - log
     topic_stub: trus01
+  r-trus02:
+    description: d-r-trus02
+    streams:
+      - st-data
+      - st-video
+      - log
+    topic_stub: trus02
+  r-trus03:
+    description: d-r-trus03
+    streams:
+      - st-data
+      - st-video
+      - log
+    topic_stub: trus03
+  r-trus04:
+    description: d-r-trus04
+    streams:
+      - st-data
+      - st-video
+      - log
+    topic_stub: trus04
+  r-trus05:
+    description: d-r-trus05
+    streams:
+      - st-data
+      - st-video
+      - log
+    topic_stub: trus05
+  r-trus06:
+    description: d-r-trus06
+    streams:
+      - st-data
+      - st-video
+      - log
+    topic_stub: trus06
+  r-trus07:
+    description: d-r-trus07
+    streams:
+      - st-data
+      - st-video
+      - log
+    topic_stub: trus07    
+    
 slots:
   sl-everyone-pend00:
     description: d-sl-everyone-pend00 
@@ -5832,7 +6130,104 @@ slots:
     resource: r-spin77
     ui_set: us-spin-opendays
     window: w-spin-opendays
-
+    
+  sl-sm2-students-trus00:
+    description: d-sl-sm2-students-trus00
+    policy: p-trus-sm2-students
+    resource: r-trus00
+    ui_set: us-trus-sm2-students
+    window: w-trus-sm2-students
+  sl-sm2-students-trus01:
+    description: d-sl-sm2-students-trus01
+    policy: p-trus-sm2-students
+    resource: r-trus01
+    ui_set: us-trus-sm2-students
+    window: w-trus-sm2-students
+  sl-sm2-students-trus02:
+    description: d-sl-sm2-students-trus02
+    policy: p-trus-sm2-students
+    resource: r-trus02
+    ui_set: us-trus-sm2-students
+    window: w-trus-sm2-students
+  sl-sm2-students-trus03:
+    description: d-sl-sm2-students-trus03
+    policy: p-trus-sm2-students
+    resource: r-trus03
+    ui_set: us-trus-sm2-students
+    window: w-trus-sm2-students
+  sl-sm2-students-trus04:
+    description: d-sl-sm2-students-trus04
+    policy: p-trus-sm2-students
+    resource: r-trus04
+    ui_set: us-trus-sm2-students
+    window: w-trus-sm2-students
+  sl-sm2-students-trus05:
+    description: d-sl-sm2-students-trus05
+    policy: p-trus-sm2-students
+    resource: r-trus05
+    ui_set: us-trus-sm2-students
+    window: w-trus-sm2-students
+  sl-sm2-students-trus06:
+    description: d-sl-sm2-students-trus06
+    policy: p-trus-sm2-students
+    resource: r-trus06
+    ui_set: us-trus-sm2-students
+    window: w-trus-sm2-students
+  sl-sm2-students-trus07:
+    description: d-sl-sm2-students-trus07
+    policy: p-trus-sm2-students
+    resource: r-trus07
+    ui_set: us-trus-sm2-students
+    window: w-trus-sm2-students
+    
+  sl-sm2-staff-trus00:
+    description: d-sl-sm2-staff-trus00
+    policy: p-trus-sm2-staff
+    resource: r-trus00
+    ui_set: us-trus-sm2-staff
+    window: w-trus-sm2-staff
+  sl-sm2-staff-trus01:
+    description: d-sl-sm2-staff-trus01
+    policy: p-trus-sm2-staff
+    resource: r-trus01
+    ui_set: us-trus-sm2-staff
+    window: w-trus-sm2-staff
+  sl-sm2-staff-trus02:
+    description: d-sl-sm2-staff-trus02
+    policy: p-trus-sm2-staff
+    resource: r-trus02
+    ui_set: us-trus-sm2-staff
+    window: w-trus-sm2-staff
+  sl-sm2-staff-trus03:
+    description: d-sl-sm2-staff-trus03
+    policy: p-trus-sm2-staff
+    resource: r-trus03
+    ui_set: us-trus-sm2-staff
+    window: w-trus-sm2-staff
+  sl-sm2-staff-trus04:
+    description: d-sl-sm2-staff-trus04
+    policy: p-trus-sm2-staff
+    resource: r-trus04
+    ui_set: us-trus-sm2-staff
+    window: w-trus-sm2-staff
+  sl-sm2-staff-trus05:
+    description: d-sl-sm2-staff-trus05
+    policy: p-trus-sm2-staff
+    resource: r-trus05
+    ui_set: us-trus-sm2-staff
+    window: w-trus-sm2-staff
+  sl-sm2-staff-trus06:
+    description: d-sl-sm2-staff-trus06
+    policy: p-trus-sm2-staff
+    resource: r-trus06
+    ui_set: us-trus-sm2-staff
+    window: w-trus-sm2-staff
+  sl-sm2-staff-trus07:
+    description: d-sl-sm2-staff-trus07
+    policy: p-trus-sm2-staff
+    resource: r-trus07
+    ui_set: us-trus-sm2-staff
+    window: w-trus-sm2-staff 
     
 streams:
   log:
@@ -5918,6 +6313,27 @@ uis:
       - st-data
       - st-video
       - log
+  ui-trus-default:
+    description: d-ui-trus-default
+    url: https://dev.practable.io/static/ui/truss-1.0/?streams={{streams}}&exp={{exp}}&course=sm2
+    streams_required:
+      - st-data
+      - st-video
+      - log
+  ui-trus-no-force:
+    description: d-ui-trus-no-force
+    url: https://dev.practable.io/static/ui/truss-no-force-1.0/?streams={{streams}}&exp={{exp}}&course=sm2
+    streams_required:
+      - st-data
+      - st-video
+      - log
+  ui-trus-open-day:
+    description: d-ui-trus-open-day
+    url: https://dev.practable.io/static/ui/truss-open-day-1.0/?streams={{streams}}&exp={{exp}}&course=everyone
+    streams_required:
+      - st-data
+      - st-video
+      - log     
 ui_sets:
   us-pend-engdes1:
     uis:
@@ -5950,11 +6366,20 @@ ui_sets:
   us-trus-everyone:
     uis:
       - ui-trus-everyone
+  us-trus-sm2-students:
+    uis:
+      - ui-trus-no-force
+  us-trus-sm2-staff:
+    uis:
+      - ui-trus-default
+      - ui-trus-no-force
+      - ui-trus-open-day
+      
 windows:
   w-pend-everyone:
     allowed:
       - start: 2023-02-04T00:00:00Z
-        end: 2024-02-04T00:00:00Z
+        end: 2023-03-04T00:00:00Z
     denied:
       - start: 2023-05-08T15:00:00Z
         end:   2023-05-08T16:00:00Z
@@ -5969,7 +6394,7 @@ windows:
   w-spin-everyone:
     allowed:
       - start: 2023-02-04T00:00:00Z
-        end: 2024-02-04T00:00:00Z
+        end: 2023-03-04T00:00:00Z
     denied:
       - start: 2023-05-08T15:00:00Z
         end:   2023-05-08T16:00:00Z
@@ -5981,6 +6406,14 @@ windows:
         end:   2023-05-11T16:00:00Z
       - start: 2023-05-12T15:00:00Z
         end:   2023-05-12T16:00:00Z
+  w-trus-sm2-students:
+    allowed:
+      - start: 2023-10-11T00:00:00Z
+        end: 2024-01-30T00:00:00Z
+  w-trus-sm2-staff:
+    allowed:
+      - start: 2023-10-11T00:00:00Z
+        end: 2025-01-30T00:00:00Z        
   w-pend-opendays:
     allowed:
       - start: 2023-05-08T00:00:00Z
