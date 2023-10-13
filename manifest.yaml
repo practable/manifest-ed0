@@ -89,7 +89,31 @@ descriptions:
     type: resource
     short: An electromagnetically-driven pendulum (standard configuration)
 
-  
+  d-r-pvna00:
+    name: PVNA 00
+    type: resource
+    short: A one-port vector network analyser with 40mm transmission line
+
+  d-r-pvna01:
+    name: PVNA 01
+    type: resource
+    short: A one-port vector network analyser with 80mm transmission line
+
+  d-r-pvna02:
+    name: PVNA 02
+    type: resource
+    short: A one-port vector network analyser with 100mm transmission line
+
+  d-r-pvna03:
+    name: PVNA 03
+    type: resource
+    short: A one-port vector network analyser with 120mm transmission line
+
+  d-r-pvna04:
+    name: PVNA 04
+    type: resource
+    short: A one-port vector network analyser with 160mm transmission line    
+    
   # Spinner resources
   d-r-spin30:
     name: Spinner 30
@@ -3435,6 +3459,37 @@ resources:
       - st-video
       - log
     topic_stub: pend37
+
+  r-pvna00:
+    description: d-r-pvna00
+    streams:
+      - st-data
+    topic_stub: pvna00
+    
+  r-pvna01:
+    description: d-r-pvna01
+    streams:
+      - st-data
+    topic_stub: pvna01
+
+  r-pvna02:
+    description: d-r-pvna02
+    streams:
+      - st-data
+    topic_stub: pvna02
+    
+  r-pvna03:
+    description: d-r-pvna03
+    streams:
+      - st-data
+    topic_stub: pvna03
+
+  r-pvna04:
+    description: d-r-pvna04
+    streams:
+      - st-data
+    topic_stub: pvna04    
+    
   r-spin30:
     description: d-r-spin30
     streams:
