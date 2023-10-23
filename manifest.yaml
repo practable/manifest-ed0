@@ -3198,266 +3198,266 @@ resources:
     streams:
       - st-data
       - st-video
-      - log
+      
     topic_stub: pend00
   r-pend01:
     description: d-r-pendulum-standard
     streams:
       - st-data
       - st-video
-      - log
+      
     topic_stub: pend01
   r-pend02:
     description: d-r-pendulum-standard
     streams:
       - st-data
       - st-video
-      - log
+      
     topic_stub: pend02
   r-pend03:
     description: d-r-pendulum-standard
     streams:
       - st-data
       - st-video
-      - log
+      
     topic_stub: pend03
   r-pend04:
     description: d-r-pendulum-standard
     streams:
       - st-data
       - st-video
-      - log
+      
     topic_stub: pend04
   r-pend05:
     description: d-r-pendulum-standard
     streams:
       - st-data
       - st-video
-      - log
+      
     topic_stub: pend05
   r-pend06:
     description: d-r-pendulum-standard
     streams:
       - st-data
       - st-video
-      - log
+      
     topic_stub: pend06
   r-pend07:
     description: d-r-pendulum-standard
     streams:
       - st-data
       - st-video
-      - log
+      
     topic_stub: pend07
   r-pend08:
     description: d-r-pendulum-standard
     streams:
       - st-data
       - st-video
-      - log
+      
     topic_stub: pend08
   r-pend09:
     description: d-r-pendulum-standard
     streams:
       - st-data
       - st-video
-      - log
+      
     topic_stub: pend09
   r-pend10:
     description: d-r-pendulum-standard
     streams:
       - st-data
       - st-video
-      - log
+      
     topic_stub: pend10
   r-pend11:
     description: d-r-pendulum-standard
     streams:
       - st-data
       - st-video
-      - log
+      
     topic_stub: pend11
   r-pend12:
     description: d-r-pendulum-standard
     streams:
       - st-data
       - st-video
-      - log
+      
     topic_stub: pend12
   r-pend13:
     description: d-r-pendulum-standard
     streams:
       - st-data
       - st-video
-      - log
+      
     topic_stub: pend13
   r-pend14:
     description: d-r-pendulum-standard
     streams:
       - st-data
       - st-video
-      - log
+      
     topic_stub: pend14
   r-pend15:
     description: d-r-pendulum-standard
     streams:
       - st-data
       - st-video
-      - log
+      
     topic_stub: pend15
   r-pend16:
     description: d-r-pendulum-standard
     streams:
       - st-data
       - st-video
-      - log
+      
     topic_stub: pend16
   r-pend17:
     description: d-r-pendulum-standard
     streams:
       - st-data
       - st-video
-      - log
+      
     topic_stub: pend17
   r-pend18:
     description: d-r-pendulum-standard
     streams:
       - st-data
       - st-video
-      - log
+      
     topic_stub: pend18
   r-pend19:
     description: d-r-pendulum-standard
     streams:
       - st-data
       - st-video
-      - log
+      
     topic_stub: pend19
   r-pend20:
     description: d-r-pendulum-standard
     streams:
       - st-data
       - st-video
-      - log
+      
     topic_stub: pend20
   r-pend21:
     description: d-r-pendulum-standard
     streams:
       - st-data
       - st-video
-      - log
+      
     topic_stub: pend21
   r-pend22:
     description: d-r-pendulum-standard
     streams:
       - st-data
       - st-video
-      - log
+      
     topic_stub: pend22
   r-pend23:
     description: d-r-pendulum-standard
     streams:
       - st-data
       - st-video
-      - log
+      
     topic_stub: pend23
   r-pend24:
     description: d-r-pendulum-standard
     streams:
       - st-data
       - st-video
-      - log
+      
     topic_stub: pend24
   r-pend25:
     description: d-r-pendulum-standard
     streams:
       - st-data
       - st-video
-      - log
+      
     topic_stub: pend25
   r-pend26:
     description: d-r-pendulum-standard
     streams:
       - st-data
       - st-video
-      - log
+      
     topic_stub: pend26
   r-pend27:
     description: d-r-pendulum-standard
     streams:
       - st-data
       - st-video
-      - log
+      
     topic_stub: pend27
   r-pend28:
     description: d-r-pendulum-standard
     streams:
       - st-data
       - st-video
-      - log
+      
     topic_stub: pend28
   r-pend29:
     description: d-r-pendulum-standard
     streams:
       - st-data
       - st-video
-      - log
+      
     topic_stub: pend29
   r-pend30:
     description: d-r-pendulum-standard
     streams:
       - st-data
       - st-video
-      - log
+      
     topic_stub: pend30
   r-pend31:
     description: d-r-pendulum-standard
     streams:
       - st-data
       - st-video
-      - log
+      
     topic_stub: pend31
   r-pend32:
     description: d-r-pendulum-standard
     streams:
       - st-data
       - st-video
-      - log
+      
     topic_stub: pend32
   r-pend33:
     description: d-r-pendulum-standard
     streams:
       - st-data
       - st-video
-      - log
+      
     topic_stub: pend33
   r-pend34:
     description: d-r-pendulum-standard
     streams:
       - st-data
       - st-video
-      - log
+      
     topic_stub: pend34
   r-pend35:
     description: d-r-pendulum-standard
     streams:
       - st-data
       - st-video
-      - log
+      
     topic_stub: pend35
   r-pend36:
     description: d-r-pendulum-standard
     streams:
       - st-data
       - st-video
-      - log
+      
     topic_stub: pend36
   r-pend37:
     description: d-r-pendulum-standard
     streams:
       - st-data
       - st-video
-      - log
+      
     topic_stub: pend37
 
   r-pvna00:
@@ -3495,210 +3495,210 @@ resources:
     streams:
       - st-data
       - st-video
-      - log
+      
     topic_stub: spin30
   r-spin31:
     description: d-r-spin31
     streams:
       - st-data
       - st-video
-      - log
+      
     topic_stub: spin31
   r-spin32:
     description: d-r-spin32
     streams:
       - st-data
       - st-video
-      - log
+      
     topic_stub: spin32
   r-spin33:
     description: d-r-spin33
     streams:
       - st-data
       - st-video
-      - log
+      
     topic_stub: spin33
   r-spin34:
     description: d-r-spin34
     streams:
       - st-data
       - st-video
-      - log
+      
     topic_stub: spin34
   r-spin35:
     description: d-r-spin35
     streams:
       - st-data
       - st-video
-      - log
+      
     topic_stub: spin35
   r-spin36:
     description: d-r-spin36
     streams:
       - st-data
       - st-video
-      - log
+      
     topic_stub: spin36
   r-spin37:
     description: d-r-spin37
     streams:
       - st-data
       - st-video
-      - log
+      
     topic_stub: spin37
   r-spin38:
     description: d-r-spin38
     streams:
       - st-data
       - st-video
-      - log
+      
     topic_stub: spin38
   r-spin39:
     description: d-r-spin39
     streams:
       - st-data
       - st-video
-      - log
+      
     topic_stub: spin39
   r-spin40:
     description: d-r-spin40
     streams:
       - st-data
       - st-video
-      - log
+      
     topic_stub: spin40
   r-spin41:
     description: d-r-spin41
     streams:
       - st-data
       - st-video
-      - log
+      
     topic_stub: spin41
   r-spin42:
     description: d-r-spin42
     streams:
       - st-data
       - st-video
-      - log
+      
     topic_stub: spin42
   r-spin43:
     description: d-r-spin43
     streams:
       - st-data
       - st-video
-      - log
+      
     topic_stub: spin43
   r-spin44:
     description: d-r-spin44
     streams:
       - st-data
       - st-video
-      - log
+      
     topic_stub: spin44
   r-spin45:
     description: d-r-spin45
     streams:
       - st-data
       - st-video
-      - log
+      
     topic_stub: spin45
   r-spin46:
     description: d-r-spin46
     streams:
       - st-data
       - st-video
-      - log
+      
     topic_stub: spin46
   r-spin47:
     description: d-r-spin47
     streams:
       - st-data
       - st-video
-      - log
+      
     topic_stub: spin47
   r-spin48:
     description: d-r-spin48
     streams:
       - st-data
       - st-video
-      - log
+      
     topic_stub: spin48
   r-spin49:
     description: d-r-spin49
     streams:
       - st-data
       - st-video
-      - log
+      
     topic_stub: spin49
   r-spin50:
     description: d-r-spin50
     streams:
       - st-data
       - st-video
-      - log
+      
     topic_stub: spin50
   r-spin51:
     description: d-r-spin51
     streams:
       - st-data
       - st-video
-      - log
+      
     topic_stub: spin51
   r-spin52:
     description: d-r-spin52
     streams:
       - st-data
       - st-video
-      - log
+      
     topic_stub: spin52
   r-spin53:
     description: d-r-spin53
     streams:
       - st-data
       - st-video
-      - log
+      
     topic_stub: spin53
   r-spin54:
     description: d-r-spin54
     streams:
       - st-data
       - st-video
-      - log
+      
     topic_stub: spin54
   r-spin55:
     description: d-r-spin55
     streams:
       - st-data
       - st-video
-      - log
+      
     topic_stub: spin55
   r-spin56:
     description: d-r-spin56
     streams:
       - st-data
       - st-video
-      - log
+      
     topic_stub: spin56
   r-spin57:
     description: d-r-spin57
     streams:
       - st-data
       - st-video
-      - log
+      
     topic_stub: spin57
   r-spin58:
     description: d-r-spin58
     streams:
       - st-data
       - st-video
-      - log
+      
     topic_stub: spin58
   r-spin59:
     description: d-r-spin59
     streams:
       - st-data
       - st-video
-      - log
+      
     topic_stub: spin59
     
   r-spin60:
@@ -3706,126 +3706,126 @@ resources:
     streams:
       - st-data
       - st-video
-      - log
+      
     topic_stub: spin60
   r-spin61:
     description: d-r-spin61
     streams:
       - st-data
       - st-video
-      - log
+      
     topic_stub: spin61
   r-spin62:
     description: d-r-spin62
     streams:
       - st-data
       - st-video
-      - log
+      
     topic_stub: spin62
   r-spin63:
     description: d-r-spin63
     streams:
       - st-data
       - st-video
-      - log
+      
     topic_stub: spin63
   r-spin64:
     description: d-r-spin64
     streams:
       - st-data
       - st-video
-      - log
+      
     topic_stub: spin64
   r-spin65:
     description: d-r-spin65
     streams:
       - st-data
       - st-video
-      - log
+      
     topic_stub: spin65
   r-spin66:
     description: d-r-spin66
     streams:
       - st-data
       - st-video
-      - log
+      
     topic_stub: spin66
   r-spin67:
     description: d-r-spin67
     streams:
       - st-data
       - st-video
-      - log
+      
     topic_stub: spin67
   r-spin68:
     description: d-r-spin68
     streams:
       - st-data
       - st-video
-      - log
+      
     topic_stub: spin68
   r-spin69:
     description: d-r-spin69
     streams:
       - st-data
       - st-video
-      - log
+      
     topic_stub: spin69
   r-spin70:
     description: d-r-spin70
     streams:
       - st-data
       - st-video
-      - log
+      
     topic_stub: spin70
   r-spin71:
     description: d-r-spin71
     streams:
       - st-data
       - st-video
-      - log
+      
     topic_stub: spin71
   r-spin72:
     description: d-r-spin72
     streams:
       - st-data
       - st-video
-      - log
+      
     topic_stub: spin72
   r-spin73:
     description: d-r-spin73
     streams:
       - st-data
       - st-video
-      - log
+      
     topic_stub: spin73
   r-spin74:
     description: d-r-spin74
     streams:
       - st-data
       - st-video
-      - log
+      
     topic_stub: spin74
   r-spin75:
     description: d-r-spin75
     streams:
       - st-data
       - st-video
-      - log
+      
     topic_stub: spin75
   r-spin76:
     description: d-r-spin76
     streams:
       - st-data
       - st-video
-      - log
+      
     topic_stub: spin76
   r-spin77:
     description: d-r-spin77
     streams:
       - st-data
       - st-video
-      - log
+      
     topic_stub: spin77
   r-trus00:
     description: d-r-trus00
