@@ -2690,7 +2690,19 @@ descriptions:
     type: ui
     short: Analytics UI for student use
     image: https://app.practable.io/ed0/static/images/booking/ui/analytics-pend-1.0/image.png
-    thumb: https://app.practable.io/ed0/static/images/booking/ui/analytics-pend-1.0/thumb.png 
+    thumb: https://app.practable.io/ed0/static/images/booking/ui/analytics-pend-1.0/thumb.png
+  d-ui-pvna-oneport-default:
+    name: VNA One-port (default)
+    type: ui
+    short: PVNA One-port UI with default calibration method
+    image: https://app.practable.io/ed0/static/images/booking/ui/pvna-default-1.0/image.png
+    thumb: https://app.practable.io/ed0/static/images/booking/ui/pvna-default-1.0/thumb.png 
+  d-ui-pvna-oneport-graphical:
+    name: VNA One-port (graphical)
+    type: ui
+    short: PVNA One-port UI with graphical calibration method
+    image: https://app.practable.io/ed0/static/images/booking/ui/pvna-graphical-1.0/image.png
+    thumb: https://app.practable.io/ed0/static/images/booking/ui/pvna-graphical-1.0/thumb.png
   d-ui-spin-analytics-student:
     name: Analytics Spinner (Student)
     type: ui
@@ -6312,6 +6324,18 @@ uis:
       - st-data
       - st-video
       - log
+  ui-pvna-oneport-default:
+    description: d-ui-pvna-oneport-default
+    url: https://app.practable.io/ed0/static/ui/pvna-oneport-default-1.0/?streams={{streams}}&exp={{exp}}&course=pvna-oneport-default
+    streams_required:
+      - st-data
+      - log
+  ui-pvna-oneport-graphical:
+    description: d-ui-pvna-oneport-graphical
+    url: https://app.practable.io/ed0/static/ui/pvna-oneport-graphical-1.0/?streams={{streams}}&exp={{exp}}&course=pvna-oneport-graphical
+    streams_required:
+      - st-data
+      - log     
   ui-spin-engdes1:
     description: d-ui-spin-student
     url: https://app.practable.io/ed0/static/ui/spinner-2.0/?v=0&streams={{streams}}&exp={{exp}}&course=engdes1
