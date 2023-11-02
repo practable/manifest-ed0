@@ -3587,30 +3587,35 @@ resources:
     topic_stub: pend37
 
   r-pvna00:
+    config_url: https://app.practable.io/ed0/static/config/experiments/pvna/pvna00-0.0.json
     description: d-r-pvna00
     streams:
       - st-data
     topic_stub: pvna00
     
   r-pvna01:
+    config_url: https://app.practable.io/ed0/static/config/experiments/pvna/pvna01-0.0.json
     description: d-r-pvna01
     streams:
       - st-data
     topic_stub: pvna01
 
   r-pvna02:
+    config_url: https://app.practable.io/ed0/static/config/experiments/pvna/pvna02-0.0.json 
     description: d-r-pvna02
     streams:
       - st-data
     topic_stub: pvna02
     
   r-pvna03:
+    config_url: https://app.practable.io/ed0/static/config/experiments/pvna/pvna03-0.0.json
     description: d-r-pvna03
     streams:
       - st-data
     topic_stub: pvna03
 
   r-pvna04:
+    config_url: https://app.practable.io/ed0/static/config/experiments/pvna/pvna04-0.0.json
     description: d-r-pvna04
     streams:
       - st-data
@@ -6502,13 +6507,13 @@ uis:
       - log
   ui-pvna-oneport-default:
     description: d-ui-pvna-oneport-default
-    url: https://app.practable.io/ed0/static/ui/pvna-oneport-default-1.0/?streams={{streams}}&exp={{exp}}&course=pvna-oneport-default
+    url: https://app.practable.io/ed0/static/ui/pvna-oneport-default-1.0/?streams={{streams}}&exp={{exp}}&config={{config}}&course=pvna-oneport-default
     streams_required:
       - st-data
       - log
   ui-pvna-oneport-graphical:
     description: d-ui-pvna-oneport-graphical
-    url: https://app.practable.io/ed0/static/ui/pvna-oneport-graphical-1.0/?streams={{streams}}&exp={{exp}}&course=pvna-oneport-graphical
+    url: https://app.practable.io/ed0/static/ui/pvna-oneport-graphical-1.0/?streams={{streams}}&exp={{exp}}&config={{config}}&course=pvna-oneport-graphical
     streams_required:
       - st-data
       - log     
