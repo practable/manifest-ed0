@@ -29,7 +29,15 @@ descriptions:
   d-g-pvna-oneport-staff:
     name: PVNA One-port staff
     type: group
-    short: Access to PVNA one-ports for staff    
+    short: Access to PVNA one-ports for staff
+  d-g-pvna-twoport-students:
+    name: PVNA Two-port students
+    type: group
+    short: Access to PVNA two-ports for students
+  d-g-pvna-twoport-staff:
+    name: PVNA Two-port staff
+    type: group
+    short: Access to PVNA two-ports for staff
   d-g-opendays:
     name: Open Days
     type: group
@@ -96,6 +104,14 @@ descriptions:
     name: PVNA One-port (Staff)
     type: policy
     short: PVNA One-ports for staff    
+  d-p-pvna-twoport-students:
+    name: PVNA Two-port (Students)
+    type: policy
+    short: PVNA Two-ports for students
+  d-p-pvna-twoport-staff:
+    name: PVNA Twp-port (Staff)
+    type: policy
+    short: PVNA Two-ports for staff
     
   # Resource Descriptions
 
@@ -104,7 +120,8 @@ descriptions:
     name: Pendulum (Std)
     type: resource
     short: An electromagnetically-driven pendulum (standard configuration)
-
+    
+  # Pocket Vector Network Analyser resources
   d-r-pvna00:
     name: PVNA 00
     type: resource
@@ -128,7 +145,33 @@ descriptions:
   d-r-pvna04:
     name: PVNA 04
     type: resource
-    short: A one-port vector network analyser with 160mm transmission line    
+    short: A one-port vector network analyser with 160mm transmission line
+
+  d-r-pvna05:
+    name: PVNA 05
+    type: resource
+    short: A two-port vector network analyser with filter and coupler
+  d-r-pvna06:
+    name: PVNA 06
+    type: resource
+    short: A two-port vector network analyser with filter and coupler
+  d-r-pvna07:
+    name: PVNA 07
+    type: resource
+    short: A two-port vector network analyser with filter and coupler
+  d-r-pvna08:
+    name: PVNA 08
+    type: resource
+    short: A two-port vector network analyser with filter and coupler
+  d-r-pvna09:
+    name: PVNA 09
+    type: resource
+    short: A two-port vector network analyser with filter and coupler
+  d-r-pvna10:
+    name: PVNA 10
+    type: resource
+    short: A two-port vector network analyser with filter and coupler
+
     
   # Spinner resources
   d-r-spin30:
@@ -2286,6 +2329,140 @@ descriptions:
     image: https://app.practable.io/ed0/static/images/booking/slots/penduino-real-1.0/image.png
     thumb: https://app.practable.io/ed0/static/images/booking/slots/penduino-real-1.0/thumb.png
 
+  # Pocket Network Vector Analyser slots  
+  d-sl-pvna-oneport-students-pvna00:
+    name: PVNA 00 (Students)
+    type: slot
+    short: A Pocket Vector Network Analyser with 40mm transmission line
+    image: https://app.practable.io/ed0/static/images/booking/slots/pvna-real-1.0/image.png
+    thumb: https://app.practable.io/ed0/static/images/booking/slots/pvna-real-1.0/thumb.png
+  d-sl-pvna-oneport-students-pvna01:
+    name: PVNA 01 (Students)
+    type: slot
+    short: A Pocket Vector Network Analyser with 80mm transmission line
+    image: https://app.practable.io/ed0/static/images/booking/slots/pvna-real-1.0/image.png
+    thumb: https://app.practable.io/ed0/static/images/booking/slots/pvna-real-1.0/thumb.png
+  d-sl-pvna-oneport-students-pvna02:
+    name: PVNA 02 (Students)
+    type: slot
+    short: A Pocket Vector Network Analyser with 100mm transmission line
+    image: https://app.practable.io/ed0/static/images/booking/slots/pvna-real-1.0/image.png
+    thumb: https://app.practable.io/ed0/static/images/booking/slots/pvna-real-1.0/thumb.png
+  d-sl-pvna-oneport-students-pvna03:
+    name: PVNA 03 (Students)
+    type: slot
+    short: A Pocket Vector Network Analyser with 120mm transmission line
+    image: https://app.practable.io/ed0/static/images/booking/slots/pvna-real-1.0/image.png
+    thumb: https://app.practable.io/ed0/static/images/booking/slots/pvna-real-1.0/thumb.png    
+  d-sl-pvna-oneport-students-pvna04:
+    name: PVNA 04 (Students)
+    type: slot
+    short: A Pocket Vector Network Analyser with 160mm transmission line
+    image: https://app.practable.io/ed0/static/images/booking/slots/pvna-real-1.0/image.png
+    thumb: https://app.practable.io/ed0/static/images/booking/slots/pvna-real-1.0/thumb.png
+  d-sl-pvna-oneport-staff-pvna00:
+    name: PVNA 00 (Staff)
+    type: slot
+    short: A Pocket Vector Network Analyser with 40mm transmission line
+    image: https://app.practable.io/ed0/static/images/booking/slots/pvna-real-1.0/image.png
+    thumb: https://app.practable.io/ed0/static/images/booking/slots/pvna-real-1.0/thumb.png
+  d-sl-pvna-oneport-staff-pvna01:
+    name: PVNA 01 (Staff)
+    type: slot
+    short: A Pocket Vector Network Analyser with 80mm transmission line
+    image: https://app.practable.io/ed0/static/images/booking/slots/pvna-real-1.0/image.png
+    thumb: https://app.practable.io/ed0/static/images/booking/slots/pvna-real-1.0/thumb.png
+  d-sl-pvna-oneport-staff-pvna02:
+    name: PVNA 02 (Staff)
+    type: slot
+    short: A Pocket Vector Network Analyser with 100mm transmission line
+    image: https://app.practable.io/ed0/static/images/booking/slots/pvna-real-1.0/image.png
+    thumb: https://app.practable.io/ed0/static/images/booking/slots/pvna-real-1.0/thumb.png
+  d-sl-pvna-oneport-staff-pvna03:
+    name: PVNA 03 (Staff)
+    type: slot
+    short: A Pocket Vector Network Analyser with 120mm transmission line
+    image: https://app.practable.io/ed0/static/images/booking/slots/pvna-real-1.0/image.png
+    thumb: https://app.practable.io/ed0/static/images/booking/slots/pvna-real-1.0/thumb.png    
+  d-sl-pvna-oneport-staff-pvna04:
+    name: PVNA 04 (Staff)
+    type: slot
+    short: A Pocket Vector Network Analyser with 160mm transmission line
+    image: https://app.practable.io/ed0/static/images/booking/slots/pvna-real-1.0/image.png
+    thumb: https://app.practable.io/ed0/static/images/booking/slots/pvna-real-1.0/thumb.png
+  d-sl-pvna-twoport-students-pvna05:
+    name: PVNA 05 (Students)
+    type: slot
+    short: A Pocket Vector Network Analyser with filter and coupler
+    image: https://app.practable.io/ed0/static/images/booking/slots/pvna-twoport-real-1.0/image.png
+    thumb: https://app.practable.io/ed0/static/images/booking/slots/pvna-twoport-real-1.0/thumb.png
+  d-sl-pvna-twoport-students-pvna06:
+    name: PVNA 06 (Students)
+    type: slot
+    short: A Pocket Vector Network Analyser with filter and coupler
+    image: https://app.practable.io/ed0/static/images/booking/slots/pvna-twoport-real-1.0/image.png
+    thumb: https://app.practable.io/ed0/static/images/booking/slots/pvna-twoport-real-1.0/thumb.png
+  d-sl-pvna-twoport-students-pvna07:
+    name: PVNA 07 (Students)
+    type: slot
+    short: A Pocket Vector Network Analyser with filter and coupler
+    image: https://app.practable.io/ed0/static/images/booking/slots/pvna-twoport-real-1.0/image.png
+    thumb: https://app.practable.io/ed0/static/images/booking/slots/pvna-twoport-real-1.0/thumb.png
+  d-sl-pvna-twoport-students-pvna08:
+    name: PVNA 08 (Students)
+    type: slot
+    short: A Pocket Vector Network Analyser with filter and coupler
+    image: https://app.practable.io/ed0/static/images/booking/slots/pvna-twoport-real-1.0/image.png
+    thumb: https://app.practable.io/ed0/static/images/booking/slots/pvna-twoport-real-1.0/thumb.png
+  d-sl-pvna-twoport-students-pvna09:
+    name: PVNA 09 (Students)
+    type: slot
+    short: A Pocket Vector Network Analyser with filter and coupler
+    image: https://app.practable.io/ed0/static/images/booking/slots/pvna-twoport-real-1.0/image.png
+    thumb: https://app.practable.io/ed0/static/images/booking/slots/pvna-twoport-real-1.0/thumb.png
+  d-sl-pvna-twoport-students-pvna10:
+    name: PVNA 10 (Students)
+    type: slot
+    short: A Pocket Vector Network Analyser with filter and coupler
+    image: https://app.practable.io/ed0/static/images/booking/slots/pvna-twoport-real-1.0/image.png
+    thumb: https://app.practable.io/ed0/static/images/booking/slots/pvna-twoport-real-1.0/thumb.png
+  d-sl-pvna-twoport-staff-pvna05:
+    name: PVNA 05 (Staff)
+    type: slot
+    short: A Pocket Vector Network Analyser with filter and coupler
+    image: https://app.practable.io/ed0/static/images/booking/slots/pvna-twoport-real-1.0/image.png
+    thumb: https://app.practable.io/ed0/static/images/booking/slots/pvna-twoport-real-1.0/thumb.png
+  d-sl-pvna-twoport-staff-pvna06:
+    name: PVNA 06 (Staff)
+    type: slot
+    short: A Pocket Vector Network Analyser with filter and coupler
+    image: https://app.practable.io/ed0/static/images/booking/slots/pvna-twoport-real-1.0/image.png
+    thumb: https://app.practable.io/ed0/static/images/booking/slots/pvna-twoport-real-1.0/thumb.png
+  d-sl-pvna-twoport-staff-pvna07:
+    name: PVNA 07 (Staff)
+    type: slot
+    short: A Pocket Vector Network Analyser with filter and coupler
+    image: https://app.practable.io/ed0/static/images/booking/slots/pvna-twoport-real-1.0/image.png
+    thumb: https://app.practable.io/ed0/static/images/booking/slots/pvna-twoport-real-1.0/thumb.png
+  d-sl-pvna-twoport-staff-pvna08:
+    name: PVNA 08 (Staff)
+    type: slot
+    short: A Pocket Vector Network Analyser with filter and coupler
+    image: https://app.practable.io/ed0/static/images/booking/slots/pvna-twoport-real-1.0/image.png
+    thumb: https://app.practable.io/ed0/static/images/booking/slots/pvna-twoport-real-1.0/thumb.png
+  d-sl-pvna-twoport-staff-pvna09:
+    name: PVNA 09 (Staff)
+    type: slot
+    short: A Pocket Vector Network Analyser with filter and coupler
+    image: https://app.practable.io/ed0/static/images/booking/slots/pvna-twoport-real-1.0/image.png
+    thumb: https://app.practable.io/ed0/static/images/booking/slots/pvna-twoport-real-1.0/thumb.png
+  d-sl-pvna-twoport-staff-pvna10:
+    name: PVNA 10 (Staff)
+    type: slot
+    short: A Pocket Vector Network Analyser with filter and coupler
+    image: https://app.practable.io/ed0/static/images/booking/slots/pvna-twoport-real-1.0/image.png
+    thumb: https://app.practable.io/ed0/static/images/booking/slots/pvna-twoport-real-1.0/thumb.png    
+    
   # Open Days spinners  
   d-sl-opendays-spin30:
     name: Spinner 30 (Open Days)
@@ -2575,66 +2752,8 @@ descriptions:
     short: A PID-controlled brushed motor with 115g disk of size ⌀:60mm t:15mm
     image: https://app.practable.io/ed0/static/images/booking/slots/spinner-real-2.0/image.png
     thumb: https://app.practable.io/ed0/static/images/booking/slots/spinner-real-2.0/thumb.png
-  d-sl-pvna-oneport-students-pvna00:
-    name: PVNA 00 (Students)
-    type: slot
-    short: A Pocket Vector Network Analyser with 40mm transmission line
-    image: https://app.practable.io/ed0/static/images/booking/slots/pvna-real-1.0/image.png
-    thumb: https://app.practable.io/ed0/static/images/booking/slots/pvna-real-1.0/thumb.png
-  d-sl-pvna-oneport-students-pvna01:
-    name: PVNA 01 (Students)
-    type: slot
-    short: A Pocket Vector Network Analyser with 80mm transmission line
-    image: https://app.practable.io/ed0/static/images/booking/slots/pvna-real-1.0/image.png
-    thumb: https://app.practable.io/ed0/static/images/booking/slots/pvna-real-1.0/thumb.png
-  d-sl-pvna-oneport-students-pvna02:
-    name: PVNA 02 (Students)
-    type: slot
-    short: A Pocket Vector Network Analyser with 100mm transmission line
-    image: https://app.practable.io/ed0/static/images/booking/slots/pvna-real-1.0/image.png
-    thumb: https://app.practable.io/ed0/static/images/booking/slots/pvna-real-1.0/thumb.png
-  d-sl-pvna-oneport-students-pvna03:
-    name: PVNA 03 (Students)
-    type: slot
-    short: A Pocket Vector Network Analyser with 120mm transmission line
-    image: https://app.practable.io/ed0/static/images/booking/slots/pvna-real-1.0/image.png
-    thumb: https://app.practable.io/ed0/static/images/booking/slots/pvna-real-1.0/thumb.png    
-  d-sl-pvna-oneport-students-pvna04:
-    name: PVNA 04 (Students)
-    type: slot
-    short: A Pocket Vector Network Analyser with 160mm transmission line
-    image: https://app.practable.io/ed0/static/images/booking/slots/pvna-real-1.0/image.png
-    thumb: https://app.practable.io/ed0/static/images/booking/slots/pvna-real-1.0/thumb.png
-  d-sl-pvna-oneport-staff-pvna00:
-    name: PVNA 00 (Staff)
-    type: slot
-    short: A Pocket Vector Network Analyser with 40mm transmission line
-    image: https://app.practable.io/ed0/static/images/booking/slots/pvna-real-1.0/image.png
-    thumb: https://app.practable.io/ed0/static/images/booking/slots/pvna-real-1.0/thumb.png
-  d-sl-pvna-oneport-staff-pvna01:
-    name: PVNA 01 (Staff)
-    type: slot
-    short: A Pocket Vector Network Analyser with 80mm transmission line
-    image: https://app.practable.io/ed0/static/images/booking/slots/pvna-real-1.0/image.png
-    thumb: https://app.practable.io/ed0/static/images/booking/slots/pvna-real-1.0/thumb.png
-  d-sl-pvna-oneport-staff-pvna02:
-    name: PVNA 02 (Staff)
-    type: slot
-    short: A Pocket Vector Network Analyser with 100mm transmission line
-    image: https://app.practable.io/ed0/static/images/booking/slots/pvna-real-1.0/image.png
-    thumb: https://app.practable.io/ed0/static/images/booking/slots/pvna-real-1.0/thumb.png
-  d-sl-pvna-oneport-staff-pvna03:
-    name: PVNA 03 (Staff)
-    type: slot
-    short: A Pocket Vector Network Analyser with 120mm transmission line
-    image: https://app.practable.io/ed0/static/images/booking/slots/pvna-real-1.0/image.png
-    thumb: https://app.practable.io/ed0/static/images/booking/slots/pvna-real-1.0/thumb.png    
-  d-sl-pvna-oneport-staff-pvna04:
-    name: PVNA 04 (Staff)
-    type: slot
-    short: A Pocket Vector Network Analyser with 160mm transmission line
-    image: https://app.practable.io/ed0/static/images/booking/slots/pvna-real-1.0/image.png
-    thumb: https://app.practable.io/ed0/static/images/booking/slots/pvna-real-1.0/thumb.png    
+
+  # Truss slots
   d-sl-sm2-staff-trus00:
     name: Truss 00 (Staff)
     type: slot
@@ -2778,6 +2897,18 @@ descriptions:
     short: PVNA One-port UI with graphical calibration method
     image: https://app.practable.io/ed0/static/images/booking/ui/pvna-oneport-graphical-1.0/image.png
     thumb: https://app.practable.io/ed0/static/images/booking/ui/pvna-oneport-graphical-1.0/thumb.png
+  d-ui-pvna-twoport-default:
+    name: VNA Two-port (default)
+    type: ui
+    short: PVNA Two-port UI with default calibration method
+    image: https://app.practable.io/ed0/static/images/booking/ui/pvna-twoport-default-1.0/image.png
+    thumb: https://app.practable.io/ed0/static/images/booking/ui/pvna-twoport-default-1.0/thumb.png 
+  d-ui-pvna-twoport-graphical:
+    name: VNA Two-port (graphical)
+    type: ui
+    short: PVNA Two-port UI with graphical calibration method
+    image: https://app.practable.io/ed0/static/images/booking/ui/pvna-twoport-graphical-1.0/image.png
+    thumb: https://app.practable.io/ed0/static/images/booking/ui/pvna-twoport-graphical-1.0/thumb.png    
   d-ui-spin-analytics-student:
     name: Analytics Spinner (Student)
     type: ui
@@ -2876,6 +3007,14 @@ groups:
     description: d-g-pvna-oneport-staff
     policies:
       - p-pvna-oneport-staff
+  g-p2IKkyK:
+    description: d-g-pvna-twoport-students
+    policies:
+      - p-pvna-twoport-students
+  g-p2cVP68:
+    description: d-g-pvna-twoport-staff
+    policies:
+      - p-pvna-twoport-staff      
   g-sm2-students-428bbe:
     description: d-g-sm2-students
     policies:
@@ -3287,6 +3426,7 @@ policies:
       - sl-opendays-spin75
       - sl-opendays-spin76
       - sl-opendays-spin77
+      
   p-pvna-oneport-students:
     description: d-p-pvna-oneport-students
     enforce_allow_start_in_past: true
@@ -3317,7 +3457,42 @@ policies:
       - sl-pvna-oneport-staff-pvna01
       - sl-pvna-oneport-staff-pvna02
       - sl-pvna-oneport-staff-pvna03
-      - sl-pvna-oneport-staff-pvna04      
+      - sl-pvna-oneport-staff-pvna04
+      
+  p-pvna-twoport-students:
+    description: d-p-pvna-twoport-students
+    enforce_allow_start_in_past: true
+    enforce_max_bookings: true
+    max_bookings: 2
+    allow_start_in_past_within: 5m
+    display_guides:
+      - 15mFor2h
+      - 30mFor8h
+    slots:
+      - sl-pvna-twoport-students-pvna05
+      - sl-pvna-twoport-students-pvna06
+      - sl-pvna-twoport-students-pvna07
+      - sl-pvna-twoport-students-pvna08
+      - sl-pvna-twoport-students-pvna09
+      - sl-pvna-twoport-students-pvna10
+      
+  p-pvna-twoport-staff:
+    description: d-p-pvna-twoport-staff
+    enforce_allow_start_in_past: true
+    enforce_max_bookings: true
+    max_bookings: 2
+    allow_start_in_past_within: 5m
+    display_guides:
+      - 15mFor2h
+      - 30mFor8h
+    slots:
+      - sl-pvna-twoport-staff-pvna05
+      - sl-pvna-twoport-staff-pvna06
+      - sl-pvna-twoport-staff-pvna07
+      - sl-pvna-twoport-staff-pvna08
+      - sl-pvna-twoport-staff-pvna09
+      - sl-pvna-twoport-staff-pvna10      
+
 resources:
   r-pend00:
     description: d-r-pendulum-standard
@@ -3619,7 +3794,49 @@ resources:
     description: d-r-pvna04
     streams:
       - st-data
-    topic_stub: pvna04    
+    topic_stub: pvna04
+    
+  r-pvna05:
+    config_url: https://app.practable.io/ed0/static/config/experiments/pvna/pvna05-0.0.json
+    description: d-r-pvna05
+    streams:
+      - st-data
+    topic_stub: pvna05
+    
+  r-pvna06:
+    config_url: https://app.practable.io/ed0/static/config/experiments/pvna/pvna06-0.0.json
+    description: d-r-pvna06
+    streams:
+      - st-data
+    topic_stub: pvna06
+    
+  r-pvna07:
+    config_url: https://app.practable.io/ed0/static/config/experiments/pvna/pvna07-0.0.json
+    description: d-r-pvna07
+    streams:
+      - st-data
+    topic_stub: pvna07
+    
+  r-pvna08:
+    config_url: https://app.practable.io/ed0/static/config/experiments/pvna/pvna08-0.0.json
+    description: d-r-pvna08
+    streams:
+      - st-data
+    topic_stub: pvna08
+    
+  r-pvna09:
+    config_url: https://app.practable.io/ed0/static/config/experiments/pvna/pvna09-0.0.json
+    description: d-r-pvna09
+    streams:
+      - st-data
+    topic_stub: pvna09
+
+  r-pvna10:
+    config_url: https://app.practable.io/ed0/static/config/experiments/pvna/pvna10-0.0.json
+    description: d-r-pvna10
+    streams:
+      - st-data
+    topic_stub: pvna10  
     
   r-spin30:
     description: d-r-spin30
@@ -6374,6 +6591,80 @@ slots:
     resource: r-pvna04
     ui_set: us-pvna-oneport-staff
     window: w-pvna-oneport-staff
+
+  sl-pvna-twoport-students-pvna05:
+    description: d-sl-pvna-twoport-students-pvna05
+    policy: p-pvna-twoport-students 
+    resource: r-pvna05
+    ui_set: us-pvna-twoport-students
+    window: w-pvna-twoport-students
+  sl-pvna-twoport-students-pvna06:
+    description: d-sl-pvna-twoport-students-pvna06
+    policy: p-pvna-twoport-students 
+    resource: r-pvna06
+    ui_set: us-pvna-twoport-students
+    window: w-pvna-twoport-students
+  sl-pvna-twoport-students-pvna07:
+    description: d-sl-pvna-twoport-students-pvna07
+    policy: p-pvna-twoport-students 
+    resource: r-pvna07
+    ui_set: us-pvna-twoport-students
+    window: w-pvna-twoport-students
+  sl-pvna-twoport-students-pvna08:
+    description: d-sl-pvna-twoport-students-pvna08
+    policy: p-pvna-twoport-students 
+    resource: r-pvna08
+    ui_set: us-pvna-twoport-students
+    window: w-pvna-twoport-students
+  sl-pvna-twoport-students-pvna09:
+    description: d-sl-pvna-twoport-students-pvna09
+    policy: p-pvna-twoport-students 
+    resource: r-pvna09
+    ui_set: us-pvna-twoport-students
+    window: w-pvna-twoport-students
+  sl-pvna-twoport-students-pvna10:
+    description: d-sl-pvna-twoport-students-pvna10
+    policy: p-pvna-twoport-students 
+    resource: r-pvna10
+    ui_set: us-pvna-twoport-students
+    window: w-pvna-twoport-students    
+
+  sl-pvna-twoport-staff-pvna05:
+    description: d-sl-pvna-twoport-staff-pvna05
+    policy: p-pvna-twoport-staff 
+    resource: r-pvna05
+    ui_set: us-pvna-twoport-staff
+    window: w-pvna-twoport-staff
+  sl-pvna-twoport-staff-pvna06:
+    description: d-sl-pvna-twoport-staff-pvna06
+    policy: p-pvna-twoport-staff 
+    resource: r-pvna06
+    ui_set: us-pvna-twoport-staff
+    window: w-pvna-twoport-staff
+  sl-pvna-twoport-staff-pvna07:
+    description: d-sl-pvna-twoport-staff-pvna07
+    policy: p-pvna-twoport-staff 
+    resource: r-pvna07
+    ui_set: us-pvna-twoport-staff
+    window: w-pvna-twoport-staff
+  sl-pvna-twoport-staff-pvna08:
+    description: d-sl-pvna-twoport-staff-pvna08
+    policy: p-pvna-twoport-staff 
+    resource: r-pvna08
+    ui_set: us-pvna-twoport-staff
+    window: w-pvna-twoport-staff
+  sl-pvna-twoport-staff-pvna09:
+    description: d-sl-pvna-twoport-staff-pvna09
+    policy: p-pvna-twoport-staff 
+    resource: r-pvna09
+    ui_set: us-pvna-twoport-staff
+    window: w-pvna-twoport-staff
+  sl-pvna-twoport-staff-pvna10:
+    description: d-sl-pvna-twoport-staff-pvna10
+    policy: p-pvna-twoport-staff 
+    resource: r-pvna10
+    ui_set: us-pvna-twoport-staff
+    window: w-pvna-twoport-staff    
     
   sl-sm2-students-trus00:
     description: d-sl-sm2-students-trus00
@@ -6516,7 +6807,19 @@ uis:
     url: https://app.practable.io/ed0/static/ui/pvna-oneport-graphical-1.0/?streams={{streams}}&exp={{exp}}&config={{config}}&course=pvna-oneport-graphical
     streams_required:
       - st-data
-      - log     
+      - log
+  ui-pvna-twoport-default:
+    description: d-ui-pvna-twoport-default
+    url: https://app.practable.io/ed0/static/ui/pvna-twoport-default-1.0/?streams={{streams}}&exp={{exp}}&config={{config}}&course=pvna-twoport-default
+    streams_required:
+      - st-data
+      - log
+  ui-pvna-twoport-graphical:
+    description: d-ui-pvna-twoport-graphical
+    url: https://app.practable.io/ed0/static/ui/pvna-twoport-graphical-1.0/?streams={{streams}}&exp={{exp}}&config={{config}}&course=pvna-twoport-default
+    streams_required:
+      - st-data
+      - log      
   ui-spin-engdes1:
     description: d-ui-spin-student
     url: https://app.practable.io/ed0/static/ui/spinner-2.0/?v=0&streams={{streams}}&exp={{exp}}&course=engdes1
@@ -6637,6 +6940,13 @@ ui_sets:
     uis:
       - ui-pvna-oneport-default
       - ui-pvna-oneport-graphical
+  us-pvna-twoport-students:
+    uis:
+      - ui-pvna-twoport-default
+  us-pvna-twoport-staff:
+    uis:
+      - ui-pvna-twoport-default
+      
 windows:
   w-pend-everyone:
     allowed:
@@ -6675,7 +6985,15 @@ windows:
   w-pvna-oneport-staff:
     allowed:
       - start: 2023-10-11T00:00:00Z
-        end: 2025-01-30T00:00:00Z          
+        end: 2025-01-30T00:00:00Z
+  w-pvna-twoport-students:
+    allowed:
+      - start: 2023-10-11T00:00:00Z
+        end: 2024-07-30T00:00:00Z
+  w-pvna-twoport-staff:
+    allowed:
+      - start: 2023-10-11T00:00:00Z
+        end: 2025-01-30T00:00:00Z        
   w-trus-sm2-students:
     allowed:
       - start: 2023-10-11T00:00:00Z
