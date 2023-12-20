@@ -3469,6 +3469,7 @@ policies:
       - 15mFor2h
       - 30mFor8h
     slots:
+      - sl-pvna-twoport-students-pvna08
       - sl-pvna-twoport-students-pvna10
       
   p-pvna-twoport-staff:
