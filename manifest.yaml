@@ -2954,7 +2954,12 @@ display_guides:
     book_ahead: 2h
     duration: 15m
     max_slots: 9
-    label: 15 min    
+    label: 15 min
+  15mFor24h:
+    book_ahead: 24h
+    duration: 15m
+    max_slots: 48
+    label: 15 min      
   30mFor2h:
     book_ahead: 2h
     duration: 30m
@@ -2969,7 +2974,12 @@ display_guides:
     book_ahead: 8h
     duration: 30m
     max_slots: 17
-    label: 30 min     
+    label: 30 min
+  30mFor24h:
+    book_ahead: 24h
+    duration: 30m
+    max_slots: 48
+    label: 30 min    
   1hFor2h:
     book_ahead: 2h
     duration: 1h
@@ -3434,8 +3444,8 @@ policies:
     max_bookings: 2
     allow_start_in_past_within: 5m
     display_guides:
-      - 15mFor2h
-      - 30mFor8h
+      - 15mFor24h
+      - 30mFor24h
     slots:
       - sl-pvna-oneport-students-pvna00
       - sl-pvna-oneport-students-pvna01
@@ -3450,8 +3460,8 @@ policies:
     max_bookings: 2
     allow_start_in_past_within: 5m
     display_guides:
-      - 15mFor2h
-      - 30mFor8h
+      - 15mFor24h
+      - 30mFor24h
     slots:
       - sl-pvna-oneport-staff-pvna00
       - sl-pvna-oneport-staff-pvna01
@@ -3466,8 +3476,8 @@ policies:
     max_bookings: 2
     allow_start_in_past_within: 5m
     display_guides:
-      - 15mFor2h
-      - 30mFor8h
+      - 15mFor24h
+      - 30mFor24h
     slots:
       - sl-pvna-twoport-students-pvna05
       - sl-pvna-twoport-students-pvna06
@@ -3482,8 +3492,8 @@ policies:
     max_bookings: 2
     allow_start_in_past_within: 5m
     display_guides:
-      - 15mFor2h
-      - 30mFor8h
+      - 15mFor24h
+      - 30mFor24h
     slots:
       - sl-pvna-twoport-staff-pvna05
       - sl-pvna-twoport-staff-pvna06
