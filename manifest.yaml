@@ -6823,12 +6823,24 @@ uis:
     streams_required:
       - st-data
       - log
+  ui-pvna-twoport-default-dev:
+    description: d-ui-pvna-twoport-default
+    url: https://app.practable.io/ed-dev-ui/ui/pvna-twoport-default-1.0/?streams={{streams}}&exp={{exp}}&config={{config}}&course=pvna-twoport-default
+    streams_required:
+      - st-data
+      - log      
   ui-pvna-twoport-graphical:
     description: d-ui-pvna-twoport-graphical
     url: https://app.practable.io/ed0/static/ui/pvna-twoport-graphical-1.0/?streams={{streams}}&exp={{exp}}&config={{config}}&course=pvna-twoport-default
     streams_required:
       - st-data
-      - log      
+      - log
+  ui-pvna-twoport-graphical-dev:
+    description: d-ui-pvna-twoport-graphical
+    url: https://app.practable.io/ed0-dev-ui/ui/pvna-twoport-graphical-1.0/?streams={{streams}}&exp={{exp}}&config={{config}}&course=pvna-twoport-default
+    streams_required:
+      - st-data
+      - log
   ui-spin-engdes1:
     description: d-ui-spin-student
     url: https://app.practable.io/ed0/static/ui/spinner-2.0/?v=0&streams={{streams}}&exp={{exp}}&course=engdes1
@@ -6955,6 +6967,9 @@ ui_sets:
   us-pvna-twoport-staff:
     uis:
       - ui-pvna-twoport-default
+      - ui-pvna-twoport-graphical
+      - ui-pvna-twoport-default-dev
+      - ui-pvna-twoport-graphical-dev
       
 windows:
   w-pend-everyone:
