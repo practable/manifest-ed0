@@ -2908,7 +2908,23 @@ descriptions:
     type: ui
     short: PVNA Two-port UI with graphical calibration method
     image: https://app.practable.io/ed0/static/images/booking/ui/pvna-twoport-graphical-1.0/image.png
-    thumb: https://app.practable.io/ed0/static/images/booking/ui/pvna-twoport-graphical-1.0/thumb.png    
+    thumb: https://app.practable.io/ed0/static/images/booking/ui/pvna-twoport-graphical-1.0/thumb.png
+  d-ui-pvna-twoport-default-dev:
+    name: "VNA Two-port (default, DEVLEOPER)"
+    type: ui
+    further:
+    image: "https://app.practable.io/ed0/static/images/booking/ui/pvna-twoport-default-1.0/image.png"
+    long:
+    short: "PVNA Two-port UI with default calibration method"
+    thumb: "https://app.practable.io/ed0/static/images/booking/ui/pvna-twoport-default-1.0/thumb.png"
+  d-ui-pvna-twoport-graphical-dev:
+    name: "VNA Two-port (graphical, DEVELOPER)"
+    type: ui
+    further:
+    image: "https://app.practable.io/ed0/static/images/booking/ui/pvna-twoport-graphical-1.0/image.png"
+    long:
+    short: "PVNA Two-port UI with graphical calibration method"
+    thumb: "https://app.practable.io/ed0/static/images/booking/ui/pvna-twoport-graphical-1.0/thumb.png"
   d-ui-spin-analytics-student:
     name: Analytics Spinner (Student)
     type: ui
@@ -6828,7 +6844,19 @@ uis:
     url: https://app.practable.io/ed0/static/ui/pvna-twoport-graphical-1.0/?streams={{streams}}&exp={{exp}}&config={{config}}&course=pvna-twoport-default
     streams_required:
       - st-data
-      - log      
+      - log
+  ui-pvna-twoport-default-dev:
+    description: d-ui-pvna-twoport-default-dev
+    url: "https://app.practable.io/ed-dev-ui/david/ui/pvna-twoport-default-1.0/?streams={{streams}}&exp={{exp}}&config={{config}}&course=pvna-twoport-default"
+    streamsrequired:
+      - st-data
+      - log
+  ui-pvna-twoport-graphical-dev:
+    description: d-ui-pvna-twoport-graphical-dev
+    url: "https://app.practable.io/ed-dev-ui/david/ui/pvna-twoport-graphical-1.0/?streams={{streams}}&exp={{exp}}&config={{config}}&course=pvna-twoport-default"
+    streamsrequired:
+      - st-data
+      - log
   ui-spin-engdes1:
     description: d-ui-spin-student
     url: https://app.practable.io/ed0/static/ui/spinner-2.0/?v=0&streams={{streams}}&exp={{exp}}&course=engdes1
@@ -6955,7 +6983,9 @@ ui_sets:
   us-pvna-twoport-staff:
     uis:
       - ui-pvna-twoport-default
-      
+      - ui-pvna-twoport-graphical
+      - ui-pvna-twoport-default-dev
+      - ui-pvna-twoport-graphical-dev      
 windows:
   w-pend-everyone:
     allowed:
