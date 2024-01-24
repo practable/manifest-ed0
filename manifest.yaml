@@ -6,6 +6,14 @@ descriptions:
     name: Everyone
     type: group
     short: A selection of experiments for any user
+  d-g-fridge-staff:
+    name: Fridge (Staff)
+    type: group
+    short: Fridge experiment for staff
+  d-g-fridge-student:
+    name: Fridge (Student)
+    type: group
+    short: Fridge experiment for students
   d-g-sm2-students:
     name: Structural Mechanics 2 Students
     type: group
@@ -51,11 +59,19 @@ descriptions:
   d-p-quarantine:
     name: Quarantined experiments
     type: group
-    short: Access to experiments that have been quarantined for troubleshooting, or regular maintenance    
+    short: Access to experiments that have been quarantined for troubleshooting, or regular maintenance
   d-p-everyone-pend:
     name: Pendulums (Everyone)
     type: policy
     short: Pendulums for everyone
+  d-p-fridge-staff:
+    name: Fridge (Staff)
+    type: policy
+    short: Fridge for staff
+  d-p-fridge-student:
+    name: Fridge (Student)
+    type: policy
+    short: Fridge for students    
   d-p-trus-sm2-students:
     name: Truss (Structural Mechanics 2)
     type: policy
@@ -115,6 +131,12 @@ descriptions:
     
   # Resource Descriptions
 
+  # Fridge resource
+  d-r-fridge-gunt:
+    name: Fridge (Gunt)
+    type: resource
+    short: An automated version of Gunt's fridge experiment
+    
   # Pendulum resources
   d-r-pendulum-standard:
     name: Pendulum (Std)
@@ -527,8 +549,21 @@ descriptions:
     image: https://app.practable.io/ed0/static/images/booking/slots/truss-real-2.0/image.png
     thumb: https://app.practable.io/ed0/static/images/booking/slots/truss-real-2.0/thumb.png
     
-  # Slot descriptiosn
+  # Slot descriptions
 
+  d-sl-fridge-student:
+    name: Gunt Fridge (Students)
+    type: slot
+    short: Gunt fridge experiment
+    image: https://app.practable.io/ed0/static/images/booking/slots/fridge-gunt-real-1.0/image.png
+    thumb: https://app.practable.io/ed0/static/images/booking/slots/fridge-gunt-real-1.0/thumb.png    
+  d-sl-fridge-staff:
+    name: Gunt Fridge (Staff)
+    type: slot
+    short: Gunt fridge experiment
+    image: https://app.practable.io/ed0/static/images/booking/slots/fridge-gunt-real-1.0/image.png
+    thumb: https://app.practable.io/ed0/static/images/booking/slots/fridge-gunt-real-1.0/thumb.png
+    
   # Everyone pendulums
   d-sl-everyone-pend00:
     name: Pendulum 00 (Everyone)
@@ -2867,6 +2902,30 @@ descriptions:
     thumb: https://app.practable.io/ed0/static/images/booking/slots/truss-real-2.0/thumb.png    
 
   # User Interfaces
+  d-ui-fridge-default:
+    name: Gunt Fridge (Default) 
+    type: ui
+    short: UI for Gunt fridge
+    image: https://app.practable.io/ed0/static/images/booking/ui/fridge-gunt-default-1.0/image.png
+    thumb: https://app.practable.io/ed0/static/images/booking/ui/fridge-gunt-default-1.0/thumb.png
+  d-ui-fridge-develop:
+    name: Gunt Fridge (DEVELOPER) 
+    type: ui
+    short: UI for Gunt fridge (Development version)
+    image: https://app.practable.io/ed0/static/images/booking/ui/fridge-gunt-develop-1.0/image.png
+    thumb: https://app.practable.io/ed0/static/images/booking/ui/fridge-gunt-develop-1.0/thumb.png    
+  d-ui-fridge-analytics:
+    name: Analytics for Gunt Fridge  
+    type: ui
+    short: UI for Gunt fridge analytics
+    image: https://app.practable.io/ed0/static/images/booking/ui/analytics-fridge-gunt-1.0/image.png
+    thumb: https://app.practable.io/ed0/static/images/booking/ui/analytics-fridge-gunt-1.0/thumb.png
+  d-ui-fridge-analytics-develop:
+    name: Analytics for Gunt Fridge (DEVELOPER)  
+    type: ui
+    short: UI for Gunt fridge analytics (Development version)
+    image: https://app.practable.io/ed0/static/images/booking/ui/analytics-fridge-gunt-develop-1.0/image.png
+    thumb: https://app.practable.io/ed0/static/images/booking/ui/analytics-fridge-gunt-develop-1.0/thumb.png    
   d-ui-pend-student:
     name: Pendulum (Student)
     type: ui
@@ -3005,7 +3064,13 @@ display_guides:
     book_ahead: 4h
     duration: 1h
     max_slots: 8
-    label: 60 min    
+    label: 60 min
+  4hfor48h:
+    book_ahead: 48h
+    duration: 4h
+    max_slots: 12
+    label: 4 hours
+    
 groups:
   g-quarantine:
     description: d-g-quarantine
@@ -3025,6 +3090,14 @@ groups:
     policies:
       - p-engdes1-lab-pend
       - p-engdes1-lab-spin
+  g-fae92f35:
+    description: d-g-fridge-staff
+    policies:
+      - p-fridge-staff
+  g-fua7d944:
+    description: d-g-fridge-student
+    policies:
+      - p-fridge-student       
   g-p1u868c:
     description: d-g-pvna-oneport-students
     policies:
@@ -3097,6 +3170,28 @@ policies:
       - sl-everyone-pend34
       - sl-everyone-pend35
       
+  p-fridge-staff:
+    description: d-p-fridge-staff
+    enforce_allow_start_in_past: true
+    allow_start_in_past_within: 5m
+    display_guides:
+      - 15mFor1h
+      - 1hFor8h
+      - 4hfor48h
+    slots:
+      - sl-frig00-staff
+      
+  p-fridge-student:
+    description: d-p-fridge-student
+    enforce_allow_start_in_past: true
+    allow_start_in_past_within: 5m
+    display_guides:
+      - 15mFor1h
+      - 1hFor8h
+      - 4hfor48h
+    slots:
+      - sl-frig00-student     
+       
   p-trus-sm2-students:
     description: d-p-trus-sm2-students
     enforce_allow_start_in_past: true
@@ -3520,6 +3615,14 @@ policies:
       - sl-pvna-twoport-staff-pvna10      
 
 resources:
+  r-frig00:
+    description: d-r-fridge-gunt
+    streams:
+      - st-data
+      - st-video
+      - st-video-alt
+    topic_stub: frig00
+    
   r-pend00:
     description: d-r-pendulum-standard
     streams:
@@ -4251,6 +4354,18 @@ resources:
     topic_stub: trus07    
     
 slots:
+  sl-frig00-staff:
+    description: d-sl-fridge-staff 
+    policy: p-fridge-staff 
+    resource: r-frig00
+    ui_set: us-fridge-staff
+    window: w-fridge-staff
+  sl-frig00-student:
+    description: d-sl-fridge-student 
+    policy: p-fridge-student 
+    resource: r-frig00
+    ui_set: us-fridge-student
+    window: w-fridge-student   
   sl-everyone-pend00:
     description: d-sl-everyone-pend00 
     policy: p-everyone-pend 
@@ -6814,7 +6929,40 @@ streams:
     scopes:
       - read
     topic: auto
+  st-video-alt:
+    url: https://app.practable.io/ed0/access
+    connection_type: session
+    for: video-alt
+    scopes:
+      - read
+    topic: auto    
 uis:
+  ui-fridge-gunt-default:
+    description: d-ui-fridge-default
+    url: https://app.practable.io/ed0/static/ui/fridge-gunt-default-1.0/?streams={{streams}}&exp={{exp}}&course=fridge
+    streams_required:
+      - st-data
+      - st-video
+      - st-video-alt
+      - log
+  ui-fridge-gunt-develop:
+    description: d-ui-fridge-develop
+    url: https://app.practable.io/ed-dev-ui/sijie/ui/fridge-gunt-default-1.0/?streams={{streams}}&exp={{exp}}&course=fridge
+    streams_required:
+      - st-data
+      - st-video
+      - st-video-alt
+      - log
+  ui-fridge-analytics:
+    description: d-ui-fridge-analytics
+    url: https://app.practable.io/ed0/static/ui/fridge-analytics-1.0/?streams={{streams}}&exp={{exp}}&course=fridge
+    streams_required:
+      - log
+  ui-fridge-analytics-develop:
+    description: d-ui-fridge-analytics-develop
+    url: https://app.practable.io/ed-dev-ui/sijie/ui/fridge-analytics-1.0/?streams={{streams}}&exp={{exp}}&course=fridge
+    streams_required:
+      - log
   ui-pend-engdes1:
     description: d-ui-pend-student
     url: https://app.practable.io/ed0/static/ui/penduino-1.0/?streams={{streams}}&exp={{exp}}&course=engdes1
@@ -6932,6 +7080,15 @@ uis:
       - st-video
       - log     
 ui_sets:
+  us-fridge-student:
+    uis:
+      - ui-fridge-gunt-default
+  us-fridge-staff:
+    uis:
+      - ui-fridge-gunt-default
+      - ui-fridge-gunt-develop
+      - ui-fridge-analytics
+      - ui-fridge-analytics-develop
   us-pend-engdes1:
     uis:
       - ui-pend-engdes1
@@ -6988,6 +7145,14 @@ ui_sets:
       - ui-pvna-twoport-default-dev
       - ui-pvna-twoport-graphical-dev      
 windows:
+  w-fridge-student:
+    allowed:
+      - start: 2024-01-24T00:00:00Z
+      - end:   2025-04-01T00:00:00Z
+  w-fridge-staff:
+    allowed:
+      - start: 2024-01-24T00:00:00Z
+      - end:   2025-04-01T00:00:00Z      
   w-pend-everyone:
     allowed:
       - start: 2023-02-04T00:00:00Z
