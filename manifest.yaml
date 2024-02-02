@@ -3080,12 +3080,12 @@ groups:
     description: d-g-everyone
     policies:
       - p-everyone-spin
-  g-engdes1:
+  g-ed1-49b369:
     description: d-g-engdes1
     policies:
       - p-engdes1-pend
       - p-engdes1-spin      
-  g-engdes1-lab:
+  g-ed1L-1744a4:
     description: d-g-engdes1-lab
     policies:
       - p-engdes1-lab-pend
@@ -3293,6 +3293,7 @@ policies:
     slots:
       - sl-everyone-trus00
       - sl-everyone-trus01
+      
   p-engdes1-lab-pend:
     description: d-p-engdes1-lab-pend
     enforce_allow_start_in_past: true
@@ -3347,7 +3348,6 @@ policies:
       - sl-engdes1-pend04
       - sl-engdes1-pend05
       - sl-engdes1-pend06
-      - sl-engdes1-pend07
       - sl-engdes1-pend08
       - sl-engdes1-pend09
       - sl-engdes1-pend10
@@ -3358,7 +3358,6 @@ policies:
       - sl-engdes1-pend15
       - sl-engdes1-pend16
       - sl-engdes1-pend17
-      - sl-engdes1-pend20
       - sl-engdes1-pend21
       - sl-engdes1-pend22
       - sl-engdes1-pend23
@@ -3367,7 +3366,7 @@ policies:
       - sl-engdes1-pend28
       - sl-engdes1-pend29
       - sl-engdes1-pend31
-      - sl-engdes1-pend33
+      - sl-engdes1-pend32
       - sl-engdes1-pend34
       - sl-engdes1-pend35
       - sl-engdes1-pend36
@@ -3423,6 +3422,7 @@ policies:
       - 15mFor1h
     slots:
       - sl-engdes1-spin30
+      - sl-engdes1-spin31      
       - sl-engdes1-spin32
       - sl-engdes1-spin33
       - sl-engdes1-spin34
@@ -3437,6 +3437,7 @@ policies:
       - sl-engdes1-spin47       
       - sl-engdes1-spin48
       - sl-engdes1-spin49
+      - sl-engdes1-spin50    
       - sl-engdes1-spin51
       - sl-engdes1-spin52
       - sl-engdes1-spin53
@@ -3453,7 +3454,17 @@ policies:
       - sl-engdes1-spin65
       - sl-engdes1-spin66
       - sl-engdes1-spin67       
-      - sl-engdes1-spin68  
+      - sl-engdes1-spin68
+      - sl-engdes1-spin69
+      - sl-engdes1-spin70       
+      - sl-engdes1-spin71
+      - sl-engdes1-spin72
+      - sl-engdes1-spin73       
+      - sl-engdes1-spin74
+      - sl-engdes1-spin75     
+      - sl-engdes1-spin76
+      - sl-engdes1-spin77     
+       
   p-opendays-pend:
     description: d-p-opendays-pend
     enforce_allow_start_in_past: true
@@ -7226,38 +7237,14 @@ windows:
     denied: []       
   w-pend-engdes1:
     allowed:
-      - start: 2023-03-09T00:00:00Z
-        end:   2023-05-26T23:59:59Z    
+      - start: 2024-02-01T00:00:00Z
+        end:   2024-04-19T23:59:59Z    
     denied:
-      - start: 2023-02-24T10:00:00Z
-        end:   2023-02-24T12:00:00Z
-      - start: 2023-02-27T14:00:00Z
-        end:   2023-02-27T18:00:00Z
-      - start: 2023-02-28T14:00:00Z
-        end:   2023-02-28T18:00:00Z
-      - start: 2023-03-10T10:00:00Z
-        end:   2023-03-10T12:00:00Z          
-      - start: 2023-03-13T14:00:00Z
-        end:   2023-03-13T18:00:00Z
-      - start: 2023-03-14T14:00:00Z
-        end:   2023-03-14T18:00:00Z 
   w-spin-engdes1:
     allowed:
-      - start: 2023-03-09T00:00:00Z
-        end:   2023-05-26T23:59:59Z 
+      - start: 2024-02-01T00:00:00Z
+        end:   2024-04-19T23:59:59Z
     denied:
-      - start: 2023-02-24T10:00:00Z
-        end:   2023-02-24T12:00:00Z
-      - start: 2023-02-27T14:00:00Z
-        end:   2023-02-27T18:00:00Z
-      - start: 2023-02-28T14:00:00Z
-        end:   2023-02-28T18:00:00Z
-      - start: 2023-03-10T10:00:00Z
-        end:   2023-03-10T12:00:00Z          
-      - start: 2023-03-13T14:00:00Z
-        end:   2023-03-13T18:00:00Z
-      - start: 2023-03-14T14:00:00Z
-        end:   2023-03-14T18:00:00Z 
   w-pend-engdes1-lab:
     allowed:
       - start: 2023-02-24T10:00:00Z
