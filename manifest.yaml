@@ -7103,11 +7103,11 @@ ui_sets:
   us-pend-engdes1:
     uis:
       - ui-pend-engdes1
-      - ui-pend-analytics-engdes1
+
   us-pend-engdes1-lab:
     uis:
       - ui-pend-engdes1
-      - ui-pend-analytics-engdes1
+
   us-pend-everyone:
     uis:
       - ui-pend-everyone
@@ -7117,11 +7117,11 @@ ui_sets:
   us-spin-engdes1-lab:
     uis:
       - ui-spin-engdes1
-      - ui-spin-analytics-engdes1
+
   us-spin-engdes1:
     uis:
       - ui-spin-engdes1
-      - ui-spin-analytics-engdes1      
+
   us-spin-everyone:
     uis:
       - ui-spin-everyone
