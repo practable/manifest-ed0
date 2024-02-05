@@ -112,6 +112,18 @@ descriptions:
     name: Spinners (open Days)
     type: policy
     short: Spinners for Open Days
+  d-p-opendays-trus:
+    name: Trusses (open Days)
+    type: policy
+    short: Trusses for Open Days
+  d-p-opendays-pvna1:
+    name: Vector Network Analysers (open Days)
+    type: policy
+    short: Vector Network Analyers (one port) for Open Days    
+  d-p-opendays-pvna2:
+    name: Vector Network Analysers (open Days)
+    type: policy
+    short: Vector Network Analyers (one & two port) for Open Days
   d-p-pvna-oneport-students:
     name: PVNA One-port (Students)
     type: policy
@@ -3065,6 +3077,16 @@ display_guides:
     duration: 1h
     max_slots: 8
     label: 60 min
+  1hFor24h:
+    book_ahead: 24h
+    duration: 1h
+    max_slots: 24
+    label: 1 hour    
+  2hFor48h:
+    book_ahead: 48h
+    duration: 2h
+    max_slots: 24
+    label: 2 hours    
   4hfor48h:
     book_ahead: 48h
     duration: 4h
@@ -3121,13 +3143,52 @@ groups:
   g-sm2-staff-832eb6:
     description: d-g-sm2-staff
     policies:
-      - p-trus-sm2-staff      
-  g-opendays-k8ds2D:
+      - p-trus-sm2-staff
+
+  #  g-ode1-staff-e807bc:
+  #    description: d-g-opendays
+  #    policies:
+  #      - p-opendays-pvna1-staff
+  #  g-ode2-staff-c74457:
+  #    description: d-g-opendays
+  #    policies:
+  #      - p-opendays-pvna1-staff
+  #      - p-opendays-pvna2-staff
+  #  g-odci-staff-dd86f7:
+  #    description: d-g-opendays
+  #    policies:
+  #      - p-opendays-trus-staff
+  #  g-odch-staff-423cad:
+  #    description: d-g-opendays
+  #    policies:
+  #      - p-opendays-spin-staff      
+  #  g-odme-staff-2ea5fc:
+  #    description: d-g-opendays
+  #    policies:
+  #      - p-opendays-pend-staff
+      
+  g-ode1-E83eD0:
     description: d-g-opendays
     policies:
-      - p-opendays-pend
-      - p-opendays-spin
+      - p-opendays-pvna1
+#  g-ode2-8d75dA:
+#    description: d-g-opendays
+#    policies:
+#      - p-opendays-pvna1
+#      - p-opendays-pvna2
       
+#  g-odci-c3C29e:
+#    description: d-g-opendays
+#    policies:
+#      - p-opendays-trus
+#  g-odch-a33F37:
+#    description: d-g-opendays
+#    policies:
+#      - p-opendays-spin      
+#  g-odme-b2fBea:
+#    description: d-g-opendays
+#    policies:
+#      - p-opendays-pend      
 policies:
   p-quarantine:
     description: d-p-quarantine
@@ -3482,7 +3543,6 @@ policies:
       - sl-opendays-pend04
       - sl-opendays-pend05
       - sl-opendays-pend06
-      - sl-opendays-pend07
       - sl-opendays-pend08
       - sl-opendays-pend09
       - sl-opendays-pend10
@@ -3493,7 +3553,6 @@ policies:
       - sl-opendays-pend15
       - sl-opendays-pend16
       - sl-opendays-pend17
-      - sl-opendays-pend20
       - sl-opendays-pend21
       - sl-opendays-pend22
       - sl-opendays-pend23
@@ -3502,11 +3561,12 @@ policies:
       - sl-opendays-pend28
       - sl-opendays-pend29
       - sl-opendays-pend31
-      - sl-opendays-pend33
+      - sl-opendays-pend32
       - sl-opendays-pend34
       - sl-opendays-pend35
       - sl-opendays-pend36
-      - sl-opendays-pend37      
+      - sl-opendays-pend37
+      
   p-opendays-spin:
     description: d-p-opendays-spin
     enforce_allow_start_in_past: true
@@ -3558,6 +3618,22 @@ policies:
       - sl-opendays-spin75
       - sl-opendays-spin76
       - sl-opendays-spin77
+      
+  p-opendays-pvna1:
+    description: d-p-opendays-pvna1
+    enforce_allow_start_in_past: true
+    enforce_max_bookings: true
+    max_bookings: 2
+    allow_start_in_past_within: 5m
+    display_guides:
+      - 15mFor24h
+      - 30mFor24h
+    slots:
+      - sl-pvna-oneport-opendays-pvna00
+      - sl-pvna-oneport-opendays-pvna01
+      - sl-pvna-oneport-opendays-pvna02
+      - sl-pvna-oneport-opendays-pvna03
+      - sl-pvna-oneport-opendays-pvna04
       
   p-pvna-oneport-students:
     description: d-p-pvna-oneport-students
@@ -6682,6 +6758,37 @@ slots:
     ui_set: us-spin-opendays
     window: w-spin-opendays
 
+  sl-pvna-oneport-opendays-pvna00:
+    description: d-sl-pvna-oneport-students-pvna00
+    policy: p-opendays-pvna1 
+    resource: r-pvna00
+    ui_set: us-pvna-oneport-students
+    window: w-opendays-pvna1
+  sl-pvna-oneport-opendays-pvna01:
+    description: d-sl-pvna-oneport-students-pvna01
+    policy: p-opendays-pvna1
+    resource: r-pvna01
+    ui_set: us-pvna-oneport-students
+    window: w-opendays-pvna1
+  sl-pvna-oneport-opendays-pvna02:
+    description: d-sl-pvna-oneport-students-pvna02
+    policy: p-opendays-pvna1
+    resource: r-pvna02
+    ui_set: us-pvna-oneport-students
+    window: w-opendays-pvna1
+  sl-pvna-oneport-opendays-pvna03:
+    description: d-sl-pvna-oneport-students-pvna03
+    policy: p-opendays-pvna1
+    resource: r-pvna03
+    ui_set: us-pvna-oneport-students
+    window: w-opendays-pvna1
+  sl-pvna-oneport-opendays-pvna04:
+    description: d-sl-pvna-oneport-students-pvna04
+    policy: p-opendays-pvna1
+    resource: r-pvna04
+    ui_set: us-pvna-oneport-students
+    window: w-opendays-pvna1
+
   sl-pvna-oneport-students-pvna00:
     description: d-sl-pvna-oneport-students-pvna00
     policy: p-pvna-oneport-students 
@@ -7275,3 +7382,7 @@ windows:
       - start: 2023-03-14T14:00:00Z
         end:   2023-03-14T18:00:00Z 
     denied: []
+  w-opendays-pvna1:
+    allowed:
+      - start: 2024-02-04T10:00:00Z 
+      - end: 2024-03-06T23:59:00Z
