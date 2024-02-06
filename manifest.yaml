@@ -116,14 +116,14 @@ descriptions:
     name: Trusses (open Days)
     type: policy
     short: Trusses for Open Days
-  d-p-opendays-pvna1:
-    name: Vector Network Analysers (open Days)
+  d-p-opendays-staff:
+    name: Open days policy for staff
     type: policy
-    short: Vector Network Analyers (one port) for Open Days    
-  d-p-opendays-pvna2:
-    name: Vector Network Analysers (open Days)
+    short: Open days policy for staff
+  d-p-opendays-students:
+    name: Open days policy for students
     type: policy
-    short: Vector Network Analyers (one & two port) for Open Days
+    short: Open days policy for students
   d-p-pvna-oneport-students:
     name: PVNA One-port (Students)
     type: policy
@@ -3087,7 +3087,7 @@ display_guides:
     duration: 2h
     max_slots: 24
     label: 2 hours    
-  4hfor48h:
+  4hFor48h:
     book_ahead: 48h
     duration: 4h
     max_slots: 12
@@ -3145,50 +3145,16 @@ groups:
     policies:
       - p-trus-sm2-staff
 
-  #  g-ode1-staff-e807bc:
-  #    description: d-g-opendays
-  #    policies:
-  #      - p-opendays-pvna1-staff
-  #  g-ode2-staff-c74457:
-  #    description: d-g-opendays
-  #    policies:
-  #      - p-opendays-pvna1-staff
-  #      - p-opendays-pvna2-staff
-  #  g-odci-staff-dd86f7:
-  #    description: d-g-opendays
-  #    policies:
-  #      - p-opendays-trus-staff
-  #  g-odch-staff-423cad:
-  #    description: d-g-opendays
-  #    policies:
-  #      - p-opendays-spin-staff      
-  #  g-odme-staff-2ea5fc:
-  #    description: d-g-opendays
-  #    policies:
-  #      - p-opendays-pend-staff
-      
-  g-ode1-E83eD0:
+  g-open-staff-E83eD0:
     description: d-g-opendays
     policies:
-      - p-opendays-pvna1
-#  g-ode2-8d75dA:
-#    description: d-g-opendays
-#    policies:
-#      - p-opendays-pvna1
-#      - p-opendays-pvna2
+      - p-opendays-staff
       
-#  g-odci-c3C29e:
-#    description: d-g-opendays
-#    policies:
-#      - p-opendays-trus
-#  g-odch-a33F37:
-#    description: d-g-opendays
-#    policies:
-#      - p-opendays-spin      
-#  g-odme-b2fBea:
-#    description: d-g-opendays
-#    policies:
-#      - p-opendays-pend      
+  g-open-b70737:
+    description: d-g-opendays
+    policies:
+      - p-opendays-students
+      
 policies:
   p-quarantine:
     description: d-p-quarantine
@@ -3238,7 +3204,7 @@ policies:
     display_guides:
       - 15mFor1h
       - 1hFor8h
-      - 4hfor48h
+      - 4hFor48h
     slots:
       - sl-frig00-staff
       
@@ -3249,7 +3215,7 @@ policies:
     display_guides:
       - 15mFor1h
       - 1hFor8h
-      - 4hfor48h
+      - 4hFor48h
     slots:
       - sl-frig00-student     
        
@@ -3525,115 +3491,60 @@ policies:
       - sl-engdes1-spin75     
       - sl-engdes1-spin76
       - sl-engdes1-spin77     
-       
-  p-opendays-pend:
-    description: d-p-opendays-pend
+
+  p-opendays-staff:
+    description: d-p-opendays-staff
     enforce_allow_start_in_past: true
     allow_start_in_past_within: 5m
     enforce_max_bookings: true
     max_bookings: 2
     display_guides:
-      - 5mFor20m
       - 15mFor2h
-      - 30mFor8h
+      - 2hFor48h
     slots:
-      - sl-opendays-pend00
-      - sl-opendays-pend02
-      - sl-opendays-pend03
-      - sl-opendays-pend04
-      - sl-opendays-pend05
-      - sl-opendays-pend06
-      - sl-opendays-pend08
-      - sl-opendays-pend09
-      - sl-opendays-pend10
-      - sl-opendays-pend11
-      - sl-opendays-pend12
-      - sl-opendays-pend13
-      - sl-opendays-pend14
-      - sl-opendays-pend15
-      - sl-opendays-pend16
-      - sl-opendays-pend17
-      - sl-opendays-pend21
-      - sl-opendays-pend22
-      - sl-opendays-pend23
-      - sl-opendays-pend26
-      - sl-opendays-pend27
-      - sl-opendays-pend28
-      - sl-opendays-pend29
-      - sl-opendays-pend31
-      - sl-opendays-pend32
-      - sl-opendays-pend34
-      - sl-opendays-pend35
-      - sl-opendays-pend36
-      - sl-opendays-pend37
+      - sl-opendays-staff-pend32
+      - sl-opendays-staff-pend34
+      - sl-opendays-staff-pend35
+      - sl-opendays-staff-pend36
+      - sl-opendays-staff-pend37
+      - sl-opendays-staff-spin57 
+      - sl-opendays-staff-spin70
+      - sl-opendays-staff-spin71
+      - sl-opendays-staff-spin74
+      - sl-opendays-staff-spin77
+      - sl-pvna-oneport-opendays-staff-pvna00
+      - sl-pvna-oneport-opendays-staff-pvna01
+      - sl-opendays-students-trus00
+      - sl-opendays-students-trus01
+      - sl-opendays-students-trus02
       
-  p-opendays-spin:
-    description: d-p-opendays-spin
+  p-opendays-students:
+    description: d-p-opendays-students
     enforce_allow_start_in_past: true
+    allow_start_in_past_within: 5m
     enforce_max_bookings: true
     max_bookings: 2
-    allow_start_in_past_within: 5m
     display_guides:
-      - 5mFor20m
       - 15mFor2h
-      - 30mFor8h
     slots:
-      - sl-opendays-spin30
-      - sl-opendays-spin32
-      - sl-opendays-spin33
-      - sl-opendays-spin34
-      - sl-opendays-spin35
-      - sl-opendays-spin36
-      - sl-opendays-spin37       
-      - sl-opendays-spin38
-      - sl-opendays-spin39
-      - sl-opendays-spin40
-      - sl-opendays-spin41
-      - sl-opendays-spin46
-      - sl-opendays-spin47       
-      - sl-opendays-spin48
-      - sl-opendays-spin49
-      - sl-opendays-spin51
-      - sl-opendays-spin52
-      - sl-opendays-spin53
-      - sl-opendays-spin54
-      - sl-opendays-spin55
-      - sl-opendays-spin56
-      - sl-opendays-spin57       
-      - sl-opendays-spin58
-      - sl-opendays-spin59
-      - sl-opendays-spin60
-      - sl-opendays-spin61
-      - sl-opendays-spin62
-      - sl-opendays-spin63
-      - sl-opendays-spin65
-      - sl-opendays-spin66
-      - sl-opendays-spin67       
-      - sl-opendays-spin68
-      - sl-opendays-spin70
-      - sl-opendays-spin71
-      - sl-opendays-spin72
-      - sl-opendays-spin73
-      - sl-opendays-spin74
-      - sl-opendays-spin75
-      - sl-opendays-spin76
-      - sl-opendays-spin77
-      
-  p-opendays-pvna1:
-    description: d-p-opendays-pvna1
-    enforce_allow_start_in_past: true
-    enforce_max_bookings: true
-    max_bookings: 2
-    allow_start_in_past_within: 5m
-    display_guides:
-      - 15mFor24h
-      - 30mFor24h
-    slots:
-      - sl-pvna-oneport-opendays-pvna00
-      - sl-pvna-oneport-opendays-pvna01
-      - sl-pvna-oneport-opendays-pvna02
-      - sl-pvna-oneport-opendays-pvna03
-      - sl-pvna-oneport-opendays-pvna04
+      - sl-opendays-students-pend26
+      - sl-opendays-students-pend27
+      - sl-opendays-students-pend28
+      - sl-opendays-students-pend29
+      - sl-opendays-students-pend31
+      - sl-opendays-students-spin58
+      - sl-opendays-students-spin67
+      - sl-opendays-students-spin72
+      - sl-opendays-students-spin73
+      - sl-opendays-students-spin76
+      - sl-pvna-oneport-opendays-students-pvna02
+      - sl-pvna-oneport-opendays-students-pvna03
+      - sl-pvna-oneport-opendays-students-pvna04
+      - sl-opendays-students-trus03
+      - sl-opendays-students-trus04
+      - sl-opendays-students-trus05
+      - sl-opendays-students-trus06
+      - sl-opendays-students-trus07
       
   p-pvna-oneport-students:
     description: d-p-pvna-oneport-students
@@ -6247,547 +6158,1092 @@ slots:
     window: w-spin-engdes1
 
   # Open Days slots
-  sl-opendays-pend00:
+  sl-opendays-students-pend00:
     description: d-sl-opendays-pend00 
-    policy: p-opendays-pend 
+    policy: p-opendays-students 
     resource: r-pend00
     ui_set: us-pend-opendays
-    window: w-pend-opendays
-  sl-opendays-pend01:
+    window: w-opendays-students
+  sl-opendays-students-pend01:
     description: d-sl-opendays-pend01 
-    policy: p-opendays-pend
+    policy: p-opendays-students
     resource: r-pend01
     ui_set: us-pend-opendays
-    window: w-pend-opendays
-  sl-opendays-pend02:
+    window: w-opendays-students
+  sl-opendays-students-pend02:
     description: d-sl-opendays-pend02 
-    policy: p-opendays-pend
+    policy: p-opendays-students
     resource: r-pend02
     ui_set: us-pend-opendays
-    window: w-pend-opendays
-  sl-opendays-pend03:
+    window: w-opendays-students
+  sl-opendays-students-pend03:
     description: d-sl-opendays-pend03 
-    policy: p-opendays-pend
+    policy: p-opendays-students
     resource: r-pend03
     ui_set: us-pend-opendays
-    window: w-pend-opendays
-  sl-opendays-pend04:
+    window: w-opendays-students
+  sl-opendays-students-pend04:
     description: d-sl-opendays-pend04 
-    policy: p-opendays-pend
+    policy: p-opendays-students
     resource: r-pend04
     ui_set: us-pend-opendays
-    window: w-pend-opendays
-  sl-opendays-pend05:
+    window: w-opendays-students
+  sl-opendays-students-pend05:
     description: d-sl-opendays-pend05 
-    policy: p-opendays-pend
+    policy: p-opendays-students
     resource: r-pend05
     ui_set: us-pend-opendays
-    window: w-pend-opendays
-  sl-opendays-pend06:
+    window: w-opendays-students
+  sl-opendays-students-pend06:
     description: d-sl-opendays-pend06 
-    policy: p-opendays-pend
+    policy: p-opendays-students
     resource: r-pend06
     ui_set: us-pend-opendays
-    window: w-pend-opendays
-  sl-opendays-pend07:
+    window: w-opendays-students
+  sl-opendays-students-pend07:
     description: d-sl-opendays-pend07 
-    policy: p-opendays-pend
+    policy: p-opendays-students
     resource: r-pend07
     ui_set: us-pend-opendays
-    window: w-pend-opendays
-  sl-opendays-pend08:
+    window: w-opendays-students
+  sl-opendays-students-pend08:
     description: d-sl-opendays-pend08 
-    policy: p-opendays-pend
+    policy: p-opendays-students
     resource: r-pend08
     ui_set: us-pend-opendays
-    window: w-pend-opendays
-  sl-opendays-pend09:
+    window: w-opendays-students
+  sl-opendays-students-pend09:
     description: d-sl-opendays-pend09 
-    policy: p-opendays-pend
+    policy: p-opendays-students
     resource: r-pend09
     ui_set: us-pend-opendays
-    window: w-pend-opendays
-  sl-opendays-pend10:
+    window: w-opendays-students
+  sl-opendays-students-pend10:
     description: d-sl-opendays-pend10 
-    policy: p-opendays-pend 
+    policy: p-opendays-students 
     resource: r-pend10
     ui_set: us-pend-opendays
-    window: w-pend-opendays
-  sl-opendays-pend11:
+    window: w-opendays-students
+  sl-opendays-students-pend11:
     description: d-sl-opendays-pend11 
-    policy: p-opendays-pend
+    policy: p-opendays-students
     resource: r-pend11
     ui_set: us-pend-opendays
-    window: w-pend-opendays
-  sl-opendays-pend12:
+    window: w-opendays-students
+  sl-opendays-students-pend12:
     description: d-sl-opendays-pend12 
-    policy: p-opendays-pend
+    policy: p-opendays-students
     resource: r-pend12
     ui_set: us-pend-opendays
-    window: w-pend-opendays
-  sl-opendays-pend13:
+    window: w-opendays-students
+  sl-opendays-students-pend13:
     description: d-sl-opendays-pend13 
-    policy: p-opendays-pend
+    policy: p-opendays-students
     resource: r-pend13
     ui_set: us-pend-opendays
-    window: w-pend-opendays
-  sl-opendays-pend14:
+    window: w-opendays-students
+  sl-opendays-students-pend14:
     description: d-sl-opendays-pend14 
-    policy: p-opendays-pend
+    policy: p-opendays-students
     resource: r-pend14
     ui_set: us-pend-opendays
-    window: w-pend-opendays
-  sl-opendays-pend15:
+    window: w-opendays-students
+  sl-opendays-students-pend15:
     description: d-sl-opendays-pend15 
-    policy: p-opendays-pend
+    policy: p-opendays-students
     resource: r-pend15
     ui_set: us-pend-opendays
-    window: w-pend-opendays
-  sl-opendays-pend16:
+    window: w-opendays-students
+  sl-opendays-students-pend16:
     description: d-sl-opendays-pend16 
-    policy: p-opendays-pend
+    policy: p-opendays-students
     resource: r-pend16
     ui_set: us-pend-opendays
-    window: w-pend-opendays
-  sl-opendays-pend17:
+    window: w-opendays-students
+  sl-opendays-students-pend17:
     description: d-sl-opendays-pend17 
-    policy: p-opendays-pend
+    policy: p-opendays-students
     resource: r-pend17
     ui_set: us-pend-opendays
-    window: w-pend-opendays
+    window: w-opendays-students
   sl-q-opendays-pend18:
     description: d-sl-opendays-pend18 
     policy: p-quarantine
     resource: r-pend18
     ui_set: us-pend-opendays
-    window: w-pend-opendays
+    window: w-opendays-students
   sl-q-opendays-pend19:
     description: d-sl-opendays-pend19 
     policy: p-quarantine
     resource: r-pend19
     ui_set: us-pend-opendays
-    window: w-pend-opendays
-  sl-opendays-pend20:
+    window: w-opendays-students
+  sl-opendays-students-pend20:
     description: d-sl-opendays-pend20 
-    policy: p-opendays-pend 
+    policy: p-opendays-students 
     resource: r-pend20
     ui_set: us-pend-opendays
-    window: w-pend-opendays
-  sl-opendays-pend21:
+    window: w-opendays-students
+  sl-opendays-students-pend21:
     description: d-sl-opendays-pend21 
-    policy: p-opendays-pend
+    policy: p-opendays-students
     resource: r-pend21
     ui_set: us-pend-opendays
-    window: w-pend-opendays
-  sl-opendays-pend22:
+    window: w-opendays-students
+  sl-opendays-students-pend22:
     description: d-sl-opendays-pend22 
-    policy: p-opendays-pend
+    policy: p-opendays-students
     resource: r-pend22
     ui_set: us-pend-opendays
-    window: w-pend-opendays
-  sl-opendays-pend23:
+    window: w-opendays-students
+  sl-opendays-students-pend23:
     description: d-sl-opendays-pend23 
-    policy: p-opendays-pend
+    policy: p-opendays-students
     resource: r-pend23
     ui_set: us-pend-opendays
-    window: w-pend-opendays
-  sl-opendays-pend24:
+    window: w-opendays-students
+  sl-opendays-students-pend24:
     description: d-sl-opendays-pend24 
-    policy: p-opendays-pend
+    policy: p-opendays-students
     resource: r-pend24
     ui_set: us-pend-opendays
-    window: w-pend-opendays
-  sl-opendays-pend26:
+    window: w-opendays-students
+  sl-opendays-students-pend26:
     description: d-sl-opendays-pend26 
-    policy: p-opendays-pend
+    policy: p-opendays-students
     resource: r-pend26
     ui_set: us-pend-opendays
-    window: w-pend-opendays
-  sl-opendays-pend27:
+    window: w-opendays-students
+  sl-opendays-students-pend27:
     description: d-sl-opendays-pend27 
-    policy: p-opendays-pend
+    policy: p-opendays-students
     resource: r-pend27
     ui_set: us-pend-opendays
-    window: w-pend-opendays
-  sl-opendays-pend28:
+    window: w-opendays-students
+  sl-opendays-students-pend28:
     description: d-sl-opendays-pend28 
-    policy: p-opendays-pend
+    policy: p-opendays-students
     resource: r-pend28
     ui_set: us-pend-opendays
-    window: w-pend-opendays
-  sl-opendays-pend29:
+    window: w-opendays-students
+  sl-opendays-students-pend29:
     description: d-sl-opendays-pend29 
-    policy: p-opendays-pend
+    policy: p-opendays-students
     resource: r-pend29
     ui_set: us-pend-opendays
-    window: w-pend-opendays
-  sl-opendays-pend30:
+    window: w-opendays-students
+  sl-opendays-students-pend30:
     description: d-sl-opendays-pend30 
-    policy: p-opendays-pend 
+    policy: p-opendays-students 
     resource: r-pend30
     ui_set: us-pend-opendays
-    window: w-pend-opendays
-  sl-opendays-pend31:
+    window: w-opendays-students
+  sl-opendays-students-pend31:
     description: d-sl-opendays-pend31 
-    policy: p-opendays-pend
+    policy: p-opendays-students
     resource: r-pend31
     ui_set: us-pend-opendays
-    window: w-pend-opendays
-  sl-opendays-pend32:
+    window: w-opendays-students
+  sl-opendays-students-pend32:
     description: d-sl-opendays-pend32 
-    policy: p-opendays-pend
+    policy: p-opendays-students
     resource: r-pend32
     ui_set: us-pend-opendays
-    window: w-pend-opendays
-  sl-opendays-pend33:
+    window: w-opendays-students
+  sl-opendays-students-pend33:
     description: d-sl-opendays-pend33 
-    policy: p-opendays-pend
+    policy: p-opendays-students
     resource: r-pend33
     ui_set: us-pend-opendays
-    window: w-pend-opendays
-  sl-opendays-pend34:
+    window: w-opendays-students
+  sl-opendays-students-pend34:
     description: d-sl-opendays-pend34 
-    policy: p-opendays-pend
+    policy: p-opendays-students
     resource: r-pend34
     ui_set: us-pend-opendays
-    window: w-pend-opendays
-  sl-opendays-pend35:
+    window: w-opendays-students
+  sl-opendays-students-pend35:
     description: d-sl-opendays-pend35 
-    policy: p-opendays-pend
+    policy: p-opendays-students
     resource: r-pend35
     ui_set: us-pend-opendays
-    window: w-pend-opendays
-  sl-opendays-pend36:
+    window: w-opendays-students
+  sl-opendays-students-pend36:
     description: d-sl-opendays-pend36 
-    policy: p-opendays-pend
+    policy: p-opendays-students
     resource: r-pend36
     ui_set: us-pend-opendays
-    window: w-pend-opendays
-  sl-opendays-pend37:
+    window: w-opendays-students
+  sl-opendays-students-pend37:
     description: d-sl-opendays-pend37 
-    policy: p-opendays-pend
+    policy: p-opendays-students
     resource: r-pend37
     ui_set: us-pend-opendays
-    window: w-pend-opendays    
-  sl-opendays-spin30:
+    window: w-opendays-students    
+  sl-opendays-students-spin30:
     description: d-sl-opendays-spin30 
-    policy: p-opendays-spin 
+    policy: p-opendays-students 
     resource: r-spin30
     ui_set: us-spin-opendays
-    window: w-spin-opendays
-  sl-opendays-spin31:
+    window: w-opendays-students
+  sl-opendays-students-spin31:
     description: d-sl-opendays-spin31 
-    policy: p-opendays-spin 
+    policy: p-opendays-students 
     resource: r-spin31
     ui_set: us-spin-opendays
-    window: w-spin-opendays
-  sl-opendays-spin32:
+    window: w-opendays-students
+  sl-opendays-students-spin32:
     description: d-sl-opendays-spin32 
-    policy: p-opendays-spin 
+    policy: p-opendays-students 
     resource: r-spin32
     ui_set: us-spin-opendays
-    window: w-spin-opendays
-  sl-opendays-spin33:
+    window: w-opendays-students
+  sl-opendays-students-spin33:
     description: d-sl-opendays-spin33 
-    policy: p-opendays-spin 
+    policy: p-opendays-students 
     resource: r-spin33
     ui_set: us-spin-opendays
-    window: w-spin-opendays
-  sl-opendays-spin34:
+    window: w-opendays-students
+  sl-opendays-students-spin34:
     description: d-sl-opendays-spin34 
-    policy: p-opendays-spin 
+    policy: p-opendays-students 
     resource: r-spin34
     ui_set: us-spin-opendays
-    window: w-spin-opendays
-  sl-opendays-spin35:
+    window: w-opendays-students
+  sl-opendays-students-spin35:
     description: d-sl-opendays-spin35 
-    policy: p-opendays-spin 
+    policy: p-opendays-students 
     resource: r-spin35
     ui_set: us-spin-opendays
-    window: w-spin-opendays
-  sl-opendays-spin36:
+    window: w-opendays-students
+  sl-opendays-students-spin36:
     description: d-sl-opendays-spin36 
-    policy: p-opendays-spin 
+    policy: p-opendays-students 
     resource: r-spin36
     ui_set: us-spin-opendays
-    window: w-spin-opendays
-  sl-opendays-spin37:
+    window: w-opendays-students
+  sl-opendays-students-spin37:
     description: d-sl-opendays-spin37 
-    policy: p-opendays-spin 
+    policy: p-opendays-students 
     resource: r-spin37
     ui_set: us-spin-opendays
-    window: w-spin-opendays
-  sl-opendays-spin38:
+    window: w-opendays-students
+  sl-opendays-students-spin38:
     description: d-sl-opendays-spin38 
-    policy: p-opendays-spin 
+    policy: p-opendays-students 
     resource: r-spin38
     ui_set: us-spin-opendays
-    window: w-spin-opendays
-  sl-opendays-spin39:
+    window: w-opendays-students
+  sl-opendays-students-spin39:
     description: d-sl-opendays-spin39 
-    policy: p-opendays-spin 
+    policy: p-opendays-students 
     resource: r-spin39
     ui_set: us-spin-opendays
-    window: w-spin-opendays
-  sl-opendays-spin40:
+    window: w-opendays-students
+  sl-opendays-students-spin40:
     description: d-sl-opendays-spin40 
-    policy: p-opendays-spin 
+    policy: p-opendays-students 
     resource: r-spin40
     ui_set: us-spin-opendays
-    window: w-spin-opendays
-  sl-opendays-spin41:
+    window: w-opendays-students
+  sl-opendays-students-spin41:
     description: d-sl-opendays-spin41 
-    policy: p-opendays-spin 
+    policy: p-opendays-students 
     resource: r-spin41
     ui_set: us-spin-opendays
-    window: w-spin-opendays
-  sl-opendays-spin42:
+    window: w-opendays-students
+  sl-opendays-students-spin42:
     description: d-sl-opendays-spin42 
-    policy: p-opendays-spin 
+    policy: p-opendays-students 
     resource: r-spin42
     ui_set: us-spin-opendays
-    window: w-spin-opendays
-  sl-opendays-spin43:
+    window: w-opendays-students
+  sl-opendays-students-spin43:
     description: d-sl-opendays-spin43 
-    policy: p-opendays-spin 
+    policy: p-opendays-students 
     resource: r-spin43
     ui_set: us-spin-opendays
-    window: w-spin-opendays
-  sl-opendays-spin44:
+    window: w-opendays-students
+  sl-opendays-students-spin44:
     description: d-sl-opendays-spin44 
-    policy: p-opendays-spin 
+    policy: p-opendays-students 
     resource: r-spin44
     ui_set: us-spin-opendays
-    window: w-spin-opendays
-  sl-opendays-spin45:
+    window: w-opendays-students
+  sl-opendays-students-spin45:
     description: d-sl-opendays-spin45 
-    policy: p-opendays-spin 
+    policy: p-opendays-students 
     resource: r-spin45
     ui_set: us-spin-opendays
-    window: w-spin-opendays
-  sl-opendays-spin46:
+    window: w-opendays-students
+  sl-opendays-students-spin46:
     description: d-sl-opendays-spin46 
-    policy: p-opendays-spin 
+    policy: p-opendays-students 
     resource: r-spin46
     ui_set: us-spin-opendays
-    window: w-spin-opendays
-  sl-opendays-spin47:
+    window: w-opendays-students
+  sl-opendays-students-spin47:
     description: d-sl-opendays-spin47 
-    policy: p-opendays-spin 
+    policy: p-opendays-students 
     resource: r-spin47
     ui_set: us-spin-opendays
-    window: w-spin-opendays
-  sl-opendays-spin48:
+    window: w-opendays-students
+  sl-opendays-students-spin48:
     description: d-sl-opendays-spin48 
-    policy: p-opendays-spin 
+    policy: p-opendays-students 
     resource: r-spin48
     ui_set: us-spin-opendays
-    window: w-spin-opendays
-  sl-opendays-spin49:
+    window: w-opendays-students
+  sl-opendays-students-spin49:
     description: d-sl-opendays-spin49 
-    policy: p-opendays-spin 
+    policy: p-opendays-students 
     resource: r-spin49
     ui_set: us-spin-opendays
-    window: w-spin-opendays
-  sl-opendays-spin50:
+    window: w-opendays-students
+  sl-opendays-students-spin50:
     description: d-sl-opendays-spin50 
-    policy: p-opendays-spin 
+    policy: p-opendays-students 
     resource: r-spin50
     ui_set: us-spin-opendays
-    window: w-spin-opendays
-  sl-opendays-spin51:
+    window: w-opendays-students
+  sl-opendays-students-spin51:
     description: d-sl-opendays-spin51 
-    policy: p-opendays-spin 
+    policy: p-opendays-students 
     resource: r-spin51
     ui_set: us-spin-opendays
-    window: w-spin-opendays
-  sl-opendays-spin52:
+    window: w-opendays-students
+  sl-opendays-students-spin52:
     description: d-sl-opendays-spin52 
-    policy: p-opendays-spin 
+    policy: p-opendays-students 
     resource: r-spin52
     ui_set: us-spin-opendays
-    window: w-spin-opendays
-  sl-opendays-spin53:
+    window: w-opendays-students
+  sl-opendays-students-spin53:
     description: d-sl-opendays-spin53 
-    policy: p-opendays-spin 
+    policy: p-opendays-students 
     resource: r-spin53
     ui_set: us-spin-opendays
-    window: w-spin-opendays
-  sl-opendays-spin54:
+    window: w-opendays-students
+  sl-opendays-students-spin54:
     description: d-sl-opendays-spin54 
-    policy: p-opendays-spin 
+    policy: p-opendays-students 
     resource: r-spin54
     ui_set: us-spin-opendays
-    window: w-spin-opendays
-  sl-opendays-spin55:
+    window: w-opendays-students
+  sl-opendays-students-spin55:
     description: d-sl-opendays-spin55 
-    policy: p-opendays-spin 
+    policy: p-opendays-students 
     resource: r-spin55
     ui_set: us-spin-opendays
-    window: w-spin-opendays
-  sl-opendays-spin56:
+    window: w-opendays-students
+  sl-opendays-students-spin56:
     description: d-sl-opendays-spin56 
-    policy: p-opendays-spin 
+    policy: p-opendays-students 
     resource: r-spin56
     ui_set: us-spin-opendays
-    window: w-spin-opendays
-  sl-opendays-spin57:
+    window: w-opendays-students
+  sl-opendays-students-spin57:
     description: d-sl-opendays-spin57 
-    policy: p-opendays-spin 
+    policy: p-opendays-students 
     resource: r-spin57
     ui_set: us-spin-opendays
-    window: w-spin-opendays
-  sl-opendays-spin58:
+    window: w-opendays-students
+  sl-opendays-students-spin58:
     description: d-sl-opendays-spin58 
-    policy: p-opendays-spin 
+    policy: p-opendays-students 
     resource: r-spin58
     ui_set: us-spin-opendays
-    window: w-spin-opendays
-  sl-opendays-spin59:
+    window: w-opendays-students
+  sl-opendays-students-spin59:
     description: d-sl-opendays-spin59 
-    policy: p-opendays-spin 
+    policy: p-opendays-students 
     resource: r-spin59
     ui_set: us-spin-opendays
-    window: w-spin-opendays
-  sl-opendays-spin60:
+    window: w-opendays-students
+  sl-opendays-students-spin60:
     description: d-sl-opendays-spin60 
-    policy: p-opendays-spin 
+    policy: p-opendays-students 
     resource: r-spin60
     ui_set: us-spin-opendays
-    window: w-spin-opendays    
-  sl-opendays-spin61:
+    window: w-opendays-students    
+  sl-opendays-students-spin61:
     description: d-sl-opendays-spin61 
-    policy: p-opendays-spin 
+    policy: p-opendays-students 
     resource: r-spin61
     ui_set: us-spin-opendays
-    window: w-spin-opendays
-  sl-opendays-spin62:
+    window: w-opendays-students
+  sl-opendays-students-spin62:
     description: d-sl-opendays-spin62 
-    policy: p-opendays-spin 
+    policy: p-opendays-students 
     resource: r-spin62
     ui_set: us-spin-opendays
-    window: w-spin-opendays
-  sl-opendays-spin63:
+    window: w-opendays-students
+  sl-opendays-students-spin63:
     description: d-sl-opendays-spin63 
-    policy: p-opendays-spin 
+    policy: p-opendays-students 
     resource: r-spin63
     ui_set: us-spin-opendays
-    window: w-spin-opendays
-  sl-opendays-spin64:
+    window: w-opendays-students
+  sl-opendays-students-spin64:
     description: d-sl-opendays-spin64 
-    policy: p-opendays-spin 
+    policy: p-opendays-students 
     resource: r-spin64
     ui_set: us-spin-opendays
-    window: w-spin-opendays
-  sl-opendays-spin65:
+    window: w-opendays-students
+  sl-opendays-students-spin65:
     description: d-sl-opendays-spin65 
-    policy: p-opendays-spin 
+    policy: p-opendays-students 
     resource: r-spin65
     ui_set: us-spin-opendays
-    window: w-spin-opendays
-  sl-opendays-spin66:
+    window: w-opendays-students
+  sl-opendays-students-spin66:
     description: d-sl-opendays-spin66 
-    policy: p-opendays-spin 
+    policy: p-opendays-students 
     resource: r-spin66
     ui_set: us-spin-opendays
-    window: w-spin-opendays
-  sl-opendays-spin67:
+    window: w-opendays-students
+  sl-opendays-students-spin67:
     description: d-sl-opendays-spin67 
-    policy: p-opendays-spin 
+    policy: p-opendays-students 
     resource: r-spin67
     ui_set: us-spin-opendays
-    window: w-spin-opendays
-  sl-opendays-spin68:
+    window: w-opendays-students
+  sl-opendays-students-spin68:
     description: d-sl-opendays-spin68 
-    policy: p-opendays-spin 
+    policy: p-opendays-students 
     resource: r-spin68
     ui_set: us-spin-opendays
-    window: w-spin-opendays
-  sl-opendays-spin69:
+    window: w-opendays-students
+  sl-opendays-students-spin69:
     description: d-sl-opendays-spin69 
-    policy: p-opendays-spin 
+    policy: p-opendays-students 
     resource: r-spin69
     ui_set: us-spin-opendays
-    window: w-spin-opendays
-  sl-opendays-spin70:
+    window: w-opendays-students
+  sl-opendays-students-spin70:
     description: d-sl-opendays-spin70 
-    policy: p-opendays-spin 
+    policy: p-opendays-students 
     resource: r-spin70
     ui_set: us-spin-opendays
-    window: w-spin-opendays    
-  sl-opendays-spin71:
+    window: w-opendays-students    
+  sl-opendays-students-spin71:
     description: d-sl-opendays-spin71 
-    policy: p-opendays-spin 
+    policy: p-opendays-students 
     resource: r-spin71
     ui_set: us-spin-opendays
-    window: w-spin-opendays
-  sl-opendays-spin72:
+    window: w-opendays-students
+  sl-opendays-students-spin72:
     description: d-sl-opendays-spin72 
-    policy: p-opendays-spin 
+    policy: p-opendays-students 
     resource: r-spin72
     ui_set: us-spin-opendays
-    window: w-spin-opendays
-  sl-opendays-spin73:
+    window: w-opendays-students
+  sl-opendays-students-spin73:
     description: d-sl-opendays-spin73 
-    policy: p-opendays-spin 
+    policy: p-opendays-students 
     resource: r-spin73
     ui_set: us-spin-opendays
-    window: w-spin-opendays
-  sl-opendays-spin74:
+    window: w-opendays-students
+  sl-opendays-students-spin74:
     description: d-sl-opendays-spin74 
-    policy: p-opendays-spin 
+    policy: p-opendays-students 
     resource: r-spin74
     ui_set: us-spin-opendays
-    window: w-spin-opendays
-  sl-opendays-spin75:
+    window: w-opendays-students
+  sl-opendays-students-spin75:
     description: d-sl-opendays-spin75 
-    policy: p-opendays-spin 
+    policy: p-opendays-students 
     resource: r-spin75
     ui_set: us-spin-opendays
-    window: w-spin-opendays
-  sl-opendays-spin76:
+    window: w-opendays-students
+  sl-opendays-students-spin76:
     description: d-sl-opendays-spin76 
-    policy: p-opendays-spin 
+    policy: p-opendays-students 
     resource: r-spin76
     ui_set: us-spin-opendays
-    window: w-spin-opendays
-  sl-opendays-spin77:
+    window: w-opendays-students
+  sl-opendays-students-spin77:
     description: d-sl-opendays-spin77 
-    policy: p-opendays-spin 
+    policy: p-opendays-students 
     resource: r-spin77
     ui_set: us-spin-opendays
-    window: w-spin-opendays
+    window: w-opendays-students
 
-  sl-pvna-oneport-opendays-pvna00:
+  # Open day slots - staff
+
+  sl-opendays-staff-pend00:
+    description: d-sl-opendays-pend00 
+    policy: p-opendays-staff 
+    resource: r-pend00
+    ui_set: us-pend-opendays
+    window: w-opendays-staff
+  sl-opendays-staff-pend01:
+    description: d-sl-opendays-pend01 
+    policy: p-opendays-staff
+    resource: r-pend01
+    ui_set: us-pend-opendays
+    window: w-opendays-staff
+  sl-opendays-staff-pend02:
+    description: d-sl-opendays-pend02 
+    policy: p-opendays-staff
+    resource: r-pend02
+    ui_set: us-pend-opendays
+    window: w-opendays-staff
+  sl-opendays-staff-pend03:
+    description: d-sl-opendays-pend03 
+    policy: p-opendays-staff
+    resource: r-pend03
+    ui_set: us-pend-opendays
+    window: w-opendays-staff
+  sl-opendays-staff-pend04:
+    description: d-sl-opendays-pend04 
+    policy: p-opendays-staff
+    resource: r-pend04
+    ui_set: us-pend-opendays
+    window: w-opendays-staff
+  sl-opendays-staff-pend05:
+    description: d-sl-opendays-pend05 
+    policy: p-opendays-staff
+    resource: r-pend05
+    ui_set: us-pend-opendays
+    window: w-opendays-staff
+  sl-opendays-staff-pend06:
+    description: d-sl-opendays-pend06 
+    policy: p-opendays-staff
+    resource: r-pend06
+    ui_set: us-pend-opendays
+    window: w-opendays-staff
+  sl-opendays-staff-pend07:
+    description: d-sl-opendays-pend07 
+    policy: p-opendays-staff
+    resource: r-pend07
+    ui_set: us-pend-opendays
+    window: w-opendays-staff
+  sl-opendays-staff-pend08:
+    description: d-sl-opendays-pend08 
+    policy: p-opendays-staff
+    resource: r-pend08
+    ui_set: us-pend-opendays
+    window: w-opendays-staff
+  sl-opendays-staff-pend09:
+    description: d-sl-opendays-pend09 
+    policy: p-opendays-staff
+    resource: r-pend09
+    ui_set: us-pend-opendays
+    window: w-opendays-staff
+  sl-opendays-staff-pend10:
+    description: d-sl-opendays-pend10 
+    policy: p-opendays-staff 
+    resource: r-pend10
+    ui_set: us-pend-opendays
+    window: w-opendays-staff
+  sl-opendays-staff-pend11:
+    description: d-sl-opendays-pend11 
+    policy: p-opendays-staff
+    resource: r-pend11
+    ui_set: us-pend-opendays
+    window: w-opendays-staff
+  sl-opendays-staff-pend12:
+    description: d-sl-opendays-pend12 
+    policy: p-opendays-staff
+    resource: r-pend12
+    ui_set: us-pend-opendays
+    window: w-opendays-staff
+  sl-opendays-staff-pend13:
+    description: d-sl-opendays-pend13 
+    policy: p-opendays-staff
+    resource: r-pend13
+    ui_set: us-pend-opendays
+    window: w-opendays-staff
+  sl-opendays-staff-pend14:
+    description: d-sl-opendays-pend14 
+    policy: p-opendays-staff
+    resource: r-pend14
+    ui_set: us-pend-opendays
+    window: w-opendays-staff
+  sl-opendays-staff-pend15:
+    description: d-sl-opendays-pend15 
+    policy: p-opendays-staff
+    resource: r-pend15
+    ui_set: us-pend-opendays
+    window: w-opendays-staff
+  sl-opendays-staff-pend16:
+    description: d-sl-opendays-pend16 
+    policy: p-opendays-staff
+    resource: r-pend16
+    ui_set: us-pend-opendays
+    window: w-opendays-staff
+  sl-opendays-staff-pend17:
+    description: d-sl-opendays-pend17 
+    policy: p-opendays-staff
+    resource: r-pend17
+    ui_set: us-pend-opendays
+    window: w-opendays-staff
+  sl-q-opendays-staff-pend18:
+    description: d-sl-opendays-pend18 
+    policy: p-quarantine
+    resource: r-pend18
+    ui_set: us-pend-opendays
+    window: w-opendays-staff
+  sl-q-opendays-staff-pend19:
+    description: d-sl-opendays-pend19 
+    policy: p-quarantine
+    resource: r-pend19
+    ui_set: us-pend-opendays
+    window: w-opendays-staff
+  sl-opendays-staff-pend20:
+    description: d-sl-opendays-pend20 
+    policy: p-opendays-staff 
+    resource: r-pend20
+    ui_set: us-pend-opendays
+    window: w-opendays-staff
+  sl-opendays-staff-pend21:
+    description: d-sl-opendays-pend21 
+    policy: p-opendays-staff
+    resource: r-pend21
+    ui_set: us-pend-opendays
+    window: w-opendays-staff
+  sl-opendays-staff-pend22:
+    description: d-sl-opendays-pend22 
+    policy: p-opendays-staff
+    resource: r-pend22
+    ui_set: us-pend-opendays
+    window: w-opendays-staff
+  sl-opendays-staff-pend23:
+    description: d-sl-opendays-pend23 
+    policy: p-opendays-staff
+    resource: r-pend23
+    ui_set: us-pend-opendays
+    window: w-opendays-staff
+  sl-opendays-staff-pend24:
+    description: d-sl-opendays-pend24 
+    policy: p-opendays-staff
+    resource: r-pend24
+    ui_set: us-pend-opendays
+    window: w-opendays-staff
+  sl-opendays-staff-pend26:
+    description: d-sl-opendays-pend26 
+    policy: p-opendays-staff
+    resource: r-pend26
+    ui_set: us-pend-opendays
+    window: w-opendays-staff
+  sl-opendays-staff-pend27:
+    description: d-sl-opendays-pend27 
+    policy: p-opendays-staff
+    resource: r-pend27
+    ui_set: us-pend-opendays
+    window: w-opendays-staff
+  sl-opendays-staff-pend28:
+    description: d-sl-opendays-pend28 
+    policy: p-opendays-staff
+    resource: r-pend28
+    ui_set: us-pend-opendays
+    window: w-opendays-staff
+  sl-opendays-staff-pend29:
+    description: d-sl-opendays-pend29 
+    policy: p-opendays-staff
+    resource: r-pend29
+    ui_set: us-pend-opendays
+    window: w-opendays-staff
+  sl-opendays-staff-pend30:
+    description: d-sl-opendays-pend30 
+    policy: p-opendays-staff 
+    resource: r-pend30
+    ui_set: us-pend-opendays
+    window: w-opendays-staff
+  sl-opendays-staff-pend31:
+    description: d-sl-opendays-pend31 
+    policy: p-opendays-staff
+    resource: r-pend31
+    ui_set: us-pend-opendays
+    window: w-opendays-staff
+  sl-opendays-staff-pend32:
+    description: d-sl-opendays-pend32 
+    policy: p-opendays-staff
+    resource: r-pend32
+    ui_set: us-pend-opendays
+    window: w-opendays-staff
+  sl-opendays-staff-pend33:
+    description: d-sl-opendays-pend33 
+    policy: p-opendays-staff
+    resource: r-pend33
+    ui_set: us-pend-opendays
+    window: w-opendays-staff
+  sl-opendays-staff-pend34:
+    description: d-sl-opendays-pend34 
+    policy: p-opendays-staff
+    resource: r-pend34
+    ui_set: us-pend-opendays
+    window: w-opendays-staff
+  sl-opendays-staff-pend35:
+    description: d-sl-opendays-pend35 
+    policy: p-opendays-staff
+    resource: r-pend35
+    ui_set: us-pend-opendays
+    window: w-opendays-staff
+  sl-opendays-staff-pend36:
+    description: d-sl-opendays-pend36 
+    policy: p-opendays-staff
+    resource: r-pend36
+    ui_set: us-pend-opendays
+    window: w-opendays-staff
+  sl-opendays-staff-pend37:
+    description: d-sl-opendays-pend37 
+    policy: p-opendays-staff
+    resource: r-pend37
+    ui_set: us-pend-opendays
+    window: w-opendays-staff    
+  sl-opendays-staff-spin30:
+    description: d-sl-opendays-spin30 
+    policy: p-opendays-staff 
+    resource: r-spin30
+    ui_set: us-spin-opendays
+    window: w-opendays-staff
+  sl-opendays-staff-spin31:
+    description: d-sl-opendays-spin31 
+    policy: p-opendays-staff 
+    resource: r-spin31
+    ui_set: us-spin-opendays
+    window: w-opendays-staff
+  sl-opendays-staff-spin32:
+    description: d-sl-opendays-spin32 
+    policy: p-opendays-staff 
+    resource: r-spin32
+    ui_set: us-spin-opendays
+    window: w-opendays-staff
+  sl-opendays-staff-spin33:
+    description: d-sl-opendays-spin33 
+    policy: p-opendays-staff 
+    resource: r-spin33
+    ui_set: us-spin-opendays
+    window: w-opendays-staff
+  sl-opendays-staff-spin34:
+    description: d-sl-opendays-spin34 
+    policy: p-opendays-staff 
+    resource: r-spin34
+    ui_set: us-spin-opendays
+    window: w-opendays-staff
+  sl-opendays-staff-spin35:
+    description: d-sl-opendays-spin35 
+    policy: p-opendays-staff 
+    resource: r-spin35
+    ui_set: us-spin-opendays
+    window: w-opendays-staff
+  sl-opendays-staff-spin36:
+    description: d-sl-opendays-spin36 
+    policy: p-opendays-staff 
+    resource: r-spin36
+    ui_set: us-spin-opendays
+    window: w-opendays-staff
+  sl-opendays-staff-spin37:
+    description: d-sl-opendays-spin37 
+    policy: p-opendays-staff 
+    resource: r-spin37
+    ui_set: us-spin-opendays
+    window: w-opendays-staff
+  sl-opendays-staff-spin38:
+    description: d-sl-opendays-spin38 
+    policy: p-opendays-staff 
+    resource: r-spin38
+    ui_set: us-spin-opendays
+    window: w-opendays-staff
+  sl-opendays-staff-spin39:
+    description: d-sl-opendays-spin39 
+    policy: p-opendays-staff 
+    resource: r-spin39
+    ui_set: us-spin-opendays
+    window: w-opendays-staff
+  sl-opendays-staff-spin40:
+    description: d-sl-opendays-spin40 
+    policy: p-opendays-staff 
+    resource: r-spin40
+    ui_set: us-spin-opendays
+    window: w-opendays-staff
+  sl-opendays-staff-spin41:
+    description: d-sl-opendays-spin41 
+    policy: p-opendays-staff 
+    resource: r-spin41
+    ui_set: us-spin-opendays
+    window: w-opendays-staff
+  sl-opendays-staff-spin42:
+    description: d-sl-opendays-spin42 
+    policy: p-opendays-staff 
+    resource: r-spin42
+    ui_set: us-spin-opendays
+    window: w-opendays-staff
+  sl-opendays-staff-spin43:
+    description: d-sl-opendays-spin43 
+    policy: p-opendays-staff 
+    resource: r-spin43
+    ui_set: us-spin-opendays
+    window: w-opendays-staff
+  sl-opendays-staff-spin44:
+    description: d-sl-opendays-spin44 
+    policy: p-opendays-staff 
+    resource: r-spin44
+    ui_set: us-spin-opendays
+    window: w-opendays-staff
+  sl-opendays-staff-spin45:
+    description: d-sl-opendays-spin45 
+    policy: p-opendays-staff 
+    resource: r-spin45
+    ui_set: us-spin-opendays
+    window: w-opendays-staff
+  sl-opendays-staff-spin46:
+    description: d-sl-opendays-spin46 
+    policy: p-opendays-staff 
+    resource: r-spin46
+    ui_set: us-spin-opendays
+    window: w-opendays-staff
+  sl-opendays-staff-spin47:
+    description: d-sl-opendays-spin47 
+    policy: p-opendays-staff 
+    resource: r-spin47
+    ui_set: us-spin-opendays
+    window: w-opendays-staff
+  sl-opendays-staff-spin48:
+    description: d-sl-opendays-spin48 
+    policy: p-opendays-staff 
+    resource: r-spin48
+    ui_set: us-spin-opendays
+    window: w-opendays-staff
+  sl-opendays-staff-spin49:
+    description: d-sl-opendays-spin49 
+    policy: p-opendays-staff 
+    resource: r-spin49
+    ui_set: us-spin-opendays
+    window: w-opendays-staff
+  sl-opendays-staff-spin50:
+    description: d-sl-opendays-spin50 
+    policy: p-opendays-staff 
+    resource: r-spin50
+    ui_set: us-spin-opendays
+    window: w-opendays-staff
+  sl-opendays-staff-spin51:
+    description: d-sl-opendays-spin51 
+    policy: p-opendays-staff 
+    resource: r-spin51
+    ui_set: us-spin-opendays
+    window: w-opendays-staff
+  sl-opendays-staff-spin52:
+    description: d-sl-opendays-spin52 
+    policy: p-opendays-staff 
+    resource: r-spin52
+    ui_set: us-spin-opendays
+    window: w-opendays-staff
+  sl-opendays-staff-spin53:
+    description: d-sl-opendays-spin53 
+    policy: p-opendays-staff 
+    resource: r-spin53
+    ui_set: us-spin-opendays
+    window: w-opendays-staff
+  sl-opendays-staff-spin54:
+    description: d-sl-opendays-spin54 
+    policy: p-opendays-staff 
+    resource: r-spin54
+    ui_set: us-spin-opendays
+    window: w-opendays-staff
+  sl-opendays-staff-spin55:
+    description: d-sl-opendays-spin55 
+    policy: p-opendays-staff 
+    resource: r-spin55
+    ui_set: us-spin-opendays
+    window: w-opendays-staff
+  sl-opendays-staff-spin56:
+    description: d-sl-opendays-spin56 
+    policy: p-opendays-staff 
+    resource: r-spin56
+    ui_set: us-spin-opendays
+    window: w-opendays-staff
+  sl-opendays-staff-spin57:
+    description: d-sl-opendays-spin57 
+    policy: p-opendays-staff 
+    resource: r-spin57
+    ui_set: us-spin-opendays
+    window: w-opendays-staff
+  sl-opendays-staff-spin58:
+    description: d-sl-opendays-spin58 
+    policy: p-opendays-staff 
+    resource: r-spin58
+    ui_set: us-spin-opendays
+    window: w-opendays-staff
+  sl-opendays-staff-spin59:
+    description: d-sl-opendays-spin59 
+    policy: p-opendays-staff 
+    resource: r-spin59
+    ui_set: us-spin-opendays
+    window: w-opendays-staff
+  sl-opendays-staff-spin60:
+    description: d-sl-opendays-spin60 
+    policy: p-opendays-staff 
+    resource: r-spin60
+    ui_set: us-spin-opendays
+    window: w-opendays-staff    
+  sl-opendays-staff-spin61:
+    description: d-sl-opendays-spin61 
+    policy: p-opendays-staff 
+    resource: r-spin61
+    ui_set: us-spin-opendays
+    window: w-opendays-staff
+  sl-opendays-staff-spin62:
+    description: d-sl-opendays-spin62 
+    policy: p-opendays-staff 
+    resource: r-spin62
+    ui_set: us-spin-opendays
+    window: w-opendays-staff
+  sl-opendays-staff-spin63:
+    description: d-sl-opendays-spin63 
+    policy: p-opendays-staff 
+    resource: r-spin63
+    ui_set: us-spin-opendays
+    window: w-opendays-staff
+  sl-opendays-staff-spin64:
+    description: d-sl-opendays-spin64 
+    policy: p-opendays-staff 
+    resource: r-spin64
+    ui_set: us-spin-opendays
+    window: w-opendays-staff
+  sl-opendays-staff-spin65:
+    description: d-sl-opendays-spin65 
+    policy: p-opendays-staff 
+    resource: r-spin65
+    ui_set: us-spin-opendays
+    window: w-opendays-staff
+  sl-opendays-staff-spin66:
+    description: d-sl-opendays-spin66 
+    policy: p-opendays-staff 
+    resource: r-spin66
+    ui_set: us-spin-opendays
+    window: w-opendays-staff
+  sl-opendays-staff-spin67:
+    description: d-sl-opendays-spin67 
+    policy: p-opendays-staff 
+    resource: r-spin67
+    ui_set: us-spin-opendays
+    window: w-opendays-staff
+  sl-opendays-staff-spin68:
+    description: d-sl-opendays-spin68 
+    policy: p-opendays-staff 
+    resource: r-spin68
+    ui_set: us-spin-opendays
+    window: w-opendays-staff
+  sl-opendays-staff-spin69:
+    description: d-sl-opendays-spin69 
+    policy: p-opendays-staff 
+    resource: r-spin69
+    ui_set: us-spin-opendays
+    window: w-opendays-staff
+  sl-opendays-staff-spin70:
+    description: d-sl-opendays-spin70 
+    policy: p-opendays-staff 
+    resource: r-spin70
+    ui_set: us-spin-opendays
+    window: w-opendays-staff    
+  sl-opendays-staff-spin71:
+    description: d-sl-opendays-spin71 
+    policy: p-opendays-staff 
+    resource: r-spin71
+    ui_set: us-spin-opendays
+    window: w-opendays-staff
+  sl-opendays-staff-spin72:
+    description: d-sl-opendays-spin72 
+    policy: p-opendays-staff 
+    resource: r-spin72
+    ui_set: us-spin-opendays
+    window: w-opendays-staff
+  sl-opendays-staff-spin73:
+    description: d-sl-opendays-spin73 
+    policy: p-opendays-staff 
+    resource: r-spin73
+    ui_set: us-spin-opendays
+    window: w-opendays-staff
+  sl-opendays-staff-spin74:
+    description: d-sl-opendays-spin74 
+    policy: p-opendays-staff 
+    resource: r-spin74
+    ui_set: us-spin-opendays
+    window: w-opendays-staff
+  sl-opendays-staff-spin75:
+    description: d-sl-opendays-spin75 
+    policy: p-opendays-staff 
+    resource: r-spin75
+    ui_set: us-spin-opendays
+    window: w-opendays-staff
+  sl-opendays-staff-spin76:
+    description: d-sl-opendays-spin76 
+    policy: p-opendays-staff 
+    resource: r-spin76
+    ui_set: us-spin-opendays
+    window: w-opendays-staff
+  sl-opendays-staff-spin77:
+    description: d-sl-opendays-spin77 
+    policy: p-opendays-staff 
+    resource: r-spin77
+    ui_set: us-spin-opendays
+    window: w-opendays-staff
+  
+    
+  sl-pvna-oneport-opendays-students-pvna00:
     description: d-sl-pvna-oneport-students-pvna00
-    policy: p-opendays-pvna1 
+    policy: p-opendays-students 
     resource: r-pvna00
     ui_set: us-pvna-oneport-students
-    window: w-opendays-pvna1
-  sl-pvna-oneport-opendays-pvna01:
+    window: w-opendays-students
+  sl-pvna-oneport-opendays-students-pvna01:
     description: d-sl-pvna-oneport-students-pvna01
-    policy: p-opendays-pvna1
+    policy: p-opendays-students
     resource: r-pvna01
     ui_set: us-pvna-oneport-students
-    window: w-opendays-pvna1
-  sl-pvna-oneport-opendays-pvna02:
+    window: w-opendays-students
+  sl-pvna-oneport-opendays-students-pvna02:
     description: d-sl-pvna-oneport-students-pvna02
-    policy: p-opendays-pvna1
+    policy: p-opendays-students
     resource: r-pvna02
     ui_set: us-pvna-oneport-students
-    window: w-opendays-pvna1
-  sl-pvna-oneport-opendays-pvna03:
+    window: w-opendays-students
+  sl-pvna-oneport-opendays-students-pvna03:
     description: d-sl-pvna-oneport-students-pvna03
-    policy: p-opendays-pvna1
+    policy: p-opendays-students
     resource: r-pvna03
     ui_set: us-pvna-oneport-students
-    window: w-opendays-pvna1
-  sl-pvna-oneport-opendays-pvna04:
+    window: w-opendays-students
+  sl-pvna-oneport-opendays-students-pvna04:
     description: d-sl-pvna-oneport-students-pvna04
-    policy: p-opendays-pvna1
+    policy: p-opendays-students
     resource: r-pvna04
     ui_set: us-pvna-oneport-students
-    window: w-opendays-pvna1
+    window: w-opendays-students
+
+  sl-pvna-oneport-opendays-staff-pvna00:
+    description: d-sl-pvna-oneport-staff-pvna00
+    policy: p-opendays-staff 
+    resource: r-pvna00
+    ui_set: us-pvna-oneport-staff
+    window: w-opendays-staff
+  sl-pvna-oneport-opendays-staff-pvna01:
+    description: d-sl-pvna-oneport-staff-pvna01
+    policy: p-opendays-staff
+    resource: r-pvna01
+    ui_set: us-pvna-oneport-staff
+    window: w-opendays-staff
+  sl-pvna-oneport-opendays-staff-pvna02:
+    description: d-sl-pvna-oneport-staff-pvna02
+    policy: p-opendays-staff
+    resource: r-pvna02
+    ui_set: us-pvna-oneport-staff
+    window: w-opendays-staff
+  sl-pvna-oneport-opendays-staff-pvna03:
+    description: d-sl-pvna-oneport-staff-pvna03
+    policy: p-opendays-staff
+    resource: r-pvna03
+    ui_set: us-pvna-oneport-staff
+    window: w-opendays-staff
+  sl-pvna-oneport-opendays-staff-pvna04:
+    description: d-sl-pvna-oneport-staff-pvna04
+    policy: p-opendays-staff
+    resource: r-pvna04
+    ui_set: us-pvna-oneport-staff
+    window: w-opendays-staff    
 
   sl-pvna-oneport-students-pvna00:
     description: d-sl-pvna-oneport-students-pvna00
@@ -7022,6 +7478,104 @@ slots:
     resource: r-trus07
     ui_set: us-trus-sm2-staff
     window: w-trus-sm2-staff 
+
+  sl-opendays-students-trus00:
+    description: d-sl-sm2-students-trus00
+    policy: p-opendays-students
+    resource: r-trus00
+    ui_set: us-trus-sm2-students
+    window: w-opendays-students
+  sl-opendays-students-trus01:
+    description: d-sl-sm2-students-trus01
+    policy: p-opendays-students
+    resource: r-trus01
+    ui_set: us-trus-sm2-students
+    window: w-opendays-students
+  sl-opendays-students-trus02:
+    description: d-sl-sm2-students-trus02
+    policy: p-opendays-students
+    resource: r-trus02
+    ui_set: us-trus-sm2-students
+    window: w-opendays-students
+  sl-opendays-students-trus03:
+    description: d-sl-sm2-students-trus03
+    policy: p-opendays-students
+    resource: r-trus03
+    ui_set: us-trus-sm2-students
+    window: w-opendays-students
+  sl-opendays-students-trus04:
+    description: d-sl-sm2-students-trus04
+    policy: p-opendays-students
+    resource: r-trus04
+    ui_set: us-trus-sm2-students
+    window: w-opendays-students
+  sl-opendays-students-trus05:
+    description: d-sl-sm2-students-trus05
+    policy: p-opendays-students
+    resource: r-trus05
+    ui_set: us-trus-sm2-students
+    window: w-opendays-students
+  sl-opendays-students-trus06:
+    description: d-sl-sm2-students-trus06
+    policy: p-opendays-students
+    resource: r-trus06
+    ui_set: us-trus-sm2-students
+    window: w-opendays-students
+  sl-opendays-students-trus07:
+    description: d-sl-sm2-students-trus07
+    policy: p-opendays-students
+    resource: r-trus07
+    ui_set: us-trus-sm2-students
+    window: w-opendays-students
+
+  sl-opendays-staff-trus00:
+    description: d-sl-sm2-staff-trus00
+    policy: p-opendays-staff
+    resource: r-trus00
+    ui_set: us-trus-sm2-staff
+    window: w-opendays-staff
+  sl-opendays-staff-trus01:
+    description: d-sl-sm2-staff-trus01
+    policy: p-opendays-staff
+    resource: r-trus01
+    ui_set: us-trus-sm2-staff
+    window: w-opendays-staff
+  sl-opendays-staff-trus02:
+    description: d-sl-sm2-staff-trus02
+    policy: p-opendays-staff
+    resource: r-trus02
+    ui_set: us-trus-sm2-staff
+    window: w-opendays-staff
+  sl-opendays-staff-trus03:
+    description: d-sl-sm2-staff-trus03
+    policy: p-opendays-staff
+    resource: r-trus03
+    ui_set: us-trus-sm2-staff
+    window: w-opendays-staff
+  sl-opendays-staff-trus04:
+    description: d-sl-sm2-staff-trus04
+    policy: p-opendays-staff
+    resource: r-trus04
+    ui_set: us-trus-sm2-staff
+    window: w-opendays-staff
+  sl-opendays-staff-trus05:
+    description: d-sl-sm2-staff-trus05
+    policy: p-opendays-staff
+    resource: r-trus05
+    ui_set: us-trus-sm2-staff
+    window: w-opendays-staff
+  sl-opendays-staff-trus06:
+    description: d-sl-sm2-staff-trus06
+    policy: p-opendays-staff
+    resource: r-trus06
+    ui_set: us-trus-sm2-staff
+    window: w-opendays-staff
+  sl-opendays-staff-trus07:
+    description: d-sl-sm2-staff-trus07
+    policy: p-opendays-staff
+    resource: r-trus07
+    ui_set: us-trus-sm2-staff
+    window: w-opendays-staff
     
 streams:
   log:
@@ -7327,16 +7881,17 @@ windows:
     allowed:
       - start: 2023-10-11T00:00:00Z
         end: 2025-01-30T00:00:00Z        
-  w-pend-opendays:
+  w-opendays-students:
     allowed:
-      - start: 2023-05-08T00:00:00Z
-        end: 2023-05-14T09:00:00Z
+      - start: 2024-02-06T00:00:00Z
+        end: 2024-05-30T09:00:00Z
     denied:
-  w-spin-opendays:
+  w-opendays-staff:
     allowed:
-      - start: 2023-05-08T00:00:00Z
-        end: 2023-05-14T09:00:00Z
+      - start: 2024-02-06T00:00:00Z
+        end: 2024-05-30T09:00:00Z
     denied:
+        
   w-trus-everyone:
     allowed:
       - start: 2023-02-04T00:00:00Z
