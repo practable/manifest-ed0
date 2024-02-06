@@ -3513,10 +3513,9 @@ policies:
       - sl-opendays-staff-spin74
       - sl-opendays-staff-spin77
       - sl-pvna-oneport-opendays-staff-pvna00
-      - sl-pvna-oneport-opendays-staff-pvna01
+      - sl-pvna-oneport-opendays-staff-pvna04
       - sl-opendays-students-trus00
-      - sl-opendays-students-trus01
-      - sl-opendays-students-trus02
+      - sl-opendays-students-trus04
       
   p-opendays-students:
     description: d-p-opendays-students
@@ -3527,21 +3526,74 @@ policies:
     display_guides:
       - 15mFor2h
     slots:
+      - sl-opendays-students-pend00
+      - sl-opendays-students-pend02
+      - sl-opendays-students-pend03
+      - sl-opendays-students-pend04
+      - sl-opendays-students-pend05
+      - sl-opendays-students-pend06
+      - sl-opendays-students-pend08
+      - sl-opendays-students-pend09
+      - sl-opendays-students-pend10
+      - sl-opendays-students-pend11
+      - sl-opendays-students-pend12
+      - sl-opendays-students-pend13
+      - sl-opendays-students-pend14
+      - sl-opendays-students-pend15
+      - sl-opendays-students-pend16
+      - sl-opendays-students-pend17
+      - sl-opendays-students-pend21
+      - sl-opendays-students-pend22
+      - sl-opendays-students-pend23
       - sl-opendays-students-pend26
       - sl-opendays-students-pend27
       - sl-opendays-students-pend28
       - sl-opendays-students-pend29
       - sl-opendays-students-pend31
+      - sl-opendays-students-spin30
+      - sl-opendays-students-spin31      
+      - sl-opendays-students-spin32
+      - sl-opendays-students-spin33
+      - sl-opendays-students-spin34
+      - sl-opendays-students-spin35
+      - sl-opendays-students-spin36
+      - sl-opendays-students-spin37       
+      - sl-opendays-students-spin38
+      - sl-opendays-students-spin39
+      - sl-opendays-students-spin40
+      - sl-opendays-students-spin41
+      - sl-opendays-students-spin46
+      - sl-opendays-students-spin47       
+      - sl-opendays-students-spin48
+      - sl-opendays-students-spin49
+      - sl-opendays-students-spin50    
+      - sl-opendays-students-spin51
+      - sl-opendays-students-spin52
+      - sl-opendays-students-spin53
+      - sl-opendays-students-spin54
+      - sl-opendays-students-spin55
+      - sl-opendays-students-spin56
       - sl-opendays-students-spin58
-      - sl-opendays-students-spin67
+      - sl-opendays-students-spin59
+      - sl-opendays-students-spin60
+      - sl-opendays-students-spin61
+      - sl-opendays-students-spin62
+      - sl-opendays-students-spin63
+      - sl-opendays-students-spin65
+      - sl-opendays-students-spin66
+      - sl-opendays-students-spin67       
+      - sl-opendays-students-spin68
+      - sl-opendays-students-spin69      
       - sl-opendays-students-spin72
       - sl-opendays-students-spin73
       - sl-opendays-students-spin76
+      - sl-pvna-oneport-opendays-students-pvna01 
       - sl-pvna-oneport-opendays-students-pvna02
       - sl-pvna-oneport-opendays-students-pvna03
       - sl-pvna-oneport-opendays-students-pvna04
-      - sl-opendays-students-trus03
-      - sl-opendays-students-trus04
+      - sl-opendays-students-trus01
+      - sl-opendays-students-trus02
+      - sl-opendays-students-trus03     
       - sl-opendays-students-trus05
       - sl-opendays-students-trus06
       - sl-opendays-students-trus07
