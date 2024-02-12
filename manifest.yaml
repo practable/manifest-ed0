@@ -3514,8 +3514,8 @@ policies:
       - sl-opendays-staff-spin77
       - sl-pvna-oneport-opendays-staff-pvna00
       - sl-pvna-oneport-opendays-staff-pvna04
-      - sl-opendays-students-trus00
-      - sl-opendays-students-trus04
+      - sl-opendays-staff-trus00
+      - sl-opendays-staff-trus04
       
   p-opendays-students:
     description: d-p-opendays-students
