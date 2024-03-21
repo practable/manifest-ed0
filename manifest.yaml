@@ -7885,15 +7885,23 @@ windows:
     allowed:
       - start: 2024-01-24T00:00:00Z
       - end:   2025-04-01T00:00:00Z
+    denied:
+      - start: 2024-03-30T08:00:00Z
+        end:   2024-03-30T12:00:00Z
   w-fridge-staff:
     allowed:
       - start: 2024-01-24T00:00:00Z
-      - end:   2025-04-01T00:00:00Z      
+      - end:   2025-04-01T00:00:00Z
+    denied:
+      - start: 2024-03-30T08:00:00Z
+        end:   2024-03-30T12:00:00Z 
   w-pend-everyone:
     allowed:
       - start: 2023-02-04T00:00:00Z
         end: 2023-03-04T00:00:00Z
     denied:
+      - start: 2024-03-30T08:00:00Z
+        end:   2024-03-30T12:00:00Z 
       - start: 2023-05-08T15:00:00Z
         end:   2023-05-08T16:00:00Z
       - start: 2023-05-09T15:00:00Z
@@ -7909,6 +7917,8 @@ windows:
       - start: 2023-02-04T00:00:00Z
         end: 2023-03-04T00:00:00Z
     denied:
+      - start: 2024-03-30T08:00:00Z
+        end:   2024-03-30T12:00:00Z 
       - start: 2023-05-08T15:00:00Z
         end:   2023-05-08T16:00:00Z
       - start: 2023-05-09T15:00:00Z
@@ -7923,31 +7933,51 @@ windows:
     allowed:
       - start: 2023-10-11T00:00:00Z
         end: 2024-07-30T00:00:00Z
+    denied:
+      - start: 2024-03-30T08:00:00Z
+        end:   2024-03-30T12:00:00Z 
   w-pvna-oneport-staff:
     allowed:
       - start: 2023-10-11T00:00:00Z
         end: 2025-01-30T00:00:00Z
+    denied:
+      - start: 2024-03-30T08:00:00Z
+        end:   2024-03-30T12:00:00Z         
   w-pvna-twoport-students:
     allowed:
       - start: 2023-10-11T00:00:00Z
         end: 2024-07-30T00:00:00Z
+    denied:
+      - start: 2024-03-30T08:00:00Z
+        end:   2024-03-30T12:00:00Z         
   w-pvna-twoport-staff:
     allowed:
       - start: 2023-10-11T00:00:00Z
-        end: 2025-01-30T00:00:00Z        
+        end: 2025-01-30T00:00:00Z
+    denied:
+      - start: 2024-03-30T08:00:00Z
+        end:   2024-03-30T12:00:00Z         
   w-trus-sm2-students:
     allowed:
       - start: 2023-10-11T00:00:00Z
         end: 2024-01-30T00:00:00Z
+    denied:
+      - start: 2024-03-30T08:00:00Z
+        end:   2024-03-30T12:00:00Z         
   w-trus-sm2-staff:
     allowed:
       - start: 2023-10-11T00:00:00Z
-        end: 2025-01-30T00:00:00Z        
+        end: 2025-01-30T00:00:00Z
+    denied:
+      - start: 2024-03-30T08:00:00Z
+        end:   2024-03-30T12:00:00Z         
   w-opendays-students:
     allowed:
       - start: 2024-02-06T00:00:00Z
         end: 2024-05-30T09:00:00Z
     denied:
+      - start: 2024-03-30T08:00:00Z
+        end:   2024-03-30T12:00:00Z       
       - start: 2024-02-23T10:00:00Z
         end:   2024-02-23T12:00:00Z     
       - start: 2024-02-26T14:00:00Z
@@ -7959,17 +7989,22 @@ windows:
       - start: 2024-02-06T00:00:00Z
         end: 2024-05-30T09:00:00Z
     denied:
-        
+      - start: 2024-03-30T08:00:00Z
+        end:   2024-03-30T12:00:00Z         
   w-trus-everyone:
     allowed:
       - start: 2023-02-04T00:00:00Z
         end: 2024-02-04T00:00:00Z
-    denied: []       
+    denied:
+      - start: 2024-03-30T08:00:00Z
+        end:   2024-03-30T12:00:00Z       
   w-pend-engdes1:
     allowed:
       - start: 2024-02-01T00:00:00Z
         end:   2024-04-19T23:59:59Z    
     denied:
+      - start: 2024-03-30T08:00:00Z
+        end:   2024-03-30T12:00:00Z       
       - start: 2024-02-23T10:00:00Z
         end:   2024-02-23T12:00:00Z     
       - start: 2024-02-26T14:00:00Z
@@ -7987,6 +8022,8 @@ windows:
       - start: 2024-02-01T00:00:00Z
         end:   2024-04-19T23:59:59Z
     denied:
+      - start: 2024-03-30T08:00:00Z
+        end:   2024-03-30T12:00:00Z       
       - start: 2024-02-23T10:00:00Z
         end:   2024-02-23T12:00:00Z     
       - start: 2024-02-26T14:00:00Z
@@ -8013,7 +8050,9 @@ windows:
         end:   2024-03-11T18:00:00Z
       - start: 2024-03-12T14:00:00Z
         end:   2024-03-12T18:00:00Z        
-    denied: []
+    denied:
+      - start: 2024-03-30T08:00:00Z
+        end:   2024-03-30T12:00:00Z       
   w-spin-engdes1-lab:
     allowed:
       - start: 2024-02-23T10:00:00Z
@@ -8028,8 +8067,13 @@ windows:
         end:   2024-03-11T18:00:00Z
       - start: 2024-03-12T14:00:00Z
         end:   2024-03-12T18:00:00Z 
-    denied: []
+    denied:
+      - start: 2024-03-30T08:00:00Z
+        end:   2024-03-30T12:00:00Z       
   w-opendays-pvna1:
     allowed:
       - start: 2024-02-04T10:00:00Z 
       - end: 2024-03-06T23:59:00Z
+    denied:
+      - start: 2024-03-30T08:00:00Z
+        end:   2024-03-30T12:00:00Z
