@@ -7545,49 +7545,49 @@ slots:
     description: d-sl-sm2-students-trus00
     policy: p-opendays-students
     resource: r-trus00
-    ui_set: us-trus-sm2-students
+    ui_set: us-trus-open-day
     window: w-opendays-students
   sl-opendays-students-trus01:
     description: d-sl-sm2-students-trus01
     policy: p-opendays-students
     resource: r-trus01
-    ui_set: us-trus-sm2-students
+    ui_set: us-trus-open-day
     window: w-opendays-students
   sl-opendays-students-trus02:
     description: d-sl-sm2-students-trus02
     policy: p-opendays-students
     resource: r-trus02
-    ui_set: us-trus-sm2-students
+    ui_set: us-trus-open-day
     window: w-opendays-students
   sl-opendays-students-trus03:
     description: d-sl-sm2-students-trus03
     policy: p-opendays-students
     resource: r-trus03
-    ui_set: us-trus-sm2-students
+    ui_set: us-trus-open-day
     window: w-opendays-students
   sl-opendays-students-trus04:
     description: d-sl-sm2-students-trus04
     policy: p-opendays-students
     resource: r-trus04
-    ui_set: us-trus-sm2-students
+    ui_set: us-trus-open-day
     window: w-opendays-students
   sl-opendays-students-trus05:
     description: d-sl-sm2-students-trus05
     policy: p-opendays-students
     resource: r-trus05
-    ui_set: us-trus-sm2-students
+    ui_set: us-trus-open-day
     window: w-opendays-students
   sl-opendays-students-trus06:
     description: d-sl-sm2-students-trus06
     policy: p-opendays-students
     resource: r-trus06
-    ui_set: us-trus-sm2-students
+    ui_set: us-trus-open-day
     window: w-opendays-students
   sl-opendays-students-trus07:
     description: d-sl-sm2-students-trus07
     policy: p-opendays-students
     resource: r-trus07
-    ui_set: us-trus-sm2-students
+    ui_set: us-trus-open-day
     window: w-opendays-students
 
   sl-opendays-staff-trus00:
@@ -7857,6 +7857,9 @@ ui_sets:
   us-trus-sm2-students:
     uis:
       - ui-trus-no-force
+  us-trus-open-day:
+    uis:
+      - ui-trus-open-day
   us-trus-sm2-staff:
     uis:
       - ui-trus-default
