@@ -7912,6 +7912,8 @@ windows:
         end:   2023-05-11T16:00:00Z
       - start: 2023-05-12T15:00:00Z
         end:   2023-05-12T16:00:00Z
+      - start: 2024-04-11T12:00:00Z
+        end:   2024-04-12T12:00:00Z
   w-spin-everyone:
     allowed:
       - start: 2023-02-04T00:00:00Z
@@ -7984,13 +7986,17 @@ windows:
         end:   2024-02-26T18:00:00Z
       - start: 2024-02-27T14:00:00Z
         end:   2024-02-27T18:00:00Z
+      - start: 2024-04-11T12:00:00Z
+        end:   2024-04-12T12:00:00Z
   w-opendays-staff:
     allowed:
       - start: 2024-02-06T00:00:00Z
         end: 2024-05-30T09:00:00Z
     denied:
       - start: 2024-03-30T08:00:00Z
-        end:   2024-03-30T12:00:00Z         
+        end:   2024-03-30T12:00:00Z
+      - start: 2024-04-11T12:00:00Z
+        end:   2024-04-12T12:00:00Z        
   w-trus-everyone:
     allowed:
       - start: 2023-02-04T00:00:00Z
@@ -8016,7 +8022,9 @@ windows:
       - start: 2024-03-11T14:00:00Z
         end:   2024-03-11T18:00:00Z
       - start: 2024-03-12T14:00:00Z
-        end:   2024-03-12T18:00:00Z 
+        end:   2024-03-12T18:00:00Z
+      - start: 2024-04-11T12:00:00Z
+        end:   2024-04-12T12:00:00Z
   w-spin-engdes1:
     allowed:
       - start: 2024-02-01T00:00:00Z
@@ -8052,7 +8060,9 @@ windows:
         end:   2024-03-12T18:00:00Z        
     denied:
       - start: 2024-03-30T08:00:00Z
-        end:   2024-03-30T12:00:00Z       
+        end:   2024-03-30T12:00:00Z
+      - start: 2024-04-11T12:00:00Z
+        end:   2024-04-12T12:00:00Z
   w-spin-engdes1-lab:
     allowed:
       - start: 2024-02-23T10:00:00Z
