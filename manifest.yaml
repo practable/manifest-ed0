@@ -7989,8 +7989,6 @@ windows:
         end:   2024-02-26T18:00:00Z
       - start: 2024-02-27T14:00:00Z
         end:   2024-02-27T18:00:00Z
-      - start: 2024-04-11T12:00:00Z
-        end:   2024-04-12T12:00:00Z
   w-opendays-staff:
     allowed:
       - start: 2024-02-06T00:00:00Z
@@ -7998,8 +7996,6 @@ windows:
     denied:
       - start: 2024-03-30T08:00:00Z
         end:   2024-03-30T12:00:00Z
-      - start: 2024-04-11T12:00:00Z
-        end:   2024-04-12T12:00:00Z        
   w-trus-everyone:
     allowed:
       - start: 2023-02-04T00:00:00Z
