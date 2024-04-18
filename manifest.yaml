@@ -30,6 +30,10 @@ descriptions:
     name: Engineering Design 1 Laboratories
     type: group
     short: Access to experiments during scheduled Engineering Design 1 laboratory sessions
+  d-g-peter:
+    name: Peter Bakaráč (ESP32 development)
+    type: group
+    short: Access to Peter's experiments
   d-g-pvna-oneport-students:
     name: PVNA One-port students
     type: group
@@ -124,6 +128,10 @@ descriptions:
     name: Open days policy for students
     type: policy
     short: Open days policy for students
+  d-p-peter:
+    name: Policy for Peter's experiments
+    type: policy
+    short: Policy for Peter's experiments
   d-p-pvna-oneport-students:
     name: PVNA One-port (Students)
     type: policy
@@ -154,6 +162,16 @@ descriptions:
     name: Pendulum (Std)
     type: resource
     short: An electromagnetically-driven pendulum (standard configuration)
+    
+  # Peter resources
+  d-r-peter00:
+    name: Peter 00
+    type: resource
+    short: Data-only raspberry pi connection for Peter
+  d-r-peter01:
+    name: Peter 01
+    type: resource
+    short: Data-only ESP32 connection for Peter
     
   # Pocket Vector Network Analyser resources
   d-r-pvna00:
@@ -2375,7 +2393,22 @@ descriptions:
     short: An electromagnetically-driven simple pendulum
     image: https://app.practable.io/ed0/static/images/booking/slots/penduino-real-1.0/image.png
     thumb: https://app.practable.io/ed0/static/images/booking/slots/penduino-real-1.0/thumb.png
-
+  
+  # Peter's experiments slots
+  d-sl-peter00:
+    name: Peter 00 (Raspberry Pi)
+    type: slot
+    short: A data-only experiment to check system connection
+    image: https://app.practable.io/ed0/static/images/booking/slots/peter-rpi-1.0/image.png
+    thumb: https://app.practable.io/ed0/static/images/booking/slots/peter-rpi-1.0/thumb.png
+    
+  d-sl-peter01:
+    name: Peter 01 (ESP32)
+    type: slot
+    short: A data-only experiment for ESP32 development
+    image: https://app.practable.io/ed0/static/images/booking/slots/peter-esp32-1.0/image.png
+    thumb: https://app.practable.io/ed0/static/images/booking/slots/peter-esp32-1.0/thumb.png
+    
   # Pocket Network Vector Analyser slots  
   d-sl-pvna-oneport-students-pvna00:
     name: PVNA 00 (Students)
@@ -2914,6 +2947,18 @@ descriptions:
     thumb: https://app.practable.io/ed0/static/images/booking/slots/truss-real-2.0/thumb.png    
 
   # User Interfaces
+  d-ui-debug:
+    name: Debug (Default) 
+    type: ui
+    short: UI for debugging
+    image: https://app.practable.io/ed0/static/images/booking/ui/debug-default-1.0/image.png
+    thumb: https://app.practable.io/ed0/static/images/booking/ui/debug-default-1.0/thumb.png
+  d-ui-debug-data:
+    name: Debug (Data-only) 
+    type: ui
+    short: UI for debugging (data-only)
+    image: https://app.practable.io/ed0/static/images/booking/ui/debug-data-1.0/image.png
+    thumb: https://app.practable.io/ed0/static/images/booking/ui/debug-data-1.0/thumb.png
   d-ui-fridge-default:
     name: Gunt Fridge (Default) 
     type: ui
@@ -3119,7 +3164,18 @@ groups:
   g-fua7d944:
     description: d-g-fridge-student
     policies:
-      - p-fridge-student       
+      - p-fridge-student
+      
+  g-open-staff-E83eD0:
+    description: d-g-opendays
+    policies:
+      - p-opendays-staff
+      
+  g-open-b70737:
+    description: d-g-opendays
+    policies:
+      - p-opendays-students
+             
   g-p1u868c:
     description: d-g-pvna-oneport-students
     policies:
@@ -3135,7 +3191,13 @@ groups:
   g-p2cVP68:
     description: d-g-pvna-twoport-staff
     policies:
-      - p-pvna-twoport-staff      
+      - p-pvna-twoport-staff  
+        
+  g-peter-ad385fe2:
+    description: d-g-peter
+    policies: 
+      - p-peter
+    
   g-sm2-students-428bbe:
     description: d-g-sm2-students
     policies:
@@ -3145,15 +3207,7 @@ groups:
     policies:
       - p-trus-sm2-staff
 
-  g-open-staff-E83eD0:
-    description: d-g-opendays
-    policies:
-      - p-opendays-staff
-      
-  g-open-b70737:
-    description: d-g-opendays
-    policies:
-      - p-opendays-students
+
       
 policies:
   p-quarantine:
@@ -3217,8 +3271,19 @@ policies:
       - 1hFor8h
       - 4hFor48h
     slots:
-      - sl-frig00-student     
-       
+      - sl-frig00-student   
+        
+  p-peter:
+    description: d-p-peter
+    enforce_allow_start_in_past: true
+    allow_start_in_past_within: 5m
+    display_guides:
+      - 1hFor8h
+      - 4hFor48h
+    slots:
+      - sl-peter00
+      - sl-peter01
+      
   p-trus-sm2-students:
     description: d-p-trus-sm2-students
     enforce_allow_start_in_past: true
@@ -3949,6 +4014,17 @@ resources:
       - st-video
       
     topic_stub: pend37
+    
+  r-peter00:
+    description: d-r-peter00
+    streams:
+      - st-data
+    topic_stub: peter00    
+  r-peter01:
+    description: d-r-peter01
+    streams:
+      - st-data
+    topic_stub: peter01
 
   r-pvna00:
     config_url: https://app.practable.io/ed0/static/config/experiments/pvna/pvna00-0.0.json
@@ -7243,7 +7319,20 @@ slots:
     resource: r-spin77
     ui_set: us-spin-opendays
     window: w-opendays-staff
-  
+
+  sl-peter00:
+    description: d-sl-peter00
+    policy: p-peter 
+    resource: r-peter00
+    ui_set: us-debug
+    window: w-peter
+    
+  sl-peter01:
+    description: d-sl-peter01
+    policy: p-peter 
+    resource: r-peter01
+    ui_set: us-debug
+    window: w-peter
     
   sl-pvna-oneport-opendays-students-pvna00:
     description: d-sl-pvna-oneport-students-pvna00
@@ -7671,6 +7760,18 @@ streams:
       - read
     topic: auto    
 uis:
+  ui-debug:
+    description: d-ui-debug
+    url: https://app.practable.io/ed0/static/ui/debug-default-1.0/?streams={{streams}}&exp={{exp}}
+    streams_required:
+      - st-data
+      - st-video
+  ui-debug-data:
+    description: d-ui-debug-data
+    url: https://app.practable.io/ed0/static/ui/debug-data-1.0/?streams={{streams}}&exp={{exp}}
+    streams_required:
+      - st-data
+
   ui-fridge-gunt-default:
     description: d-ui-fridge-default
     url: https://app.practable.io/ed0/static/ui/fridge-gunt-default-1.0/?streams={{streams}}&exp={{exp}}&course=fridge
@@ -7814,6 +7915,13 @@ uis:
       - st-video
       - log     
 ui_sets:
+  us-debug:
+    uis:
+      - ui-debug
+  us-debug-data:
+    uis:
+      - ui-debug-data
+    
   us-fridge-student:
     uis:
       - ui-fridge-gunt-default
@@ -7934,6 +8042,10 @@ windows:
         end:   2023-05-11T16:00:00Z
       - start: 2023-05-12T15:00:00Z
         end:   2023-05-12T16:00:00Z
+  w-peter:
+    allowed:
+      - start: 2024-04-18T00:00:00Z
+        end:   2029-04-18T23:59:59Z 
   w-pvna-oneport-students:
     allowed:
       - start: 2023-10-11T00:00:00Z
