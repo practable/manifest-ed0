@@ -7324,14 +7324,14 @@ slots:
     description: d-sl-peter00
     policy: p-peter 
     resource: r-peter00
-    ui_set: us-debug
+    ui_set: us-debug-data
     window: w-peter
     
   sl-peter01:
     description: d-sl-peter01
     policy: p-peter 
     resource: r-peter01
-    ui_set: us-debug
+    ui_set: us-debug-data
     window: w-peter
     
   sl-pvna-oneport-opendays-students-pvna00:
