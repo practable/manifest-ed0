@@ -2,6 +2,10 @@
 descriptions:
 
   # Group descriptions
+  d-g-dev-david:
+    name: Development (David)
+    type: group
+    short: A selection of experiments for UI development
   d-g-everyone:
     name: Everyone
     type: group
@@ -60,6 +64,10 @@ descriptions:
     short: Access to experiments that have been quarantined for troubleshooting, or regular maintenance
 
   # Policy descriptions  
+  d-p-dev-david:
+    name: Policy for development (David)
+    type: policy
+    short: Policy for development (David)
   d-p-quarantine:
     name: Quarantined experiments
     type: group
@@ -580,7 +588,22 @@ descriptions:
     thumb: https://app.practable.io/ed0/static/images/booking/slots/truss-real-2.0/thumb.png
     
   # Slot descriptions
-
+  # Development (David) experiments
+  d-sl-dev-david-pend34:
+    name: Pendulum 34 (David Development)
+    type: slot
+    short: An electromagnetically-driven simple pendulum
+    image: https://app.practable.io/ed0/static/images/booking/slots/penduino-real-1.0/image.png
+    thumb: https://app.practable.io/ed0/static/images/booking/slots/penduino-real-1.0/thumb.png 
+    
+  d-sl-dev-david-spin77:
+    name: Spinner 77 (David Development)
+    type: slot
+    short: A PID-controlled brushed motor with 115g disk of size ⌀:60mm t:15mm
+    image: https://app.practable.io/ed0/static/images/booking/slots/spinner-real-2.0/image.png
+    thumb: https://app.practable.io/ed0/static/images/booking/slots/spinner-real-2.0/thumb.png
+    
+  # Fridge 
   d-sl-fridge-student:
     name: Gunt Fridge (Students)
     type: slot
@@ -2989,12 +3012,24 @@ descriptions:
     short: Pendulum UI for student use
     image: https://app.practable.io/ed0/static/images/booking/ui/penduino-default-1.0/image.png
     thumb: https://app.practable.io/ed0/static/images/booking/ui/penduino-default-1.0/thumb.png 
+  d-ui-pend-student-dev:
+    name: Pendulum (Student, Develop)
+    type: ui
+    short: Pendulum Development UI for student use
+    image: https://app.practable.io/ed0/static/images/booking/ui/penduino-default-1.0/image.png
+    thumb: https://app.practable.io/ed0/static/images/booking/ui/penduino-default-1.0/thumb.png 
   d-ui-spin-student:
     name: Spinner (Student)
     type: ui
     short: Spinner UI for student use
     image: https://app.practable.io/ed0/static/images/booking/ui/spinner-default-2.0/image.png
     thumb: https://app.practable.io/ed0/static/images/booking/ui/spinner-default-2.0/thumb.png  
+  d-ui-spin-student-dev:
+    name: Spinner (Student, Develop)
+    type: ui
+    short: Spinner Development UI for student use
+    image: https://app.practable.io/ed0/static/images/booking/ui/spinner-default-2.0/image.png
+    thumb: https://app.practable.io/ed0/static/images/booking/ui/spinner-default-2.0/thumb.png 
   d-ui-pend-analytics-student:
     name: Analytics Pendulum (Student)
     type: ui
@@ -3139,6 +3174,10 @@ display_guides:
     label: 4 hours
     
 groups:
+  g-dev-david-325caf5a:
+    description: d-g-dev-david
+    policies:
+      - p-dev-david
   g-quarantine:
     description: d-g-quarantine
     policies:
@@ -3210,6 +3249,18 @@ groups:
 
       
 policies:
+  p-dev-david:
+    description: d-p-dev-david
+    enforce_allow_start_in_past: true
+    allow_start_in_past_within: 5m
+    display_guides:
+      - 15mFor1h
+      - 1hFor8h
+      - 4hFor48h
+    slots:
+      - sl-dev-david-pend34
+      - sl-dev-david-spin77
+
   p-quarantine:
     description: d-p-quarantine
     enforce_allow_start_in_past: true
@@ -4490,6 +4541,19 @@ resources:
     topic_stub: trus07    
     
 slots:
+  sl-dev-david-pend34:
+    description: d-sl-dev-david-pend34
+    policy: p-dev-david 
+    resource: r-pend34
+    ui_set: us-dev-david-pend
+    window: w-dev-david
+  sl-dev-david-spin77:
+    description: d-sl-dev-david-spin77
+    policy: p-dev-david 
+    resource: r-spin77
+    ui_set: us-dev-david-spin
+    window: w-dev-david
+  
   sl-frig00-staff:
     description: d-sl-fridge-staff 
     policy: p-fridge-staff 
@@ -7798,6 +7862,13 @@ uis:
     url: https://app.practable.io/ed-dev-ui/sijie/ui/fridge-analytics-1.0/?streams={{streams}}&exp={{exp}}&course=fridge
     streams_required:
       - log
+  ui-pend-dev-david:
+    description: d-ui-pend-student-dev
+    url: https://app.practable.io/ed-dev-ui/david/ui/penduino-default-2.0/?streams={{streams}}&exp={{exp}}&course=develop
+    streams_required:
+      - st-data
+      - st-video
+      - log
   ui-pend-engdes1:
     description: d-ui-pend-student
     url: https://app.practable.io/ed0/static/ui/penduino-1.0/?streams={{streams}}&exp={{exp}}&course=engdes1
@@ -7840,6 +7911,13 @@ uis:
     url: "https://app.practable.io/ed-dev-ui/david/ui/pvna-twoport-graphical-1.0/?streams={{streams}}&exp={{exp}}&config={{config}}&course=pvna-twoport-default"
     streamsrequired:
       - st-data
+      - log
+  ui-spin-dev-david:
+    description: d-ui-spin-student-dev
+    url: https://app.practable.io/ed-dev-ui/david/ui/spinner-default-3.0/?v=0&streams={{streams}}&exp={{exp}}&course=develop
+    streams_required:
+      - st-data
+      - st-video
       - log
   ui-spin-engdes1:
     description: d-ui-spin-student
@@ -7921,6 +7999,12 @@ ui_sets:
   us-debug-data:
     uis:
       - ui-debug-data
+  us-dev-david-pend:
+    uis:
+      - ui-pend-dev-david
+  us-dev-david-spin:
+    uis:
+      - ui-spin-dev-david
     
   us-fridge-student:
     uis:
@@ -7992,6 +8076,10 @@ ui_sets:
      
 
 windows:
+  w-dev-david:
+    allowed:
+      - start: 2024-04-18T00:00:00Z
+        end:   2029-04-18T23:59:59Z 
   w-fridge-student:
     allowed:
       - start: 2024-01-24T00:00:00Z
