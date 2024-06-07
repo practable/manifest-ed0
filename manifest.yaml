@@ -8179,7 +8179,7 @@ windows:
   w-opendays-students:
     allowed:
       - start: 2024-02-06T00:00:00Z
-        end: 2024-05-30T09:00:00Z
+        end: 2024-06-30T09:00:00Z
     denied:
       - start: 2024-03-30T08:00:00Z
         end:   2024-03-30T12:00:00Z       
@@ -8192,7 +8192,7 @@ windows:
   w-opendays-staff:
     allowed:
       - start: 2024-02-06T00:00:00Z
-        end: 2024-05-30T09:00:00Z
+        end: 2024-06-30T09:00:00Z
     denied:
       - start: 2024-03-30T08:00:00Z
         end:   2024-03-30T12:00:00Z
