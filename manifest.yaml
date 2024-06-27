@@ -4155,6 +4155,7 @@ resources:
     topic_stub: pvna10  
     
   r-spin30:
+    config_url: https://app.practable.io/ed0/static/config/experiments/spinner/spin30-2.0.json
     description: d-r-spin30
     streams:
       - st-data
@@ -4162,6 +4163,7 @@ resources:
       
     topic_stub: spin30
   r-spin31:
+    config_url: https://app.practable.io/ed0/static/config/experiments/spinner/spin31-2.0.json
     description: d-r-spin31
     streams:
       - st-data
@@ -4169,6 +4171,7 @@ resources:
       
     topic_stub: spin31
   r-spin32:
+    config_url: https://app.practable.io/ed0/static/config/experiments/spinner/spin32-2.0.json
     description: d-r-spin32
     streams:
       - st-data
@@ -4176,6 +4179,7 @@ resources:
       
     topic_stub: spin32
   r-spin33:
+    config_url: https://app.practable.io/ed0/static/config/experiments/spinner/spin33-2.0.json
     description: d-r-spin33
     streams:
       - st-data
@@ -4183,6 +4187,7 @@ resources:
       
     topic_stub: spin33
   r-spin34:
+    config_url: https://app.practable.io/ed0/static/config/experiments/spinner/spin34-2.0.json
     description: d-r-spin34
     streams:
       - st-data
@@ -4190,6 +4195,7 @@ resources:
       
     topic_stub: spin34
   r-spin35:
+    config_url: https://app.practable.io/ed0/static/config/experiments/spinner/spin35-2.0.json
     description: d-r-spin35
     streams:
       - st-data
@@ -4197,6 +4203,7 @@ resources:
       
     topic_stub: spin35
   r-spin36:
+    config_url: https://app.practable.io/ed0/static/config/experiments/spinner/spin36-2.0.json
     description: d-r-spin36
     streams:
       - st-data
@@ -4204,6 +4211,7 @@ resources:
       
     topic_stub: spin36
   r-spin37:
+    config_url: https://app.practable.io/ed0/static/config/experiments/spinner/spin37-2.0.json
     description: d-r-spin37
     streams:
       - st-data
@@ -4211,6 +4219,7 @@ resources:
       
     topic_stub: spin37
   r-spin38:
+    config_url: https://app.practable.io/ed0/static/config/experiments/spinner/spin38-2.0.json
     description: d-r-spin38
     streams:
       - st-data
@@ -4218,6 +4227,7 @@ resources:
       
     topic_stub: spin38
   r-spin39:
+    config_url: https://app.practable.io/ed0/static/config/experiments/spinner/spin39-2.0.json
     description: d-r-spin39
     streams:
       - st-data
@@ -4225,6 +4235,7 @@ resources:
       
     topic_stub: spin39
   r-spin40:
+    config_url: https://app.practable.io/ed0/static/config/experiments/spinner/spin40-2.0.json
     description: d-r-spin40
     streams:
       - st-data
@@ -4232,6 +4243,7 @@ resources:
       
     topic_stub: spin40
   r-spin41:
+    config_url: https://app.practable.io/ed0/static/config/experiments/spinner/spin41-2.0.json
     description: d-r-spin41
     streams:
       - st-data
@@ -4239,6 +4251,7 @@ resources:
       
     topic_stub: spin41
   r-spin42:
+    config_url: https://app.practable.io/ed0/static/config/experiments/spinner/spin42-2.0.json
     description: d-r-spin42
     streams:
       - st-data
@@ -4246,6 +4259,7 @@ resources:
       
     topic_stub: spin42
   r-spin43:
+    config_url: https://app.practable.io/ed0/static/config/experiments/spinner/spin43-2.0.json
     description: d-r-spin43
     streams:
       - st-data
@@ -4253,6 +4267,7 @@ resources:
       
     topic_stub: spin43
   r-spin44:
+    config_url: https://app.practable.io/ed0/static/config/experiments/spinner/spin44-2.0.json
     description: d-r-spin44
     streams:
       - st-data
@@ -4260,6 +4275,7 @@ resources:
       
     topic_stub: spin44
   r-spin45:
+    config_url: https://app.practable.io/ed0/static/config/experiments/spinner/spin45-2.0.json
     description: d-r-spin45
     streams:
       - st-data
@@ -4267,6 +4283,7 @@ resources:
       
     topic_stub: spin45
   r-spin46:
+    config_url: https://app.practable.io/ed0/static/config/experiments/spinner/spin46-2.0.json
     description: d-r-spin46
     streams:
       - st-data
@@ -4274,6 +4291,7 @@ resources:
       
     topic_stub: spin46
   r-spin47:
+    config_url: https://app.practable.io/ed0/static/config/experiments/spinner/spin47-2.0.json
     description: d-r-spin47
     streams:
       - st-data
@@ -4281,6 +4299,7 @@ resources:
       
     topic_stub: spin47
   r-spin48:
+    config_url: https://app.practable.io/ed0/static/config/experiments/spinner/spin48-2.0.json
     description: d-r-spin48
     streams:
       - st-data
@@ -4288,6 +4307,7 @@ resources:
       
     topic_stub: spin48
   r-spin49:
+    config_url: https://app.practable.io/ed0/static/config/experiments/spinner/spin49-2.0.json
     description: d-r-spin49
     streams:
       - st-data
@@ -4295,6 +4315,7 @@ resources:
       
     topic_stub: spin49
   r-spin50:
+    config_url: https://app.practable.io/ed0/static/config/experiments/spinner/spin50-2.0.json
     description: d-r-spin50
     streams:
       - st-data
@@ -4302,6 +4323,7 @@ resources:
       
     topic_stub: spin50
   r-spin51:
+    config_url: https://app.practable.io/ed0/static/config/experiments/spinner/spin51-2.0.json
     description: d-r-spin51
     streams:
       - st-data
@@ -4309,6 +4331,7 @@ resources:
       
     topic_stub: spin51
   r-spin52:
+    config_url: https://app.practable.io/ed0/static/config/experiments/spinner/spin52-2.0.json
     description: d-r-spin52
     streams:
       - st-data
@@ -4316,6 +4339,7 @@ resources:
       
     topic_stub: spin52
   r-spin53:
+    config_url: https://app.practable.io/ed0/static/config/experiments/spinner/spin53-2.0.json
     description: d-r-spin53
     streams:
       - st-data
@@ -4323,6 +4347,7 @@ resources:
       
     topic_stub: spin53
   r-spin54:
+    config_url: https://app.practable.io/ed0/static/config/experiments/spinner/spin54-2.0.json
     description: d-r-spin54
     streams:
       - st-data
@@ -4330,6 +4355,7 @@ resources:
       
     topic_stub: spin54
   r-spin55:
+    config_url: https://app.practable.io/ed0/static/config/experiments/spinner/spin55-2.0.json
     description: d-r-spin55
     streams:
       - st-data
@@ -4337,6 +4363,7 @@ resources:
       
     topic_stub: spin55
   r-spin56:
+    config_url: https://app.practable.io/ed0/static/config/experiments/spinner/spin56-2.0.json
     description: d-r-spin56
     streams:
       - st-data
@@ -4344,6 +4371,7 @@ resources:
       
     topic_stub: spin56
   r-spin57:
+    config_url: https://app.practable.io/ed0/static/config/experiments/spinner/spin57-2.0.json
     description: d-r-spin57
     streams:
       - st-data
@@ -4351,6 +4379,7 @@ resources:
       
     topic_stub: spin57
   r-spin58:
+    config_url: https://app.practable.io/ed0/static/config/experiments/spinner/spin58-2.0.json
     description: d-r-spin58
     streams:
       - st-data
@@ -4358,6 +4387,7 @@ resources:
       
     topic_stub: spin58
   r-spin59:
+    config_url: https://app.practable.io/ed0/static/config/experiments/spinner/spin59-2.0.json
     description: d-r-spin59
     streams:
       - st-data
@@ -4366,6 +4396,7 @@ resources:
     topic_stub: spin59
     
   r-spin60:
+    config_url: https://app.practable.io/ed0/static/config/experiments/spinner/spin60-2.0.json
     description: d-r-spin60
     streams:
       - st-data
@@ -4373,6 +4404,7 @@ resources:
       
     topic_stub: spin60
   r-spin61:
+    config_url: https://app.practable.io/ed0/static/config/experiments/spinner/spin61-2.0.json
     description: d-r-spin61
     streams:
       - st-data
@@ -4380,6 +4412,7 @@ resources:
       
     topic_stub: spin61
   r-spin62:
+    config_url: https://app.practable.io/ed0/static/config/experiments/spinner/spin62-2.0.json
     description: d-r-spin62
     streams:
       - st-data
@@ -4387,6 +4420,7 @@ resources:
       
     topic_stub: spin62
   r-spin63:
+    config_url: https://app.practable.io/ed0/static/config/experiments/spinner/spin63-2.0.json
     description: d-r-spin63
     streams:
       - st-data
@@ -4394,6 +4428,7 @@ resources:
       
     topic_stub: spin63
   r-spin64:
+    config_url: https://app.practable.io/ed0/static/config/experiments/spinner/spin64-2.0.json
     description: d-r-spin64
     streams:
       - st-data
@@ -4401,6 +4436,7 @@ resources:
       
     topic_stub: spin64
   r-spin65:
+    config_url: https://app.practable.io/ed0/static/config/experiments/spinner/spin65-2.0.json
     description: d-r-spin65
     streams:
       - st-data
@@ -4408,6 +4444,7 @@ resources:
       
     topic_stub: spin65
   r-spin66:
+    config_url: https://app.practable.io/ed0/static/config/experiments/spinner/spin66-2.0.json
     description: d-r-spin66
     streams:
       - st-data
@@ -4415,6 +4452,7 @@ resources:
       
     topic_stub: spin66
   r-spin67:
+    config_url: https://app.practable.io/ed0/static/config/experiments/spinner/spin67-2.0.json
     description: d-r-spin67
     streams:
       - st-data
@@ -4422,6 +4460,7 @@ resources:
       
     topic_stub: spin67
   r-spin68:
+    config_url: https://app.practable.io/ed0/static/config/experiments/spinner/spin68-2.0.json
     description: d-r-spin68
     streams:
       - st-data
@@ -4429,6 +4468,7 @@ resources:
       
     topic_stub: spin68
   r-spin69:
+    config_url: https://app.practable.io/ed0/static/config/experiments/spinner/spin69-2.0.json
     description: d-r-spin69
     streams:
       - st-data
@@ -4436,6 +4476,7 @@ resources:
       
     topic_stub: spin69
   r-spin70:
+    config_url: https://app.practable.io/ed0/static/config/experiments/spinner/spin70-2.0.json
     description: d-r-spin70
     streams:
       - st-data
@@ -4443,6 +4484,7 @@ resources:
       
     topic_stub: spin70
   r-spin71:
+    config_url: https://app.practable.io/ed0/static/config/experiments/spinner/spin71-2.0.json
     description: d-r-spin71
     streams:
       - st-data
@@ -4450,6 +4492,7 @@ resources:
       
     topic_stub: spin71
   r-spin72:
+    config_url: https://app.practable.io/ed0/static/config/experiments/spinner/spin72-2.0.json
     description: d-r-spin72
     streams:
       - st-data
@@ -4457,6 +4500,7 @@ resources:
       
     topic_stub: spin72
   r-spin73:
+    config_url: https://app.practable.io/ed0/static/config/experiments/spinner/spin73-2.0.json
     description: d-r-spin73
     streams:
       - st-data
@@ -4464,6 +4508,7 @@ resources:
       
     topic_stub: spin73
   r-spin74:
+    config_url: https://app.practable.io/ed0/static/config/experiments/spinner/spin74-2.0.json
     description: d-r-spin74
     streams:
       - st-data
@@ -4471,6 +4516,7 @@ resources:
       
     topic_stub: spin74
   r-spin75:
+    config_url: https://app.practable.io/ed0/static/config/experiments/spinner/spin75-2.0.json
     description: d-r-spin75
     streams:
       - st-data
@@ -4478,6 +4524,7 @@ resources:
       
     topic_stub: spin75
   r-spin76:
+    config_url: https://app.practable.io/ed0/static/config/experiments/spinner/spin76-2.0.json
     description: d-r-spin76
     streams:
       - st-data
@@ -4485,6 +4532,7 @@ resources:
       
     topic_stub: spin76
   r-spin77:
+    config_url: https://app.practable.io/ed0/static/config/experiments/spinner/spin77-2.0.json
     description: d-r-spin77
     streams:
       - st-data
@@ -7914,11 +7962,10 @@ uis:
       - log
   ui-spin-dev-david:
     description: d-ui-spin-student-dev
-    url: https://app.practable.io/ed-dev-ui/david/ui/spinner-default-3.0/?v=0&streams={{streams}}&exp={{exp}}&course=develop
+    url: https://app.practable.io/ed-dev-ui/david/ui/spinner-default-3.0/?v=0&streams={{streams}}&exp={{exp}}&config={{config}}&course=develop&hardware=spinner
     streams_required:
       - st-data
       - st-video
-      - log
   ui-spin-engdes1:
     description: d-ui-spin-student
     url: https://app.practable.io/ed0/static/ui/spinner-2.0/?v=0&streams={{streams}}&exp={{exp}}&course=engdes1
