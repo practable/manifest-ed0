@@ -8212,7 +8212,7 @@ windows:
   w-trus-sm2-students:
     allowed:
       - start: 2023-10-11T00:00:00Z
-        end: 2024-01-30T00:00:00Z
+        end: 2024-08-31T00:00:00Z
     denied:
       - start: 2024-03-30T08:00:00Z
         end:   2024-03-30T12:00:00Z         
