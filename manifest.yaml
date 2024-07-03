@@ -595,7 +595,13 @@ descriptions:
     short: An electromagnetically-driven simple pendulum
     image: https://app.practable.io/ed0/static/images/booking/slots/penduino-real-1.0/image.png
     thumb: https://app.practable.io/ed0/static/images/booking/slots/penduino-real-1.0/thumb.png 
-    
+  d-sl-dev-david-pend38:
+    name: Pendulum 38 (David Development)
+    type: slot
+    short: An electromagnetically-driven simple pendulum
+    image: https://app.practable.io/ed0/static/images/booking/slots/penduino-real-1.0/image.png
+    thumb: https://app.practable.io/ed0/static/images/booking/slots/penduino-real-1.0/thumb.png 
+   
   d-sl-dev-david-spin77:
     name: Spinner 77 (David Development)
     type: slot
@@ -3259,6 +3265,7 @@ policies:
       - 4hFor48h
     slots:
       - sl-dev-david-pend34
+      - sl-dev-david-pend38
       - sl-dev-david-spin77
 
   p-quarantine:
@@ -4065,6 +4072,13 @@ resources:
       - st-video
       
     topic_stub: pend37
+  r-pend38:
+    description: d-r-pendulum-standard
+    streams:
+      - st-data
+      - st-video
+      
+    topic_stub: pend38
     
   r-peter00:
     description: d-r-peter00
@@ -4593,6 +4607,12 @@ slots:
     description: d-sl-dev-david-pend34
     policy: p-dev-david 
     resource: r-pend34
+    ui_set: us-dev-david-pend
+    window: w-dev-david
+  sl-dev-david-pend38:
+    description: d-sl-dev-david-pend38
+    policy: p-dev-david 
+    resource: r-pend38
     ui_set: us-dev-david-pend
     window: w-dev-david
   sl-dev-david-spin77:
