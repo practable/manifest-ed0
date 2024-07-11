@@ -3036,6 +3036,18 @@ descriptions:
     short: Spinner Development UI for student use
     image: https://app.practable.io/ed0/static/images/booking/ui/spinner-default-2.0/image.png
     thumb: https://app.practable.io/ed0/static/images/booking/ui/spinner-default-2.0/thumb.png 
+  d-ui-spin-dev:
+    name: Spinner (Developer)
+    type: ui
+    short: Spinner Development UI for student use
+    image: https://app.practable.io/ed0/static/images/booking/ui/spinner-default-2.0/image.png
+    thumb: https://app.practable.io/ed0/static/images/booking/ui/spinner-default-2.0/thumb.png 
+  d-ui-spin-dev-logging:
+    name: Spinner (Developer with logging)
+    type: ui
+    short: Spinner Development UI for student use with logging included
+    image: https://app.practable.io/ed0/static/images/booking/ui/spinner-default-2.0/image.png
+    thumb: https://app.practable.io/ed0/static/images/booking/ui/spinner-default-2.0/thumb.png
   d-ui-pend-analytics-student:
     name: Analytics Pendulum (Student)
     type: ui
@@ -7981,13 +7993,13 @@ uis:
       - st-data
       - log
   ui-spin-dev-david:
-    description: d-ui-spin-student-dev
+    description: d-ui-spin-dev
     url: https://app.practable.io/ed-dev-ui/david/ui/spinner-default-3.0/?v=0&streams={{streams}}&exp={{exp}}&config={{config}}&course=develop&hardware=spinner
     streams_required:
       - st-data
       - st-video
   ui-spin-analytics-dev-david:
-    description: d-ui-spin-student-dev
+    description: d-ui-spin-dev-logging
     url: https://app.practable.io/ed-dev-ui/david/ui/spinner-analytics-3.0/?v=0&streams={{streams}}&exp={{exp}}&config={{config}}&course=develop&hardware=spinner
     streams_required:
       - st-data
