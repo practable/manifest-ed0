@@ -7986,6 +7986,12 @@ uis:
     streams_required:
       - st-data
       - st-video
+  ui-spin-analytics-dev-david:
+    description: d-ui-spin-student-dev
+    url: https://app.practable.io/ed-dev-ui/david/ui/spinner-analytics-3.0/?v=0&streams={{streams}}&exp={{exp}}&config={{config}}&course=develop&hardware=spinner
+    streams_required:
+      - st-data
+      - st-video
   ui-spin-engdes1:
     description: d-ui-spin-student
     url: https://app.practable.io/ed0/static/ui/spinner-2.0/?v=0&streams={{streams}}&exp={{exp}}&course=engdes1
@@ -8072,6 +8078,7 @@ ui_sets:
   us-dev-david-spin:
     uis:
       - ui-spin-dev-david
+      - ui-spin-analytics-dev-david
     
   us-fridge-student:
     uis:
